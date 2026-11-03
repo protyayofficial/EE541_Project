@@ -1,0 +1,7 @@
+ horizon  objective  objective_per_slot  max_violation  solve_seconds  status
+       3  33.233216           11.077739   8.867380e-09       0.576965 optimal
+       5  48.468757            9.693751   7.220740e-09       0.010039 optimal
+       8  48.047704            6.005963   7.591876e-09       0.010035 optimal
+      12  56.998739            4.749895   2.378124e-09       0.009799 optimal
+      16  87.730626            5.483164   2.710518e-09       0.010145 optimal
+      20 103.837524            5.191876   7.826435e-09       0.011558 optimal

@@ -1,0 +1,21 @@
+{
+  "name": "diagnostics",
+  "command": [
+    "/Users/ace/miniconda3/envs/ee541/bin/python",
+    "research_experiments.py",
+    "--study",
+    "diagnostics",
+    "--backend",
+    "cvxpy",
+    "--seeds",
+    "10",
+    "--slots",
+    "120",
+    "--horizon",
+    "10",
+    "--out",
+    "results/diagnostics"
+  ],
+  "return_code": 0,
+  "duration_seconds": 2.126
+}

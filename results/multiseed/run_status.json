@@ -1,0 +1,23 @@
+{
+  "name": "multiseed",
+  "command": [
+    "/Users/ace/miniconda3/envs/ee541/bin/python",
+    "research_experiments.py",
+    "--study",
+    "multiseed",
+    "--backend",
+    "cvxpy",
+    "--seeds",
+    "10",
+    "--slots",
+    "120",
+    "--horizon",
+    "10",
+    "--out",
+    "results/multiseed",
+    "--predictor",
+    "causal"
+  ],
+  "return_code": 0,
+  "duration_seconds": 24.251
+}

@@ -1,0 +1,45 @@
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+
+ horizon elapsed 126.5 seconds
+         mode  horizon  mean_queue  sd_queue  mean_drop  sd_drop  mean_energy  mean_throughput  worst_feasibility  avg_solve_ms  inaccurate_fraction
+     adaptive        5     3.87044   1.66354    0.00000  0.00000    118.72831        514.36026            0.00000       6.17112              0.00000
+     adaptive       10     3.89626   1.66653    0.00000  0.00000    118.00238        514.55817            0.00000       6.51327              0.00000
+     adaptive       15     4.00060   1.88068    0.00000  0.00000    116.85192        515.14917            0.00001       6.68334              0.00000
+     adaptive       20     4.15844   1.98142    0.00000  0.00000    115.77113        515.13315            0.00005       6.80504              0.00000
+adaptive_risk        5     3.85134   1.63982    0.00000  0.00000    118.67792        514.41271            0.00000       5.96460              0.00000
+adaptive_risk       10     3.83682   1.63350    0.00000  0.00000    117.75683        514.84686            0.00001       6.60400              0.00000
+adaptive_risk       15     3.90241   1.67764    0.00000  0.00000    116.69037        515.34708            0.00002       6.59874              0.00000
+adaptive_risk       20     4.10002   1.87513    0.00000  0.00000    115.46503        515.38500            0.00000       6.85154              0.00000
+      nominal        5     3.60838   1.28075    0.00000  0.00000    118.61334        514.44791            0.00000       6.42095              0.00000
+      nominal       10     3.55514   1.19299    0.00000  0.00000    118.26169        514.56204            0.00000       6.37208              0.00000
+      nominal       15     3.54317   1.15332    0.00000  0.00000    118.09978        514.67199            0.00000       6.40593              0.00000
+      nominal       20     3.53320   1.10279    0.00000  0.00000    117.94365        514.70629            0.00000       6.61230              0.00000
+       robust        5     3.79695   1.61182    0.00000  0.00000    118.72212        514.62489            0.00000       6.27666              0.00000
+       robust       10     3.63364   1.35372    0.00000  0.00000    117.90290        514.82069            0.00001       6.57705              0.00000
+       robust       15     3.66879   1.44365    0.00000  0.00000    116.41928        515.07889            0.00001       6.49770              0.00000
+       robust       20     3.74566   1.51091    0.00000  0.00000    115.53074        515.35350            0.00001       6.74547              0.00000

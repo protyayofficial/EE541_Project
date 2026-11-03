@@ -1,0 +1,14 @@
+{
+  "name": "tests",
+  "command": [
+    "/Users/ace/miniconda3/envs/ee541/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "return_code": 0,
+  "duration_seconds": 0.527
+}

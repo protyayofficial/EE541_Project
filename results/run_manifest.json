@@ -1,0 +1,155 @@
+[
+  {
+    "name": "tests",
+    "command": [
+      "/Users/ace/miniconda3/envs/ee541/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "return_code": 0,
+    "duration_seconds": 0.527
+  },
+  {
+    "name": "baseline",
+    "command": [
+      "/Users/ace/miniconda3/envs/ee541/bin/python",
+      "run_experiments.py",
+      "--slots",
+      "120",
+      "--backend",
+      "cvxpy",
+      "--seed",
+      "7"
+    ],
+    "return_code": 0,
+    "duration_seconds": 2.768
+  },
+  {
+    "name": "multiseed",
+    "command": [
+      "/Users/ace/miniconda3/envs/ee541/bin/python",
+      "research_experiments.py",
+      "--study",
+      "multiseed",
+      "--backend",
+      "cvxpy",
+      "--seeds",
+      "10",
+      "--slots",
+      "120",
+      "--horizon",
+      "10",
+      "--out",
+      "results/multiseed",
+      "--predictor",
+      "causal"
+    ],
+    "return_code": 0,
+    "duration_seconds": 24.251
+  },
+  {
+    "name": "forecast",
+    "command": [
+      "/Users/ace/miniconda3/envs/ee541/bin/python",
+      "research_experiments.py",
+      "--study",
+      "forecast",
+      "--backend",
+      "cvxpy",
+      "--seeds",
+      "10",
+      "--slots",
+      "120",
+      "--horizon",
+      "10",
+      "--out",
+      "results/forecast"
+    ],
+    "return_code": 0,
+    "duration_seconds": 101.574
+  },
+  {
+    "name": "horizon",
+    "command": [
+      "/Users/ace/miniconda3/envs/ee541/bin/python",
+      "research_experiments.py",
+      "--study",
+      "horizon",
+      "--backend",
+      "cvxpy",
+      "--seeds",
+      "10",
+      "--slots",
+      "120",
+      "--horizon",
+      "10",
+      "--out",
+      "results/horizon",
+      "--predictor",
+      "causal"
+    ],
+    "return_code": 0,
+    "duration_seconds": 127.261
+  },
+  {
+    "name": "stress",
+    "command": [
+      "/Users/ace/miniconda3/envs/ee541/bin/python",
+      "research_experiments.py",
+      "--study",
+      "stress",
+      "--backend",
+      "cvxpy",
+      "--seeds",
+      "10",
+      "--slots",
+      "120",
+      "--horizon",
+      "10",
+      "--out",
+      "results/stress",
+      "--predictor",
+      "causal"
+    ],
+    "return_code": 0,
+    "duration_seconds": 423.252
+  },
+  {
+    "name": "diagnostics",
+    "command": [
+      "/Users/ace/miniconda3/envs/ee541/bin/python",
+      "research_experiments.py",
+      "--study",
+      "diagnostics",
+      "--backend",
+      "cvxpy",
+      "--seeds",
+      "10",
+      "--slots",
+      "120",
+      "--horizon",
+      "10",
+      "--out",
+      "results/diagnostics"
+    ],
+    "return_code": 0,
+    "duration_seconds": 2.126
+  },
+  {
+    "name": "solver_accuracy",
+    "command": [
+      "/Users/ace/miniconda3/envs/ee541/bin/python",
+      "solver_accuracy.py",
+      "--horizon",
+      "12",
+      "--out",
+      "results/solver_accuracy"
+    ],
+    "return_code": 0,
+    "duration_seconds": 2.095
+  }
+]

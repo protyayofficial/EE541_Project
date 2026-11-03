@@ -1,0 +1,9 @@
+test_causal_rollout (test_model.Tests.test_causal_rollout) ... ok
+test_lp_feasible_under_full_physical_capacity (test_model.Tests.test_lp_feasible_under_full_physical_capacity) ... ok
+test_causal_forecast_ignores_future (test_research.ResearchTests.test_causal_forecast_ignores_future) ... ok
+test_no_proactive_drops_mode (test_research.ResearchTests.test_no_proactive_drops_mode) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.040s
+
+OK

@@ -1,0 +1,7 @@
+    mode  average_queue  rejection_ratio  throughput_bps  energy_J  mean_solve_ms  max_planned_violation  inaccurate_fraction  solver_failure_count
+   fixed        9.21821          0.00000       553.33333 137.47850        0.00000                0.00000              0.00000                     0
+  greedy       11.23321          0.00000       553.33333 140.80392        0.00000                0.00000              0.00000                     0
+ channel       16.19401          0.06854       502.48230 116.13087        0.00000                0.00000              0.00000                     0
+ nominal        6.46450          0.00000       553.33333 134.11139        7.33022                0.00000              0.00000                     0
+  robust        4.52062          0.03490       534.66354 132.07691        4.98434                0.00000              0.00000                     0
+adaptive        6.16061          0.00936       548.32351 132.76857        5.05276                0.00000              0.00000                     0

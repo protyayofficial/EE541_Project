@@ -1,0 +1,15 @@
+{
+  "name": "baseline",
+  "command": [
+    "/Users/ace/miniconda3/envs/ee541/bin/python",
+    "run_experiments.py",
+    "--slots",
+    "120",
+    "--backend",
+    "cvxpy",
+    "--seed",
+    "7"
+  ],
+  "return_code": 0,
+  "duration_seconds": 2.768
+}
