@@ -1,0 +1,123 @@
+moderate 100 ema_nominal
+moderate 100 ar_nominal
+moderate 100 ar_calibrated
+moderate 100 ar_gated
+moderate 101 ema_nominal
+moderate 101 ar_nominal
+moderate 101 ar_calibrated
+moderate 101 ar_gated
+moderate 102 ema_nominal
+moderate 102 ar_nominal
+moderate 102 ar_calibrated
+moderate 102 ar_gated
+moderate 103 ema_nominal
+moderate 103 ar_nominal
+moderate 103 ar_calibrated
+moderate 103 ar_gated
+moderate 104 ema_nominal
+moderate 104 ar_nominal
+moderate 104 ar_calibrated
+moderate 104 ar_gated
+moderate 105 ema_nominal
+moderate 105 ar_nominal
+moderate 105 ar_calibrated
+moderate 105 ar_gated
+moderate 106 ema_nominal
+moderate 106 ar_nominal
+moderate 106 ar_calibrated
+moderate 106 ar_gated
+moderate 107 ema_nominal
+moderate 107 ar_nominal
+moderate 107 ar_calibrated
+moderate 107 ar_gated
+moderate 108 ema_nominal
+moderate 108 ar_nominal
+moderate 108 ar_calibrated
+moderate 108 ar_gated
+moderate 109 ema_nominal
+moderate 109 ar_nominal
+moderate 109 ar_calibrated
+moderate 109 ar_gated
+scarce 100 ema_nominal
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scarce 100 ar_nominal
+scarce 100 ar_calibrated
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scarce 100 ar_gated
+scarce 101 ema_nominal
+scarce 101 ar_nominal
+scarce 101 ar_calibrated
+scarce 101 ar_gated
+scarce 102 ema_nominal
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scarce 102 ar_nominal
+scarce 102 ar_calibrated
+scarce 102 ar_gated
+scarce 103 ema_nominal
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scarce 103 ar_nominal
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scarce 103 ar_calibrated
+scarce 103 ar_gated
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scarce 104 ema_nominal
+scarce 104 ar_nominal
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scarce 104 ar_calibrated
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scarce 104 ar_gated
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scarce 105 ema_nominal
+scarce 105 ar_nominal
+scarce 105 ar_calibrated
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scarce 105 ar_gated
+scarce 106 ema_nominal
+scarce 106 ar_nominal
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scarce 106 ar_calibrated
+scarce 106 ar_gated
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scarce 107 ema_nominal
+scarce 107 ar_nominal
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scarce 107 ar_calibrated
+scarce 107 ar_gated
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scarce 108 ema_nominal
+scarce 108 ar_nominal
+scarce 108 ar_calibrated
+scarce 108 ar_gated
+scarce 109 ema_nominal
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scarce 109 ar_nominal
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scarce 109 ar_calibrated
+scarce 109 ar_gated
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/reliability_study.py:72: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver, verbose=False, **opts)
+scenario          mode     queue     drop     energy  throughput  max_violation  solve_ms  fallback_count
+moderate ar_calibrated  3.322117 0.000000 117.527292  515.311965   1.425365e-07 10.599267               0
+moderate      ar_gated  3.371921 0.000000 117.743952  515.207259   7.273685e-08 10.419461               0
+moderate    ar_nominal  3.455900 0.000000 118.764090  514.635160   6.106074e-08 10.134736               0
+moderate   ema_nominal  3.554096 0.000000 118.262349  514.562379   6.888581e-08 10.691622               0
+  scarce ar_calibrated 23.229121 0.175900  78.451186  470.489323   6.409889e-05 12.744485               0
+  scarce      ar_gated 23.322720 0.184401  78.451186  464.542611   4.354023e-07 13.113107               1
+  scarce    ar_nominal 23.322923 0.184423  78.451186  464.530019   4.354023e-07 13.012741               1
+  scarce   ema_nominal 23.661410 0.195080  78.451186  456.566492   7.083517e-05 13.010931               0

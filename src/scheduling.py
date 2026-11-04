@@ -248,6 +248,8 @@ def verify_plan(sol,b0,e0,gain,arrival,harvest,cfg=Config()):
         'energy_balance':np.max(np.abs(E[1:] - E[:-1]+cfg.tau*p-H+w)),
         'rate':np.max(d-capacity(p,g,cfg)),
         'data_availability':np.max(d-b[:-1]),
+        'power_cap':np.max(p-cfg.power_max),
+        'data_cap':np.max(d-cfg.data_max),
         'energy_causality':np.max(cfg.tau*p-E[:-1]),
         'buffer_cap':np.max(b-cfg.buffer_max),
         'battery_cap':np.max(E-cfg.energy_max),

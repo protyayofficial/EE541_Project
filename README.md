@@ -1,3 +1,5 @@
+> **Current handoff:** Start with [README_HANDOFF.md](README_HANDOFF.md) for the latest validated workflow, results, and Argha’s checklist.
+
 # EE 541: Prediction-Aware Robust Convex Scheduling
 
 **Protyay Dey & Arghadeep Saha — research prototype, not final numerical results.**

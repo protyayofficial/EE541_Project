@@ -1,3 +1,4 @@
+
 """Research evaluation with paired experiments and reproducible figures.
 
 Usage (from project root):
@@ -44,11 +45,13 @@ def run_case(seed, slots, backend, horizon, noise, arrival, harvest, predictor, 
         trace=causal_forecasts(trace,max(21,horizon))
     rows=[]; example=None
     for mode in policies:
-        df=run_policy(trace,mode,cfg,backend=backend,allow_proactive=False)
+        df=run_policy(trace,mode,cfg,backend=backend,allow_proactive=True)
         sm=summarize(df,cfg).iloc[0].to_dict()
         sm.update(seed=seed,slots=slots,horizon=horizon,noise=noise,
                   arrival_mean=arrival,harvest_mean=harvest,predictor=predictor,
-                  forced_drops=float(df['drop'].sum()),
+                  forced_drops=float(df['forced_drop'].sum()),
+                  proactive_drops=float(df['proactive'].sum()),
+                  total_drops=float(df['drop'].sum()),
                   delivered=float(df['d'].sum()),
                   avg_spill_J=float(df.spill.mean()),
                   drop_events=int((df['drop']>1e-7).sum()),

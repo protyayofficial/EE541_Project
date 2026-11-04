@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+*.zip
+results/**/per_seed_partial.csv
+results/**/per_slot_partial.csv

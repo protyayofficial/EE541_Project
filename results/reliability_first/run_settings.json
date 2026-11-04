@@ -1,0 +1,6 @@
+{
+  "seeds": 10,
+  "slots": 120,
+  "horizon": 10,
+  "out": "results/reliability_first"
+}

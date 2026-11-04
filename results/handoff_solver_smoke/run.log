@@ -1,0 +1,8 @@
+  solver  tolerance  objective  max_violation  elapsed_sec  iterations  status  objective_gap_to_clarabel
+CLARABEL        NaN  32.197945   5.507475e-09     0.009370          16 optimal                   0.000000
+     SCS    0.01000  32.359445   8.695440e-02     0.006752          75 optimal                   0.161500
+     SCS    0.00300  32.359445   8.695440e-02     0.006491          75 optimal                   0.161500
+     SCS    0.00100  32.209415   7.627582e-02     0.006509         100 optimal                   0.011470
+     SCS    0.00030  32.197929   2.114827e-05     0.006800         175 optimal                   0.000016
+     SCS    0.00010  32.197929   2.114827e-05     0.006709         175 optimal                   0.000016
+     SCS    0.00001  32.197929   2.114827e-05     0.007529         175 optimal                   0.000016
