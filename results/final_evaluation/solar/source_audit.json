@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "trajectories": 210,
+  "checks": "generated channel, clipped arrivals and source-specific harvest match; no overlap with available prior saved windows",
+  "scope": "same sites/seasons, windows not independent; action audit is recorded separately"
+}

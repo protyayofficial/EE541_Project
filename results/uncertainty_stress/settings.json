@@ -1,7 +1,0 @@
-{
-  "seeds": 5,
-  "seed_start": 300,
-  "slots": 80,
-  "horizon": 10,
-  "out": "results/uncertainty_stress"
-}

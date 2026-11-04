@@ -1,7 +1,0 @@
-
- multiseed elapsed 1.5 seconds
-         mode  mean_queue  sd_queue  mean_drop  sd_drop  mean_energy  mean_throughput  worst_feasibility  avg_solve_ms  inaccurate_fraction
-     adaptive     6.09624   0.87616    0.00000  0.00000     14.62551        700.00000            0.00000       9.73647              0.00000
-adaptive_risk     6.10948   0.89154    0.00000  0.00000     14.53816        700.00000            0.00000      12.41444              0.00000
-      nominal     6.15582   0.92421    0.00000  0.00000     14.49100        700.00000            0.00000      26.27404              0.00000
-       robust     6.09624   0.87616    0.00000  0.00000     14.62551        700.00000            0.00000       8.95334              0.00000

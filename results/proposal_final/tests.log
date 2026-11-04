@@ -1,0 +1,11 @@
+test_causal_rollout (test_model.Tests.test_causal_rollout) ... ok
+test_lp_feasible_under_full_physical_capacity (test_model.Tests.test_lp_feasible_under_full_physical_capacity) ... ok
+test_causal_prediction_ignores_unobserved_future (test_proposal_study.ProposalTests.test_causal_prediction_ignores_unobserved_future) ... ok
+test_fixed_margins_preserve_current_observed_channel (test_proposal_study.ProposalTests.test_fixed_margins_preserve_current_observed_channel) ... ok
+test_margin_ablations_and_zero_floor (test_proposal_study.ProposalTests.test_margin_ablations_and_zero_floor) ... ok
+test_weighted_mpc_physical_rollout (test_proposal_study.ProposalTests.test_weighted_mpc_physical_rollout) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.338s
+
+OK

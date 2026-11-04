@@ -1,0 +1,6 @@
+{
+  "cases": 6,
+  "horizon": 10,
+  "objective": "submitted weighted objective",
+  "note": "primal feasibility and cross-solver agreement; neither alone certifies optimality"
+}

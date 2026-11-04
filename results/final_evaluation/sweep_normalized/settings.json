@@ -1,0 +1,29 @@
+{
+  "seeds": 10,
+  "seed_start": 6000,
+  "mean_normalize": true,
+  "slots": 80,
+  "horizon": 10,
+  "out": "results/final_evaluation/sweep_normalized",
+  "modes": [
+    "greedy",
+    "nominal",
+    "fixed_margin",
+    "adaptive_harvest",
+    "adaptive_all"
+  ],
+  "volatility": [
+    0.2,
+    0.45,
+    0.8
+  ],
+  "mean_harvest": [
+    0.6,
+    1.2
+  ],
+  "arrivals": "Poisson mean 2.5, clipped to [0,10]",
+  "predictor": "causal past-only AR channel and historical arrival/harvest estimate; current channel observed",
+  "note": "fixed method settings; normalized case sets stationary expected gain to one but higher moments still change; volatility is not a direct forecast-noise injection; paired comparisons by seed",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.11.17 (main, Oct  1 2026, 20:09:52) [Clang 20.1.8 ]"
+}

@@ -1,0 +1,353 @@
+harvest 0.6 volatility 0.2 seed 6000 mode greedy
+harvest 0.6 volatility 0.2 seed 6000 mode nominal
+harvest 0.6 volatility 0.2 seed 6000 mode fixed_margin
+harvest 0.6 volatility 0.2 seed 6000 mode adaptive_harvest
+harvest 0.6 volatility 0.2 seed 6000 mode adaptive_all
+harvest 0.6 volatility 0.2 seed 6001 mode greedy
+harvest 0.6 volatility 0.2 seed 6001 mode nominal
+harvest 0.6 volatility 0.2 seed 6001 mode fixed_margin
+harvest 0.6 volatility 0.2 seed 6001 mode adaptive_harvest
+harvest 0.6 volatility 0.2 seed 6001 mode adaptive_all
+harvest 0.6 volatility 0.2 seed 6002 mode greedy
+harvest 0.6 volatility 0.2 seed 6002 mode nominal
+harvest 0.6 volatility 0.2 seed 6002 mode fixed_margin
+harvest 0.6 volatility 0.2 seed 6002 mode adaptive_harvest
+harvest 0.6 volatility 0.2 seed 6002 mode adaptive_all
+harvest 0.6 volatility 0.2 seed 6003 mode greedy
+harvest 0.6 volatility 0.2 seed 6003 mode nominal
+harvest 0.6 volatility 0.2 seed 6003 mode fixed_margin
+harvest 0.6 volatility 0.2 seed 6003 mode adaptive_harvest
+harvest 0.6 volatility 0.2 seed 6003 mode adaptive_all
+harvest 0.6 volatility 0.2 seed 6004 mode greedy
+harvest 0.6 volatility 0.2 seed 6004 mode nominal
+harvest 0.6 volatility 0.2 seed 6004 mode fixed_margin
+harvest 0.6 volatility 0.2 seed 6004 mode adaptive_harvest
+harvest 0.6 volatility 0.2 seed 6004 mode adaptive_all
+harvest 0.6 volatility 0.2 seed 6005 mode greedy
+harvest 0.6 volatility 0.2 seed 6005 mode nominal
+harvest 0.6 volatility 0.2 seed 6005 mode fixed_margin
+harvest 0.6 volatility 0.2 seed 6005 mode adaptive_harvest
+harvest 0.6 volatility 0.2 seed 6005 mode adaptive_all
+harvest 0.6 volatility 0.2 seed 6006 mode greedy
+harvest 0.6 volatility 0.2 seed 6006 mode nominal
+harvest 0.6 volatility 0.2 seed 6006 mode fixed_margin
+harvest 0.6 volatility 0.2 seed 6006 mode adaptive_harvest
+harvest 0.6 volatility 0.2 seed 6006 mode adaptive_all
+harvest 0.6 volatility 0.2 seed 6007 mode greedy
+harvest 0.6 volatility 0.2 seed 6007 mode nominal
+harvest 0.6 volatility 0.2 seed 6007 mode fixed_margin
+harvest 0.6 volatility 0.2 seed 6007 mode adaptive_harvest
+harvest 0.6 volatility 0.2 seed 6007 mode adaptive_all
+harvest 0.6 volatility 0.2 seed 6008 mode greedy
+harvest 0.6 volatility 0.2 seed 6008 mode nominal
+harvest 0.6 volatility 0.2 seed 6008 mode fixed_margin
+harvest 0.6 volatility 0.2 seed 6008 mode adaptive_harvest
+harvest 0.6 volatility 0.2 seed 6008 mode adaptive_all
+harvest 0.6 volatility 0.2 seed 6009 mode greedy
+harvest 0.6 volatility 0.2 seed 6009 mode nominal
+harvest 0.6 volatility 0.2 seed 6009 mode fixed_margin
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:108: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 volatility 0.2 seed 6009 mode adaptive_harvest
+harvest 0.6 volatility 0.2 seed 6009 mode adaptive_all
+harvest 0.6 volatility 0.45 seed 6000 mode greedy
+harvest 0.6 volatility 0.45 seed 6000 mode nominal
+harvest 0.6 volatility 0.45 seed 6000 mode fixed_margin
+harvest 0.6 volatility 0.45 seed 6000 mode adaptive_harvest
+harvest 0.6 volatility 0.45 seed 6000 mode adaptive_all
+harvest 0.6 volatility 0.45 seed 6001 mode greedy
+harvest 0.6 volatility 0.45 seed 6001 mode nominal
+harvest 0.6 volatility 0.45 seed 6001 mode fixed_margin
+harvest 0.6 volatility 0.45 seed 6001 mode adaptive_harvest
+harvest 0.6 volatility 0.45 seed 6001 mode adaptive_all
+harvest 0.6 volatility 0.45 seed 6002 mode greedy
+harvest 0.6 volatility 0.45 seed 6002 mode nominal
+harvest 0.6 volatility 0.45 seed 6002 mode fixed_margin
+harvest 0.6 volatility 0.45 seed 6002 mode adaptive_harvest
+harvest 0.6 volatility 0.45 seed 6002 mode adaptive_all
+harvest 0.6 volatility 0.45 seed 6003 mode greedy
+harvest 0.6 volatility 0.45 seed 6003 mode nominal
+harvest 0.6 volatility 0.45 seed 6003 mode fixed_margin
+harvest 0.6 volatility 0.45 seed 6003 mode adaptive_harvest
+harvest 0.6 volatility 0.45 seed 6003 mode adaptive_all
+harvest 0.6 volatility 0.45 seed 6004 mode greedy
+harvest 0.6 volatility 0.45 seed 6004 mode nominal
+harvest 0.6 volatility 0.45 seed 6004 mode fixed_margin
+harvest 0.6 volatility 0.45 seed 6004 mode adaptive_harvest
+harvest 0.6 volatility 0.45 seed 6004 mode adaptive_all
+harvest 0.6 volatility 0.45 seed 6005 mode greedy
+harvest 0.6 volatility 0.45 seed 6005 mode nominal
+harvest 0.6 volatility 0.45 seed 6005 mode fixed_margin
+harvest 0.6 volatility 0.45 seed 6005 mode adaptive_harvest
+harvest 0.6 volatility 0.45 seed 6005 mode adaptive_all
+harvest 0.6 volatility 0.45 seed 6006 mode greedy
+harvest 0.6 volatility 0.45 seed 6006 mode nominal
+harvest 0.6 volatility 0.45 seed 6006 mode fixed_margin
+harvest 0.6 volatility 0.45 seed 6006 mode adaptive_harvest
+harvest 0.6 volatility 0.45 seed 6006 mode adaptive_all
+harvest 0.6 volatility 0.45 seed 6007 mode greedy
+harvest 0.6 volatility 0.45 seed 6007 mode nominal
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:108: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 volatility 0.45 seed 6007 mode fixed_margin
+harvest 0.6 volatility 0.45 seed 6007 mode adaptive_harvest
+harvest 0.6 volatility 0.45 seed 6007 mode adaptive_all
+harvest 0.6 volatility 0.45 seed 6008 mode greedy
+harvest 0.6 volatility 0.45 seed 6008 mode nominal
+harvest 0.6 volatility 0.45 seed 6008 mode fixed_margin
+harvest 0.6 volatility 0.45 seed 6008 mode adaptive_harvest
+harvest 0.6 volatility 0.45 seed 6008 mode adaptive_all
+harvest 0.6 volatility 0.45 seed 6009 mode greedy
+harvest 0.6 volatility 0.45 seed 6009 mode nominal
+harvest 0.6 volatility 0.45 seed 6009 mode fixed_margin
+harvest 0.6 volatility 0.45 seed 6009 mode adaptive_harvest
+harvest 0.6 volatility 0.45 seed 6009 mode adaptive_all
+harvest 0.6 volatility 0.8 seed 6000 mode greedy
+harvest 0.6 volatility 0.8 seed 6000 mode nominal
+harvest 0.6 volatility 0.8 seed 6000 mode fixed_margin
+harvest 0.6 volatility 0.8 seed 6000 mode adaptive_harvest
+harvest 0.6 volatility 0.8 seed 6000 mode adaptive_all
+harvest 0.6 volatility 0.8 seed 6001 mode greedy
+harvest 0.6 volatility 0.8 seed 6001 mode nominal
+harvest 0.6 volatility 0.8 seed 6001 mode fixed_margin
+harvest 0.6 volatility 0.8 seed 6001 mode adaptive_harvest
+harvest 0.6 volatility 0.8 seed 6001 mode adaptive_all
+harvest 0.6 volatility 0.8 seed 6002 mode greedy
+harvest 0.6 volatility 0.8 seed 6002 mode nominal
+harvest 0.6 volatility 0.8 seed 6002 mode fixed_margin
+harvest 0.6 volatility 0.8 seed 6002 mode adaptive_harvest
+harvest 0.6 volatility 0.8 seed 6002 mode adaptive_all
+harvest 0.6 volatility 0.8 seed 6003 mode greedy
+harvest 0.6 volatility 0.8 seed 6003 mode nominal
+harvest 0.6 volatility 0.8 seed 6003 mode fixed_margin
+harvest 0.6 volatility 0.8 seed 6003 mode adaptive_harvest
+harvest 0.6 volatility 0.8 seed 6003 mode adaptive_all
+harvest 0.6 volatility 0.8 seed 6004 mode greedy
+harvest 0.6 volatility 0.8 seed 6004 mode nominal
+harvest 0.6 volatility 0.8 seed 6004 mode fixed_margin
+harvest 0.6 volatility 0.8 seed 6004 mode adaptive_harvest
+harvest 0.6 volatility 0.8 seed 6004 mode adaptive_all
+harvest 0.6 volatility 0.8 seed 6005 mode greedy
+harvest 0.6 volatility 0.8 seed 6005 mode nominal
+harvest 0.6 volatility 0.8 seed 6005 mode fixed_margin
+harvest 0.6 volatility 0.8 seed 6005 mode adaptive_harvest
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:108: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 volatility 0.8 seed 6005 mode adaptive_all
+harvest 0.6 volatility 0.8 seed 6006 mode greedy
+harvest 0.6 volatility 0.8 seed 6006 mode nominal
+harvest 0.6 volatility 0.8 seed 6006 mode fixed_margin
+harvest 0.6 volatility 0.8 seed 6006 mode adaptive_harvest
+harvest 0.6 volatility 0.8 seed 6006 mode adaptive_all
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:108: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 volatility 0.8 seed 6007 mode greedy
+harvest 0.6 volatility 0.8 seed 6007 mode nominal
+harvest 0.6 volatility 0.8 seed 6007 mode fixed_margin
+harvest 0.6 volatility 0.8 seed 6007 mode adaptive_harvest
+harvest 0.6 volatility 0.8 seed 6007 mode adaptive_all
+harvest 0.6 volatility 0.8 seed 6008 mode greedy
+harvest 0.6 volatility 0.8 seed 6008 mode nominal
+harvest 0.6 volatility 0.8 seed 6008 mode fixed_margin
+harvest 0.6 volatility 0.8 seed 6008 mode adaptive_harvest
+harvest 0.6 volatility 0.8 seed 6008 mode adaptive_all
+harvest 0.6 volatility 0.8 seed 6009 mode greedy
+harvest 0.6 volatility 0.8 seed 6009 mode nominal
+harvest 0.6 volatility 0.8 seed 6009 mode fixed_margin
+harvest 0.6 volatility 0.8 seed 6009 mode adaptive_harvest
+harvest 0.6 volatility 0.8 seed 6009 mode adaptive_all
+harvest 1.2 volatility 0.2 seed 6000 mode greedy
+harvest 1.2 volatility 0.2 seed 6000 mode nominal
+harvest 1.2 volatility 0.2 seed 6000 mode fixed_margin
+harvest 1.2 volatility 0.2 seed 6000 mode adaptive_harvest
+harvest 1.2 volatility 0.2 seed 6000 mode adaptive_all
+harvest 1.2 volatility 0.2 seed 6001 mode greedy
+harvest 1.2 volatility 0.2 seed 6001 mode nominal
+harvest 1.2 volatility 0.2 seed 6001 mode fixed_margin
+harvest 1.2 volatility 0.2 seed 6001 mode adaptive_harvest
+harvest 1.2 volatility 0.2 seed 6001 mode adaptive_all
+harvest 1.2 volatility 0.2 seed 6002 mode greedy
+harvest 1.2 volatility 0.2 seed 6002 mode nominal
+harvest 1.2 volatility 0.2 seed 6002 mode fixed_margin
+harvest 1.2 volatility 0.2 seed 6002 mode adaptive_harvest
+harvest 1.2 volatility 0.2 seed 6002 mode adaptive_all
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:108: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 volatility 0.2 seed 6003 mode greedy
+harvest 1.2 volatility 0.2 seed 6003 mode nominal
+harvest 1.2 volatility 0.2 seed 6003 mode fixed_margin
+harvest 1.2 volatility 0.2 seed 6003 mode adaptive_harvest
+harvest 1.2 volatility 0.2 seed 6003 mode adaptive_all
+harvest 1.2 volatility 0.2 seed 6004 mode greedy
+harvest 1.2 volatility 0.2 seed 6004 mode nominal
+harvest 1.2 volatility 0.2 seed 6004 mode fixed_margin
+harvest 1.2 volatility 0.2 seed 6004 mode adaptive_harvest
+harvest 1.2 volatility 0.2 seed 6004 mode adaptive_all
+harvest 1.2 volatility 0.2 seed 6005 mode greedy
+harvest 1.2 volatility 0.2 seed 6005 mode nominal
+harvest 1.2 volatility 0.2 seed 6005 mode fixed_margin
+harvest 1.2 volatility 0.2 seed 6005 mode adaptive_harvest
+harvest 1.2 volatility 0.2 seed 6005 mode adaptive_all
+harvest 1.2 volatility 0.2 seed 6006 mode greedy
+harvest 1.2 volatility 0.2 seed 6006 mode nominal
+harvest 1.2 volatility 0.2 seed 6006 mode fixed_margin
+harvest 1.2 volatility 0.2 seed 6006 mode adaptive_harvest
+harvest 1.2 volatility 0.2 seed 6006 mode adaptive_all
+harvest 1.2 volatility 0.2 seed 6007 mode greedy
+harvest 1.2 volatility 0.2 seed 6007 mode nominal
+harvest 1.2 volatility 0.2 seed 6007 mode fixed_margin
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:108: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 volatility 0.2 seed 6007 mode adaptive_harvest
+harvest 1.2 volatility 0.2 seed 6007 mode adaptive_all
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:108: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 volatility 0.2 seed 6008 mode greedy
+harvest 1.2 volatility 0.2 seed 6008 mode nominal
+harvest 1.2 volatility 0.2 seed 6008 mode fixed_margin
+harvest 1.2 volatility 0.2 seed 6008 mode adaptive_harvest
+harvest 1.2 volatility 0.2 seed 6008 mode adaptive_all
+harvest 1.2 volatility 0.2 seed 6009 mode greedy
+harvest 1.2 volatility 0.2 seed 6009 mode nominal
+harvest 1.2 volatility 0.2 seed 6009 mode fixed_margin
+harvest 1.2 volatility 0.2 seed 6009 mode adaptive_harvest
+harvest 1.2 volatility 0.2 seed 6009 mode adaptive_all
+harvest 1.2 volatility 0.45 seed 6000 mode greedy
+harvest 1.2 volatility 0.45 seed 6000 mode nominal
+harvest 1.2 volatility 0.45 seed 6000 mode fixed_margin
+harvest 1.2 volatility 0.45 seed 6000 mode adaptive_harvest
+harvest 1.2 volatility 0.45 seed 6000 mode adaptive_all
+harvest 1.2 volatility 0.45 seed 6001 mode greedy
+harvest 1.2 volatility 0.45 seed 6001 mode nominal
+harvest 1.2 volatility 0.45 seed 6001 mode fixed_margin
+harvest 1.2 volatility 0.45 seed 6001 mode adaptive_harvest
+harvest 1.2 volatility 0.45 seed 6001 mode adaptive_all
+harvest 1.2 volatility 0.45 seed 6002 mode greedy
+harvest 1.2 volatility 0.45 seed 6002 mode nominal
+harvest 1.2 volatility 0.45 seed 6002 mode fixed_margin
+harvest 1.2 volatility 0.45 seed 6002 mode adaptive_harvest
+harvest 1.2 volatility 0.45 seed 6002 mode adaptive_all
+harvest 1.2 volatility 0.45 seed 6003 mode greedy
+harvest 1.2 volatility 0.45 seed 6003 mode nominal
+harvest 1.2 volatility 0.45 seed 6003 mode fixed_margin
+harvest 1.2 volatility 0.45 seed 6003 mode adaptive_harvest
+harvest 1.2 volatility 0.45 seed 6003 mode adaptive_all
+harvest 1.2 volatility 0.45 seed 6004 mode greedy
+harvest 1.2 volatility 0.45 seed 6004 mode nominal
+harvest 1.2 volatility 0.45 seed 6004 mode fixed_margin
+harvest 1.2 volatility 0.45 seed 6004 mode adaptive_harvest
+harvest 1.2 volatility 0.45 seed 6004 mode adaptive_all
+harvest 1.2 volatility 0.45 seed 6005 mode greedy
+harvest 1.2 volatility 0.45 seed 6005 mode nominal
+harvest 1.2 volatility 0.45 seed 6005 mode fixed_margin
+harvest 1.2 volatility 0.45 seed 6005 mode adaptive_harvest
+harvest 1.2 volatility 0.45 seed 6005 mode adaptive_all
+harvest 1.2 volatility 0.45 seed 6006 mode greedy
+harvest 1.2 volatility 0.45 seed 6006 mode nominal
+harvest 1.2 volatility 0.45 seed 6006 mode fixed_margin
+harvest 1.2 volatility 0.45 seed 6006 mode adaptive_harvest
+harvest 1.2 volatility 0.45 seed 6006 mode adaptive_all
+harvest 1.2 volatility 0.45 seed 6007 mode greedy
+harvest 1.2 volatility 0.45 seed 6007 mode nominal
+harvest 1.2 volatility 0.45 seed 6007 mode fixed_margin
+harvest 1.2 volatility 0.45 seed 6007 mode adaptive_harvest
+harvest 1.2 volatility 0.45 seed 6007 mode adaptive_all
+harvest 1.2 volatility 0.45 seed 6008 mode greedy
+harvest 1.2 volatility 0.45 seed 6008 mode nominal
+harvest 1.2 volatility 0.45 seed 6008 mode fixed_margin
+harvest 1.2 volatility 0.45 seed 6008 mode adaptive_harvest
+harvest 1.2 volatility 0.45 seed 6008 mode adaptive_all
+harvest 1.2 volatility 0.45 seed 6009 mode greedy
+harvest 1.2 volatility 0.45 seed 6009 mode nominal
+harvest 1.2 volatility 0.45 seed 6009 mode fixed_margin
+harvest 1.2 volatility 0.45 seed 6009 mode adaptive_harvest
+harvest 1.2 volatility 0.45 seed 6009 mode adaptive_all
+harvest 1.2 volatility 0.8 seed 6000 mode greedy
+harvest 1.2 volatility 0.8 seed 6000 mode nominal
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:108: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 volatility 0.8 seed 6000 mode fixed_margin
+harvest 1.2 volatility 0.8 seed 6000 mode adaptive_harvest
+harvest 1.2 volatility 0.8 seed 6000 mode adaptive_all
+harvest 1.2 volatility 0.8 seed 6001 mode greedy
+harvest 1.2 volatility 0.8 seed 6001 mode nominal
+harvest 1.2 volatility 0.8 seed 6001 mode fixed_margin
+harvest 1.2 volatility 0.8 seed 6001 mode adaptive_harvest
+harvest 1.2 volatility 0.8 seed 6001 mode adaptive_all
+harvest 1.2 volatility 0.8 seed 6002 mode greedy
+harvest 1.2 volatility 0.8 seed 6002 mode nominal
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:108: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 volatility 0.8 seed 6002 mode fixed_margin
+harvest 1.2 volatility 0.8 seed 6002 mode adaptive_harvest
+harvest 1.2 volatility 0.8 seed 6002 mode adaptive_all
+harvest 1.2 volatility 0.8 seed 6003 mode greedy
+harvest 1.2 volatility 0.8 seed 6003 mode nominal
+harvest 1.2 volatility 0.8 seed 6003 mode fixed_margin
+harvest 1.2 volatility 0.8 seed 6003 mode adaptive_harvest
+harvest 1.2 volatility 0.8 seed 6003 mode adaptive_all
+harvest 1.2 volatility 0.8 seed 6004 mode greedy
+harvest 1.2 volatility 0.8 seed 6004 mode nominal
+harvest 1.2 volatility 0.8 seed 6004 mode fixed_margin
+harvest 1.2 volatility 0.8 seed 6004 mode adaptive_harvest
+harvest 1.2 volatility 0.8 seed 6004 mode adaptive_all
+harvest 1.2 volatility 0.8 seed 6005 mode greedy
+harvest 1.2 volatility 0.8 seed 6005 mode nominal
+harvest 1.2 volatility 0.8 seed 6005 mode fixed_margin
+harvest 1.2 volatility 0.8 seed 6005 mode adaptive_harvest
+harvest 1.2 volatility 0.8 seed 6005 mode adaptive_all
+harvest 1.2 volatility 0.8 seed 6006 mode greedy
+harvest 1.2 volatility 0.8 seed 6006 mode nominal
+harvest 1.2 volatility 0.8 seed 6006 mode fixed_margin
+harvest 1.2 volatility 0.8 seed 6006 mode adaptive_harvest
+harvest 1.2 volatility 0.8 seed 6006 mode adaptive_all
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:108: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 volatility 0.8 seed 6007 mode greedy
+harvest 1.2 volatility 0.8 seed 6007 mode nominal
+harvest 1.2 volatility 0.8 seed 6007 mode fixed_margin
+harvest 1.2 volatility 0.8 seed 6007 mode adaptive_harvest
+harvest 1.2 volatility 0.8 seed 6007 mode adaptive_all
+harvest 1.2 volatility 0.8 seed 6008 mode greedy
+harvest 1.2 volatility 0.8 seed 6008 mode nominal
+harvest 1.2 volatility 0.8 seed 6008 mode fixed_margin
+harvest 1.2 volatility 0.8 seed 6008 mode adaptive_harvest
+harvest 1.2 volatility 0.8 seed 6008 mode adaptive_all
+harvest 1.2 volatility 0.8 seed 6009 mode greedy
+harvest 1.2 volatility 0.8 seed 6009 mode nominal
+harvest 1.2 volatility 0.8 seed 6009 mode fixed_margin
+harvest 1.2 volatility 0.8 seed 6009 mode adaptive_harvest
+harvest 1.2 volatility 0.8 seed 6009 mode adaptive_all
+Max violation: 9.919359647092563e-05 inaccurate: 0
+                                             realized_cost  drop_ratio      queue      energy
+harvest_mean channel_sigma mode
+0.6          0.20          adaptive_all        2648.939549    0.101515  21.583014   54.926182
+                           adaptive_harvest    2605.250197    0.101750  21.121402   54.926182
+                           fixed_margin        2794.859136    0.119138  21.719012   54.926182
+                           greedy              2943.310607    0.133964  22.188398   54.926182
+                           nominal             2704.019807    0.108583  21.571563   54.926182
+             0.45          adaptive_all        2916.646787    0.142223  21.245024   54.926182
+                           adaptive_harvest    2727.067501    0.131987  20.028578   54.926182
+                           fixed_margin        3063.397276    0.153514  21.955465   54.926182
+                           greedy              3444.544429    0.194856  22.952868   54.926182
+                           nominal             2877.550880    0.136763  21.223583   54.926182
+             0.80          adaptive_all        3821.145338    0.247485  23.049587   54.926182
+                           adaptive_harvest    3280.927673    0.200016  20.864250   54.825856
+                           fixed_margin        3663.965896    0.228459  22.714469   54.926182
+                           greedy              4462.400633    0.317691  24.669743   54.926182
+                           nominal             3372.111363    0.201698  21.643731   54.907498
+1.2          0.20          adaptive_all         328.742001    0.000000   3.755911   84.461061
+                           adaptive_harvest     333.366907    0.000000   3.813544   84.555925
+                           fixed_margin         319.579418    0.000000   3.638937   85.763196
+                           greedy               338.648842    0.000000   3.875746   86.594348
+                           nominal              322.922504    0.000000   3.680419   85.926700
+             0.45          adaptive_all         628.652564    0.002596   6.995872   95.259036
+                           adaptive_harvest     644.422249    0.002574   7.237697   94.511031
+                           fixed_margin         631.828271    0.002035   6.982878   97.083365
+                           greedy               714.968852    0.006003   7.620085   97.940958
+                           nominal              602.345596    0.000927   6.763643   96.889772
+             0.80          adaptive_all        1691.383776    0.057464  14.427797  101.781622
+                           adaptive_harvest    1560.247094    0.052775  13.653393   98.648333
+                           fixed_margin        1685.879288    0.053784  14.422904  101.998154
+                           greedy              2044.239759    0.076563  16.605028  102.328136
+                           nominal             1454.193609    0.040355  13.143451  101.904333

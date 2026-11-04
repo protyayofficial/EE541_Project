@@ -1,6 +1,0 @@
-{
-  "seeds": 2,
-  "slots": 20,
-  "horizon": 5,
-  "out": "results/reliability_smoke"
-}

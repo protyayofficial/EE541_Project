@@ -1,0 +1,18 @@
+test_consistency_windows_exclude_previous_experiments (test_holdout.HoldoutTests.test_consistency_windows_exclude_previous_experiments) ... ok
+test_guard_windows_are_disjoint_from_previous_study (test_holdout.HoldoutTests.test_guard_windows_are_disjoint_from_previous_study) ... ok
+test_minimax_test_windows_exclude_all_previous_comparisons (test_holdout.HoldoutTests.test_minimax_test_windows_exclude_all_previous_comparisons) ... ok
+test_causal_rollout (test_model.Tests.test_causal_rollout) ... ok
+test_lp_feasible_under_full_physical_capacity (test_model.Tests.test_lp_feasible_under_full_physical_capacity) ... ok
+test_no_discretionary_forecast_rejection_when_service_possible (test_proposal_study.FirstSlotRejectionTests.test_no_discretionary_forecast_rejection_when_service_possible) ... ok
+test_unavoidable_rejection_is_feasible (test_proposal_study.FirstSlotRejectionTests.test_unavoidable_rejection_is_feasible) ... ok
+test_battery_guard_removes_margin_above_threshold (test_proposal_study.ProposalTests.test_battery_guard_removes_margin_above_threshold) ... ok
+test_causal_prediction_ignores_unobserved_future (test_proposal_study.ProposalTests.test_causal_prediction_ignores_unobserved_future) ... ok
+test_fixed_margins_preserve_current_observed_channel (test_proposal_study.ProposalTests.test_fixed_margins_preserve_current_observed_channel) ... ok
+test_margin_ablations_and_zero_floor (test_proposal_study.ProposalTests.test_margin_ablations_and_zero_floor) ... ok
+test_weighted_mpc_physical_rollout (test_proposal_study.ProposalTests.test_weighted_mpc_physical_rollout) ... ok
+test_zero_margin_matches_nominal (test_proposal_study.ProposalTests.test_zero_margin_matches_nominal) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 2.826s
+
+OK

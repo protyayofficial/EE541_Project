@@ -1,6 +1,0 @@
-{
-  "seeds": 2,
-  "slots": 15,
-  "horizon": 5,
-  "out": "results/handoff_reliability_smoke"
-}

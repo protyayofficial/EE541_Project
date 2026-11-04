@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "plans_audited": 90,
+  "failed_instances": 0,
+  "maximum_rechecked_violation": 1.2098646173797079e-07,
+  "minimum_online_minus_offline": -7.91401930655411e-07,
+  "checks": "same exogenous traces, saved primal dynamics, bounds, rate and objective; numerical consistency against online costs",
+  "scope": "does not prove solver optimality or certify a dual lower bound"
+}

@@ -1,0 +1,8 @@
+{
+  "synthetic": "sweep_normalized",
+  "solar": "solar",
+  "objective": "same weighted cost, full horizon",
+  "information": "perfect future channel, arrivals and harvest",
+  "admission": "allows proactive rejection; online execution rejects only forced overflow",
+  "qualification": "theoretical optimum is a lower bound over forced-only rollouts; numerical primal objective is an approximate reference, not a certified lower bound"
+}

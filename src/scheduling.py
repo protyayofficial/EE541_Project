@@ -42,7 +42,7 @@ def _arrays(gain, arrival, harvest):
     return g, l, H
 
 
-def solve_cvxpy(b0, e0, gain, arrival, harvest, cfg=Config()):
+def solve_cvxpy(b0, e0, gain, arrival, harvest, cfg=Config(), first_slot_drop_cap=None, solver_preference=None):
     """Exact convex model. Requires `pip install cvxpy clarabel` locally."""
     import cvxpy as cp
     g, l, H = _arrays(gain, arrival, harvest)
@@ -60,6 +60,10 @@ def solve_cvxpy(b0, e0, gain, arrival, harvest, cfg=Config()):
             b[1:] == b[:-1] - d + l - o,
             E[1:] == E[:-1] - p * cfg.tau + H - w,
             d <= cfg.rate_scale * cp.log1p(cp.multiply(g, p)) / np.log(2)]
+    if first_slot_drop_cap is not None:
+        if not np.isfinite(first_slot_drop_cap) or first_slot_drop_cap < 0:
+            raise ValueError('first_slot_drop_cap must be finite and nonnegative')
+        cons.append(o[0] <= first_slot_drop_cap)
     objective = cp.Minimize(cp.sum(b[:-1]) + cfg.drop_weight * cp.sum(o)
                             + cfg.energy_weight * cfg.tau * cp.sum(p)
                             + cfg.terminal_weight * b[-1])
@@ -88,6 +92,11 @@ def solve_cvxpy(b0, e0, gain, arrival, harvest, cfg=Config()):
             "acceleration_lookback": 0,
         }),
     ]
+
+    if solver_preference is not None:
+        if solver_preference not in ('CLARABEL', 'SCS'):
+            raise ValueError('solver_preference must be CLARABEL, SCS, or None')
+        solver_settings = [(solver, opts) for solver, opts in solver_settings if solver == solver_preference]
 
     for solver, options in solver_settings:
 
@@ -141,6 +150,8 @@ def solve_cvxpy(b0, e0, gain, arrival, harvest, cfg=Config()):
             result, b0, e0, g, l, H, cfg
         )
 
+        if first_slot_drop_cap is not None:
+            residuals['first_slot_drop_cap'] = max(0., float(result['o'][0])-first_slot_drop_cap)
         violation = max(residuals.values())
 
         if not np.isfinite(violation) or violation > 1e-4:

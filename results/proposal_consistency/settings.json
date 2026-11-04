@@ -1,0 +1,27 @@
+{
+  "out": "results/proposal_consistency",
+  "slots": 60,
+  "methods": [
+    "greedy",
+    "fixed_fraction",
+    "nominal",
+    "fixed_margin",
+    "adaptive_channel",
+    "adaptive_arrival",
+    "adaptive_harvest",
+    "adaptive_all",
+    "nominal_forced",
+    "adaptive_forced",
+    "adaptive_arrival_forced",
+    "adaptive_harvest_forced",
+    "guarded_h15"
+  ],
+  "dataset_sha256": {
+    "data/arco/dataset.csv": "9c9d66ef8d9d6507623186067d8f7e3e06dc1029c9e2f2f02f4e55a32418e2a8",
+    "data/umass/homeC-generation.tar.gz": "f47cca12cfe82a95a427142757f82e033a722dcf49a12d6f20ecf31fc8453454",
+    "data/nrel/723170TYA.CSV": "1e96f84638ce98e6b29002bc45a27aa69bb29b0ed0368d3b52b7b1f81610c6c9"
+  },
+  "windows": "four new disjoint windows per source after prior studies",
+  "explanation": "o0 <= max(0,b0+forecast_arrivals-buffer_capacity-max_possible_service)+1e-6; max service respects actual channel, buffer, power and energy",
+  "warning": "forecast-based cap only; actual arrivals differ; later planned rejection remains unconstrained; not an exact robust guarantee"
+}

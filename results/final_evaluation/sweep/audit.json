@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "trajectories": 300,
+  "slots_per_trajectory": 80,
+  "checks": "matched causal exogenous inputs, bounded arrivals, all execution bounds, channel rate, queue and battery transitions",
+  "scope": "does not independently reconstruct predicted plans, prove optimality, or certify uncertainty coverage"
+}
