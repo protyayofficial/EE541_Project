@@ -1,0 +1,30 @@
+{
+  "windows": 2,
+  "slots": 12,
+  "horizon": 5,
+  "out": "results/final_evaluation/solar_smoke",
+  "modes": [
+    "fixed",
+    "channel",
+    "greedy",
+    "nominal",
+    "fixed_margin",
+    "adaptive_harvest",
+    "adaptive_all"
+  ],
+  "dataset_sha256": {
+    "data/arco/dataset.csv": "9c9d66ef8d9d6507623186067d8f7e3e06dc1029c9e2f2f02f4e55a32418e2a8",
+    "data/umass/homeC-generation.tar.gz": "f47cca12cfe82a95a427142757f82e033a722dcf49a12d6f20ecf31fc8453454",
+    "data/nrel/723170TYA.CSV": "1e96f84638ce98e6b29002bc45a27aa69bb29b0ed0368d3b52b7b1f81610c6c9"
+  },
+  "selection": "ARCO alternating 06,10,14,19 starts, UMass after first 30 windows, TMY3 later year index; nonoverlap of logged intervals with earlier episode windows",
+  "caveat": "one source per dataset; windows in same dates/season can be correlated and were not prospectively preregistered; energy conversion is assumed, traffic and channel synthetic; TMY is stitched and hourly",
+  "arrival": "Poisson mean 2.5 clipped at 10",
+  "scales": {
+    "arco": 0.01,
+    "umass_home_c": 0.1,
+    "nrel_tmy3": 0.005
+  },
+  "python": "3.11.17 (main, Oct  1 2026, 20:09:52) [Clang 20.1.8 ]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit"
+}

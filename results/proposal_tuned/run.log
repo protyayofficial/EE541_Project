@@ -1,0 +1,289 @@
+development arco 2018-09-12 08:00:00 all_025
+development arco 2018-09-12 08:00:00 all_050
+development arco 2018-09-12 08:00:00 all_100
+development arco 2018-09-12 08:00:00 arrival_050
+development arco 2018-09-12 08:00:00 arrival_100
+development arco 2018-09-12 08:00:00 harvest_050
+development arco 2018-09-12 08:00:00 harvest_100
+development arco 2018-09-13 12:00:00 all_025
+development arco 2018-09-13 12:00:00 all_050
+development arco 2018-09-13 12:00:00 all_100
+development arco 2018-09-13 12:00:00 arrival_050
+development arco 2018-09-13 12:00:00 arrival_100
+development arco 2018-09-13 12:00:00 harvest_050
+development arco 2018-09-13 12:00:00 harvest_100
+development arco 2018-09-14 17:00:00 all_025
+development arco 2018-09-14 17:00:00 all_050
+development arco 2018-09-14 17:00:00 all_100
+development arco 2018-09-14 17:00:00 arrival_050
+development arco 2018-09-14 17:00:00 arrival_100
+development arco 2018-09-14 17:00:00 harvest_050
+development arco 2018-09-14 17:00:00 harvest_100
+development arco 2018-09-15 21:00:00 all_025
+development arco 2018-09-15 21:00:00 all_050
+development arco 2018-09-15 21:00:00 all_100
+development arco 2018-09-15 21:00:00 arrival_050
+development arco 2018-09-15 21:00:00 arrival_100
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+development arco 2018-09-15 21:00:00 harvest_050
+development arco 2018-09-15 21:00:00 harvest_100
+development arco 2018-09-16 08:00:00 all_025
+development arco 2018-09-16 08:00:00 all_050
+development arco 2018-09-16 08:00:00 all_100
+development arco 2018-09-16 08:00:00 arrival_050
+development arco 2018-09-16 08:00:00 arrival_100
+development arco 2018-09-16 08:00:00 harvest_050
+development arco 2018-09-16 08:00:00 harvest_100
+development arco 2018-09-17 12:00:00 all_025
+development arco 2018-09-17 12:00:00 all_050
+development arco 2018-09-17 12:00:00 all_100
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+development arco 2018-09-17 12:00:00 arrival_050
+development arco 2018-09-17 12:00:00 arrival_100
+development arco 2018-09-17 12:00:00 harvest_050
+development arco 2018-09-17 12:00:00 harvest_100
+development umass_home_c 2011-07-30 08:00:00+00:00 all_025
+development umass_home_c 2011-07-30 08:00:00+00:00 all_050
+development umass_home_c 2011-07-30 08:00:00+00:00 all_100
+development umass_home_c 2011-07-30 08:00:00+00:00 arrival_050
+development umass_home_c 2011-07-30 08:00:00+00:00 arrival_100
+development umass_home_c 2011-07-30 08:00:00+00:00 harvest_050
+development umass_home_c 2011-07-30 08:00:00+00:00 harvest_100
+development umass_home_c 2011-07-31 12:00:00+00:00 all_025
+development umass_home_c 2011-07-31 12:00:00+00:00 all_050
+development umass_home_c 2011-07-31 12:00:00+00:00 all_100
+development umass_home_c 2011-07-31 12:00:00+00:00 arrival_050
+development umass_home_c 2011-07-31 12:00:00+00:00 arrival_100
+development umass_home_c 2011-07-31 12:00:00+00:00 harvest_050
+development umass_home_c 2011-07-31 12:00:00+00:00 harvest_100
+development umass_home_c 2011-08-01 17:00:00+00:00 all_025
+development umass_home_c 2011-08-01 17:00:00+00:00 all_050
+development umass_home_c 2011-08-01 17:00:00+00:00 all_100
+development umass_home_c 2011-08-01 17:00:00+00:00 arrival_050
+development umass_home_c 2011-08-01 17:00:00+00:00 arrival_100
+development umass_home_c 2011-08-01 17:00:00+00:00 harvest_050
+development umass_home_c 2011-08-01 17:00:00+00:00 harvest_100
+development umass_home_c 2011-08-02 21:00:00+00:00 all_025
+development umass_home_c 2011-08-02 21:00:00+00:00 all_050
+development umass_home_c 2011-08-02 21:00:00+00:00 all_100
+development umass_home_c 2011-08-02 21:00:00+00:00 arrival_050
+development umass_home_c 2011-08-02 21:00:00+00:00 arrival_100
+development umass_home_c 2011-08-02 21:00:00+00:00 harvest_050
+development umass_home_c 2011-08-02 21:00:00+00:00 harvest_100
+development umass_home_c 2011-08-03 08:00:00+00:00 all_025
+development umass_home_c 2011-08-03 08:00:00+00:00 all_050
+development umass_home_c 2011-08-03 08:00:00+00:00 all_100
+development umass_home_c 2011-08-03 08:00:00+00:00 arrival_050
+development umass_home_c 2011-08-03 08:00:00+00:00 arrival_100
+development umass_home_c 2011-08-03 08:00:00+00:00 harvest_050
+development umass_home_c 2011-08-03 08:00:00+00:00 harvest_100
+development umass_home_c 2011-08-04 12:00:00+00:00 all_025
+development umass_home_c 2011-08-04 12:00:00+00:00 all_050
+development umass_home_c 2011-08-04 12:00:00+00:00 all_100
+development umass_home_c 2011-08-04 12:00:00+00:00 arrival_050
+development umass_home_c 2011-08-04 12:00:00+00:00 arrival_100
+development umass_home_c 2011-08-04 12:00:00+00:00 harvest_050
+development umass_home_c 2011-08-04 12:00:00+00:00 harvest_100
+development nrel_tmy3 tmy_hour_index_2160 all_025
+development nrel_tmy3 tmy_hour_index_2160 all_050
+development nrel_tmy3 tmy_hour_index_2160 all_100
+development nrel_tmy3 tmy_hour_index_2160 arrival_050
+development nrel_tmy3 tmy_hour_index_2160 arrival_100
+development nrel_tmy3 tmy_hour_index_2160 harvest_050
+development nrel_tmy3 tmy_hour_index_2160 harvest_100
+development nrel_tmy3 tmy_hour_index_2232 all_025
+development nrel_tmy3 tmy_hour_index_2232 all_050
+development nrel_tmy3 tmy_hour_index_2232 all_100
+development nrel_tmy3 tmy_hour_index_2232 arrival_050
+development nrel_tmy3 tmy_hour_index_2232 arrival_100
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+development nrel_tmy3 tmy_hour_index_2232 harvest_050
+development nrel_tmy3 tmy_hour_index_2232 harvest_100
+development nrel_tmy3 tmy_hour_index_2304 all_025
+development nrel_tmy3 tmy_hour_index_2304 all_050
+development nrel_tmy3 tmy_hour_index_2304 all_100
+development nrel_tmy3 tmy_hour_index_2304 arrival_050
+development nrel_tmy3 tmy_hour_index_2304 arrival_100
+development nrel_tmy3 tmy_hour_index_2304 harvest_050
+development nrel_tmy3 tmy_hour_index_2304 harvest_100
+development nrel_tmy3 tmy_hour_index_2376 all_025
+development nrel_tmy3 tmy_hour_index_2376 all_050
+development nrel_tmy3 tmy_hour_index_2376 all_100
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+development nrel_tmy3 tmy_hour_index_2376 arrival_050
+development nrel_tmy3 tmy_hour_index_2376 arrival_100
+development nrel_tmy3 tmy_hour_index_2376 harvest_050
+development nrel_tmy3 tmy_hour_index_2376 harvest_100
+development nrel_tmy3 tmy_hour_index_2448 all_025
+development nrel_tmy3 tmy_hour_index_2448 all_050
+development nrel_tmy3 tmy_hour_index_2448 all_100
+development nrel_tmy3 tmy_hour_index_2448 arrival_050
+development nrel_tmy3 tmy_hour_index_2448 arrival_100
+development nrel_tmy3 tmy_hour_index_2448 harvest_050
+development nrel_tmy3 tmy_hour_index_2448 harvest_100
+development nrel_tmy3 tmy_hour_index_2520 all_025
+development nrel_tmy3 tmy_hour_index_2520 all_050
+development nrel_tmy3 tmy_hour_index_2520 all_100
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+development nrel_tmy3 tmy_hour_index_2520 arrival_050
+development nrel_tmy3 tmy_hour_index_2520 arrival_100
+development nrel_tmy3 tmy_hour_index_2520 harvest_050
+development nrel_tmy3 tmy_hour_index_2520 harvest_100
+SELECTED harvest_100
+new arco 2018-08-10 12:00:00 greedy
+new arco 2018-08-10 12:00:00 fixed_fraction
+new arco 2018-08-10 12:00:00 nominal
+new arco 2018-08-10 12:00:00 fixed_margin
+new arco 2018-08-10 12:00:00 adaptive_channel
+new arco 2018-08-10 12:00:00 adaptive_arrival
+new arco 2018-08-10 12:00:00 adaptive_harvest
+new arco 2018-08-10 12:00:00 adaptive_all
+new arco 2018-08-10 12:00:00 selected
+new arco 2018-08-11 17:00:00 greedy
+new arco 2018-08-11 17:00:00 fixed_fraction
+new arco 2018-08-11 17:00:00 nominal
+new arco 2018-08-11 17:00:00 fixed_margin
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+new arco 2018-08-11 17:00:00 adaptive_channel
+new arco 2018-08-11 17:00:00 adaptive_arrival
+new arco 2018-08-11 17:00:00 adaptive_harvest
+new arco 2018-08-11 17:00:00 adaptive_all
+/Users/ace/Work/Sem 3/EE541 - Optimization/ee541_packet_scheduling/src/scheduling.py:99: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+new arco 2018-08-11 17:00:00 selected
+new arco 2018-08-12 21:00:00 greedy
+new arco 2018-08-12 21:00:00 fixed_fraction
+new arco 2018-08-12 21:00:00 nominal
+new arco 2018-08-12 21:00:00 fixed_margin
+new arco 2018-08-12 21:00:00 adaptive_channel
+new arco 2018-08-12 21:00:00 adaptive_arrival
+new arco 2018-08-12 21:00:00 adaptive_harvest
+new arco 2018-08-12 21:00:00 adaptive_all
+new arco 2018-08-12 21:00:00 selected
+new arco 2018-08-13 08:00:00 greedy
+new arco 2018-08-13 08:00:00 fixed_fraction
+new arco 2018-08-13 08:00:00 nominal
+new arco 2018-08-13 08:00:00 fixed_margin
+new arco 2018-08-13 08:00:00 adaptive_channel
+new arco 2018-08-13 08:00:00 adaptive_arrival
+new arco 2018-08-13 08:00:00 adaptive_harvest
+new arco 2018-08-13 08:00:00 adaptive_all
+new arco 2018-08-13 08:00:00 selected
+new umass_home_c 2011-08-13 17:00:00+00:00 greedy
+new umass_home_c 2011-08-13 17:00:00+00:00 fixed_fraction
+new umass_home_c 2011-08-13 17:00:00+00:00 nominal
+new umass_home_c 2011-08-13 17:00:00+00:00 fixed_margin
+new umass_home_c 2011-08-13 17:00:00+00:00 adaptive_channel
+new umass_home_c 2011-08-13 17:00:00+00:00 adaptive_arrival
+new umass_home_c 2011-08-13 17:00:00+00:00 adaptive_harvest
+new umass_home_c 2011-08-13 17:00:00+00:00 adaptive_all
+new umass_home_c 2011-08-13 17:00:00+00:00 selected
+new umass_home_c 2011-08-14 21:00:00+00:00 greedy
+new umass_home_c 2011-08-14 21:00:00+00:00 fixed_fraction
+new umass_home_c 2011-08-14 21:00:00+00:00 nominal
+new umass_home_c 2011-08-14 21:00:00+00:00 fixed_margin
+new umass_home_c 2011-08-14 21:00:00+00:00 adaptive_channel
+new umass_home_c 2011-08-14 21:00:00+00:00 adaptive_arrival
+new umass_home_c 2011-08-14 21:00:00+00:00 adaptive_harvest
+new umass_home_c 2011-08-14 21:00:00+00:00 adaptive_all
+new umass_home_c 2011-08-14 21:00:00+00:00 selected
+new umass_home_c 2011-08-15 08:00:00+00:00 greedy
+new umass_home_c 2011-08-15 08:00:00+00:00 fixed_fraction
+new umass_home_c 2011-08-15 08:00:00+00:00 nominal
+new umass_home_c 2011-08-15 08:00:00+00:00 fixed_margin
+new umass_home_c 2011-08-15 08:00:00+00:00 adaptive_channel
+new umass_home_c 2011-08-15 08:00:00+00:00 adaptive_arrival
+new umass_home_c 2011-08-15 08:00:00+00:00 adaptive_harvest
+new umass_home_c 2011-08-15 08:00:00+00:00 adaptive_all
+new umass_home_c 2011-08-15 08:00:00+00:00 selected
+new umass_home_c 2011-08-16 12:00:00+00:00 greedy
+new umass_home_c 2011-08-16 12:00:00+00:00 fixed_fraction
+new umass_home_c 2011-08-16 12:00:00+00:00 nominal
+new umass_home_c 2011-08-16 12:00:00+00:00 fixed_margin
+new umass_home_c 2011-08-16 12:00:00+00:00 adaptive_channel
+new umass_home_c 2011-08-16 12:00:00+00:00 adaptive_arrival
+new umass_home_c 2011-08-16 12:00:00+00:00 adaptive_harvest
+new umass_home_c 2011-08-16 12:00:00+00:00 adaptive_all
+new umass_home_c 2011-08-16 12:00:00+00:00 selected
+new nrel_tmy3 tmy_hour_index_3168 greedy
+new nrel_tmy3 tmy_hour_index_3168 fixed_fraction
+new nrel_tmy3 tmy_hour_index_3168 nominal
+new nrel_tmy3 tmy_hour_index_3168 fixed_margin
+new nrel_tmy3 tmy_hour_index_3168 adaptive_channel
+new nrel_tmy3 tmy_hour_index_3168 adaptive_arrival
+new nrel_tmy3 tmy_hour_index_3168 adaptive_harvest
+new nrel_tmy3 tmy_hour_index_3168 adaptive_all
+new nrel_tmy3 tmy_hour_index_3168 selected
+new nrel_tmy3 tmy_hour_index_3240 greedy
+new nrel_tmy3 tmy_hour_index_3240 fixed_fraction
+new nrel_tmy3 tmy_hour_index_3240 nominal
+new nrel_tmy3 tmy_hour_index_3240 fixed_margin
+new nrel_tmy3 tmy_hour_index_3240 adaptive_channel
+new nrel_tmy3 tmy_hour_index_3240 adaptive_arrival
+new nrel_tmy3 tmy_hour_index_3240 adaptive_harvest
+new nrel_tmy3 tmy_hour_index_3240 adaptive_all
+new nrel_tmy3 tmy_hour_index_3240 selected
+new nrel_tmy3 tmy_hour_index_3312 greedy
+new nrel_tmy3 tmy_hour_index_3312 fixed_fraction
+new nrel_tmy3 tmy_hour_index_3312 nominal
+new nrel_tmy3 tmy_hour_index_3312 fixed_margin
+new nrel_tmy3 tmy_hour_index_3312 adaptive_channel
+new nrel_tmy3 tmy_hour_index_3312 adaptive_arrival
+new nrel_tmy3 tmy_hour_index_3312 adaptive_harvest
+new nrel_tmy3 tmy_hour_index_3312 adaptive_all
+new nrel_tmy3 tmy_hour_index_3312 selected
+new nrel_tmy3 tmy_hour_index_3384 greedy
+new nrel_tmy3 tmy_hour_index_3384 fixed_fraction
+new nrel_tmy3 tmy_hour_index_3384 nominal
+new nrel_tmy3 tmy_hour_index_3384 fixed_margin
+new nrel_tmy3 tmy_hour_index_3384 adaptive_channel
+new nrel_tmy3 tmy_hour_index_3384 adaptive_arrival
+new nrel_tmy3 tmy_hour_index_3384 adaptive_harvest
+new nrel_tmy3 tmy_hour_index_3384 adaptive_all
+new nrel_tmy3 tmy_hour_index_3384 selected
+SCORES
+ candidate
+harvest_100    0.954439
+arrival_100    0.962518
+all_050        0.969425
+all_100        0.979554
+arrival_050    0.985505
+all_025        0.989660
+harvest_050    1.001190
+SELECTED harvest_100
+                               realized_cost  drop_ratio      queue     energy  terminal_queue
+dataset      mode
+arco         adaptive_all        2313.019332    0.269161  14.670905  36.758410       15.457298
+             adaptive_arrival    2254.520228    0.263347  14.362596  36.529134       13.595767
+             adaptive_channel    2342.192365    0.273284  14.802861  36.778947       15.586515
+             adaptive_harvest    2297.773295    0.270677  14.502748  36.728912       13.324144
+             fixed_fraction      2525.281534    0.264433  18.223613  33.269411       19.090133
+             fixed_margin        2299.625993    0.267487  14.617042  36.804115       15.159108
+             greedy              2386.009002    0.279498  15.002796  36.893135       15.717144
+             nominal             2328.821438    0.275477  14.576469  36.853367       13.800238
+             selected            2297.773295    0.270677  14.502748  36.728912       13.324144
+nrel_tmy3    adaptive_all         709.525908    0.003395  10.289537  53.685575       11.165351
+             adaptive_arrival     820.751941    0.009683  11.055181  53.527252       16.767921
+             adaptive_channel     910.847861    0.021115  11.633201  54.250178       16.501759
+             adaptive_harvest     725.919650    0.004710  10.568354  52.816099       10.108952
+             fixed_fraction      1347.109934    0.022595  18.060797  40.725855       24.086653
+             fixed_margin         898.884541    0.019019  11.563141  54.028526       16.945814
+             greedy               904.606969    0.023906  11.367962  56.069060       15.685725
+             nominal              966.426458    0.020627  12.471172  54.390814       17.758464
+             selected             725.919650    0.004710  10.568354  52.816099       10.108952
+umass_home_c adaptive_all         210.864521    0.000000   3.019741  62.969548        3.372440
+             adaptive_arrival     219.244182    0.000000   3.162483  61.737080        3.372440
+             adaptive_channel     210.274873    0.000000   3.009377  63.184205        3.372440
+             adaptive_harvest     208.882769    0.000000   2.986136  63.199911        3.372440
+             fixed_fraction       495.381574    0.000000   7.516356  61.307023        5.867357
+             fixed_margin         209.144698    0.000000   2.991250  62.900476        3.372440
+             greedy               207.650089    0.000000   2.964907  63.473405        3.372440
+             nominal              208.283330    0.000000   2.975673  63.388640        3.372440
+             selected             208.882769    0.000000   2.986136  63.199911        3.372440
+max residual 8.673813928083973e-05 inaccurate 0

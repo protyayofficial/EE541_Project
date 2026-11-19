@@ -5,10 +5,8 @@ __pycache__/
 *.zip
 results/**/per_seed_partial.csv
 results/**/per_slot_partial.csv
-# Download locally from the upstream dataset; redistribution terms need verification.
+# Download ARCO locally from upstream; redistribution terms need verification.
 /data/arco/dataset.csv
-/data/umass/*.tar.gz
-/data/nrel/*.CSV
 results/**/partial_windows.csv
 results/**/partial_slots.csv
 results/**/partial*.csv

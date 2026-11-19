@@ -1,0 +1,6 @@
+{
+  "candidate": "harvest_100",
+  "method": "adaptive_harvest",
+  "margin_scale": 1.0,
+  "development_relative_cost": 0.9544388634308382
+}

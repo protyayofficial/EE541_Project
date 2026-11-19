@@ -1,0 +1,14 @@
+{
+  "out": "results/proposal_guarded",
+  "slots": 60,
+  "dataset_sha256": {
+    "data/arco/dataset.csv": "9c9d66ef8d9d6507623186067d8f7e3e06dc1029c9e2f2f02f4e55a32418e2a8",
+    "data/umass/homeC-generation.tar.gz": "f47cca12cfe82a95a427142757f82e033a722dcf49a12d6f20ecf31fc8453454",
+    "data/nrel/723170TYA.CSV": "1e96f84638ce98e6b29002bc45a27aa69bb29b0ed0368d3b52b7b1f81610c6c9"
+  },
+  "development_reference": "results/proposal_tuned/development.csv",
+  "score": "mean across datasets of mean candidate cost divided by matched mean nominal cost",
+  "new_windows": "ARCO next August windows, other sources next nonoverlapping windows; four per source",
+  "caution": "guard proposed after earlier exploratory results; only new windows are reserved for this comparison",
+  "development_reference_sha256": "5b86fef35c8b5e36aea233d6b2b8ed7b81f8e66d3fd609ade886a9dfb3a5227d"
+}

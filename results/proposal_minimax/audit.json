@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "trajectories": 108,
+  "datasets": 3,
+  "methods": [
+    "adaptive_all",
+    "adaptive_arrival",
+    "adaptive_channel",
+    "adaptive_harvest",
+    "fixed_fraction",
+    "fixed_margin",
+    "greedy",
+    "nominal",
+    "selected"
+  ],
+  "slots_per_trajectory": 60,
+  "checks": "matched inputs, queue and battery transitions, action bounds, energy causality and channel capacity",
+  "scope": "does not reconstruct predicted horizon plans or certify optimality"
+}

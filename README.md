@@ -38,6 +38,8 @@ The final analysis should explain when uncertainty margins help and when conserv
 - [Empirical one-step uncertainty-bound coverage](results/final_evaluation/figures/one_step_coverage.png).
 - [Paired solar-source cost differences](results/final_evaluation/figures/solar_paired_cost.png).
 - [Solver comparison](results/final_evaluation/solver/solver_comparison.csv), [solar results](results/final_evaluation/solar/per_window.csv), and [clairvoyant-reference audit](results/final_evaluation/offline/audit.json).
-- [Dataset provenance and attribution](data/arco/README.md), [UMass](data/umass/README.md), and [NREL](data/nrel/README.md). Raw datasets are not included; the recorded checksums are in the relevant experiment settings.
+- [Dataset provenance and attribution](data/arco/README.md), [UMass](data/umass/README.md), and [NREL](data/nrel/README.md). The UMass and NREL input files are included. The ARCO input is available from its linked upstream source; its redistribution terms could not be verified, so it is not included. The experiment settings record the input checksums.
 
 The final report, presentation, joint review and any necessary final validation remain to be completed. The instructor's project brief is not included in this repository; follow its requirements for citations and tool disclosure.
+
+Additional exploratory results from tuning, guarded and minimax selection are preserved under `results/proposal_tuned`, `results/proposal_guarded`, and `results/proposal_minimax`. These are development studies; the final evaluation above is the primary evidence. Smoke-test outputs are also included for completeness.
