@@ -5,8 +5,6 @@ __pycache__/
 *.zip
 results/**/per_seed_partial.csv
 results/**/per_slot_partial.csv
-# Download ARCO locally from upstream; redistribution terms need verification.
-/data/arco/dataset.csv
 results/**/partial_windows.csv
 results/**/partial_slots.csv
 results/**/partial*.csv
