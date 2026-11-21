@@ -4,13 +4,14 @@ from pathlib import Path
 from dataclasses import replace
 import numpy as np
 import pandas as pd
-from scipy.stats import t as student_t
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from src.scheduling import Config
+from src.radio import simulation_settings,timing_metrics
+from src.packets import run_delay_metrics,append_packet_run,DELAY_MEASURES,paired_stats
 from src.experiment import make_trace
-from src.course_data import sources,load_solar
+from src.course_data import SOURCE_INTERVALS,sources,load_solar
 from proposal_study import run, METHODS, FILES
 
 CANDIDATES={'all_025':('adaptive_all',.25),'all_050':('adaptive_all',.5),
@@ -35,28 +36,34 @@ def study_windows(slots):
     return out
 
 def evaluate(trace,cfg,mode,scale):
-    d=run(trace,cfg,mode,margin_scale=scale);terminal=float(d.b.iloc[-1]-d.d.iloc[-1]+d.arrivals.iloc[-1]-d['drop'].iloc[-1])
+    d=run(trace,cfg,mode,margin_scale=scale);terminal=float(d.b_next.iloc[-1])
     stats={'queue':float(d.b.mean()),'drop_ratio':float(d['drop'].sum()/max(1,d.arrivals.sum())),
         'energy':float(d.energy.sum()),'terminal_queue':terminal,'throughput':float(d.throughput_bps.mean()),
         'realized_cost':float(d.b.sum()+cfg.drop_weight*d['drop'].sum()+cfg.energy_weight*d.energy.sum()+cfg.terminal_weight*terminal),
-        'max_violation':float(d.plan_violation.max()),'inaccurate':int((d.solver_status=='optimal_inaccurate').sum()),'solve_ms':float(d.solve_ms.mean())}
+        'max_violation':float(d.plan_violation.max()),'inaccurate':int((d.solver_status=='optimal_inaccurate').sum()),'solve_ms':float(d.solve_ms.mean()),**timing_metrics(d),**run_delay_metrics(d)}
     return d,stats
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--out',default='results/proposal_tuned');p.add_argument('--slots',type=int,default=60);p.add_argument('--horizon',type=int,default=10);args=p.parse_args()
     if args.slots!=60 or args.horizon!=10:p.error('selection is matched to existing 60-slot, 10-horizon development reference')
-    out=Path(args.out);out.mkdir(parents=True,exist_ok=True);data=study_windows(args.slots)
-    original=Path('results/proposal_final');orig_settings=json.loads((original/'settings.json').read_text());ref=pd.read_csv(original/'per_window.csv')
+    out=Path(args.out)
+    if any((out/name).exists() for name in ('per_slot.csv','per_window.csv','per_packet.csv')):
+        p.error('output contains trajectories; choose a fresh --out directory')
+    out.mkdir(parents=True,exist_ok=True);data=study_windows(args.slots)
+    original=Path('results/proposal_final');orig_settings=json.loads((original/'settings.json').read_text());
+    if orig_settings.get('radio_model') != simulation_settings(Config())['radio_model'] or orig_settings.get('arrival_model') != simulation_settings(Config())['arrival_model'] or orig_settings.get('config') != simulation_settings(replace(Config(),horizon=args.horizon))['config']:
+        raise ValueError('Regenerate proposal reference with matching radio model/config before tuning')
+    ref=pd.read_csv(original/'per_window.csv')
     if orig_settings['slots']!=args.slots or orig_settings['horizon']!=args.horizon:raise ValueError('reference settings mismatch')
     hashes={f:hashlib.sha256(Path(f).read_bytes()).hexdigest() for f in FILES}
     if hashes!=orig_settings['dataset_sha256']:raise ValueError('dataset checksum mismatch with development reference')
-    settings=vars(args)|{'candidates':CANDIDATES,'selection':'equal source average of candidate mean realized proposal cost divided by nominal mean realized cost on the same development windows; lower is better',
-        'development_windows_per_source':6,'new_windows_per_source':4,'nominal_reference':'results/proposal_final/per_window.csv','dataset_sha256':hashes,
+    settings=vars(args)|simulation_settings(replace(Config(),horizon=args.horizon))|{'candidates':CANDIDATES,'selection':'equal source average of candidate mean realized proposal cost divided by nominal mean realized cost on the same development windows; lower is better',
+        'development_windows_per_source':6,'new_windows_per_source':4,'nominal_reference':'results/proposal_final/per_window.csv','dataset_slot_seconds':SOURCE_INTERVALS,'dataset_sha256':hashes,
         'caution':'small matched windows, proxy energy conversions, TMY3 stitched; no guaranteed superiority or uncertainty coverage'}
     (out/'settings.json').write_text(json.dumps(settings,indent=2)+'\n');dev=[]
     for dataset,seconds,windows,_ in data:
       for j,(start,harvest) in enumerate(windows):
-        seed=700+j;trace=make_trace(args.slots,seed,arrival_mean=2.5,harvest_mean=1.1);trace['harvest']=harvest;cfg=replace(Config(),horizon=args.horizon,slot_seconds=seconds)
+        seed=700+j;trace=make_trace(args.slots,seed,harvest_mean=1.1);trace['harvest']=harvest;cfg=replace(Config(),horizon=args.horizon,slot_seconds=seconds)
         r=ref[(ref.dataset==dataset)&(ref['split']=='development')&(ref['mode']=='nominal')&(ref.window==start)&(ref.seed==seed)]
         if len(r)!=1:raise ValueError('development nominal trace mismatch')
         for label,(mode,scale) in CANDIDATES.items():
@@ -70,26 +77,28 @@ def main():
     print('SELECTED',selected,flush=True);rows=[];frames=[]
     for dataset,seconds,_,windows in data:
       for j,(start,harvest) in enumerate(windows):
-        seed=1200+j;trace=make_trace(args.slots,seed,arrival_mean=2.5,harvest_mean=1.1);trace['harvest']=harvest;cfg=replace(Config(),horizon=args.horizon,slot_seconds=seconds)
+        seed=1200+j;trace=make_trace(args.slots,seed,harvest_mean=1.1);trace['harvest']=harvest;cfg=replace(Config(),horizon=args.horizon,slot_seconds=seconds)
         for name in (*METHODS,'selected'):
           chosen=mode if name=='selected' else name;strength=scale if name=='selected' else 1.
           print('new',dataset,start,name,flush=True);begin=time.perf_counter();df,stats=evaluate(trace,cfg,chosen,strength)
           rows.append(stats|dict(dataset=dataset,window=start,seed=seed,mode=name,wall_seconds=time.perf_counter()-begin))
-          df=df.copy();df['dataset']=dataset;df['window']=start;df['mode']=name;frames.append(df)
+          run_id=append_packet_run(df,out,dict(experiment='tuned',dataset=dataset,window=start,seed=seed,mode=name,margin_scale=strength))
+          rows[-1]['run_id']=run_id
+          df=df.copy();df['dataset']=dataset;df['window']=start;df['mode']=name;df['run_id']=run_id;frames.append(df)
           pd.DataFrame(rows).to_csv(out/'new_windows_partial.csv',index=False)
         pd.concat(frames,ignore_index=True).to_csv(out/'new_slots_partial.csv',index=False)
     raw=pd.DataFrame(rows);raw.to_csv(out/'per_window.csv',index=False);pd.concat(frames,ignore_index=True).to_csv(out/'per_slot.csv',index=False)
-    raw.groupby(['dataset','mode'])[['queue','drop_ratio','energy','terminal_queue','realized_cost','throughput']].agg(['mean','std']).to_csv(out/'summary.csv')
+    raw.groupby(['dataset','mode'])[['queue','drop_ratio','energy','terminal_queue','realized_cost','throughput',*DELAY_MEASURES]].agg(['mean','std','count']).to_csv(out/'summary.csv')
     pairs=[]
     for dataset,group in raw.groupby('dataset'):
       cand=group[group['mode']=='selected'].set_index('window')
       for name in METHODS:
        base=group[group['mode']==name].set_index('window')
-       for metric in ('queue','drop_ratio','energy','terminal_queue','realized_cost','throughput'):
-        delta=(cand[metric]-base[metric]).dropna();n=len(delta);mu=delta.mean();half=student_t.ppf(.975,n-1)*delta.std(ddof=1)/np.sqrt(n)
-        pairs.append(dict(dataset=dataset,baseline=name,metric=metric,n=n,delta=mu,ci_low=mu-half,ci_high=mu+half))
+       for metric in ('queue','drop_ratio','energy','terminal_queue','realized_cost','throughput',*DELAY_MEASURES):
+        delta=cand[metric]-base[metric]
+        pairs.append(dict(dataset=dataset,baseline=name,metric=metric,**paired_stats(delta)))
     pd.DataFrame(pairs).to_csv(out/'paired.csv',index=False)
-    for met,label in [('realized_cost','Realized weighted cost'),('drop_ratio','Rejection fraction'),('queue','Average queue'),('energy','Transmission energy (J)'),('terminal_queue','Final queue')]:
+    for met,label in [('realized_cost','Realized weighted cost'),('drop_ratio','Rejection fraction'),('queue','Average queue'),('energy','TX data and control energy (J)'),('terminal_queue','Final queue')]:
       fig,axs=plt.subplots(1,3,figsize=(16,5))
       for ax,(dataset,grp) in zip(axs,raw.groupby('dataset')):
        v=grp.groupby('mode')[met].mean().sort_values();ax.barh(v.index,v.values);ax.set(title=dataset,xlabel=label);ax.grid(axis='x',alpha=.2)

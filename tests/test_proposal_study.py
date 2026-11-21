@@ -24,7 +24,8 @@ class ProposalTests(unittest.TestCase):
     def test_causal_prediction_ignores_unobserved_future(self):
         trace=make_trace(8,seed=75)
         altered={k:np.array(v,copy=True) for k,v in trace.items()}
-        for key in ('gain','arrival','harvest'):altered[key][5:]+=100.
+        for key in ('arrival','harvest'):altered[key][5:]+=100
+        altered['gain'][5:]=.2;altered['condition'][5:]='Worst'
         cfg=replace(Config(),horizon=4)
         original=run(trace,cfg,'adaptive_all');changed=run(altered,cfg,'adaptive_all')
         np.testing.assert_allclose(original.p.iloc[:5],changed.p.iloc[:5],atol=1e-7)
@@ -53,8 +54,8 @@ class ProposalTests(unittest.TestCase):
             self.assertTrue((d.p*cfg.tau<=d.E+1e-6).all())
             self.assertTrue((d.d<=d.b+1e-6).all())
             self.assertTrue(np.all(d.d<=capacity(d.p,d.gain,cfg)+1e-6))
-            np.testing.assert_allclose(d.b.to_numpy()[1:],(d.b-d.d+d.arrivals-d['drop']).to_numpy()[:-1],atol=1e-6)
-            np.testing.assert_allclose(d.E.to_numpy()[1:],np.minimum(cfg.energy_max,(d.E-d.p*cfg.tau+d.harvest).to_numpy()[:-1]),atol=1e-6)
+            np.testing.assert_allclose(d.b.to_numpy()[1:],(d.b-d.acknowledged+d.arrivals-d['drop']).to_numpy()[:-1],atol=1e-6)
+            np.testing.assert_allclose(d.E.to_numpy()[1:],np.minimum(cfg.energy_max,(d.E-d.energy+d.harvest).to_numpy()[:-1]),atol=1e-6)
 
 class FirstSlotRejectionTests(unittest.TestCase):
     def test_no_discretionary_forecast_rejection_when_service_possible(self):

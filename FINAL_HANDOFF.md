@@ -1,6 +1,104 @@
 # EE 541 course project — final evaluation handoff
 
-**For Protyay Dey and Arghadeep Saha.** This package contains the submitted proposal, the prediction- and uncertainty-aware CVXPY scheduler, matched experiments, correctness checks, plots and raw results. It is a reproducible study for the course, not a claim that the adaptive method beats every comparison. Both students should review and understand the math, code and results before submission.
+**Current production status — completed 20 November 2026, 11:09:39 UTC.**
+The fresh batch in
+[`results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/`](results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/status.json)
+passed all 21 stages and its final completion audit. Independent reconciliation
+confirmed 300 original, 300 normalized, 300 solar, 120 delay–energy and 120
+forecast-sensitivity runs: 1,140,000 actual online slot records, each episode
+1,000 slots with horizon 10, plus 90 offline references and 12 solver checks.
+All packet/battery/aggregate/delay/source/solver audits and 20 plots are present.
+The launcher exited 0 and its production lock is free; no restart is needed.
+
+The first attempt failed in stage 05 after 119 completed run checkpoints and
+remains preserved/incomplete. Its slot-171 numerical failure was reproduced and
+corrected with positive constant objective normalization; the model and 1e-4
+residual threshold are unchanged. The 102-test recovery suite passed before
+launch. [Recovery details](docs/solver_recovery.md) and the
+[completion verification](results/recovery_20261120/completion_verification.json)
+record provenance and output checks. The prelaunch notes below retain their
+historical scope; the actual completed production is the timestamped root above.
+
+**Historical evaluation:** the saved results and numerical findings below predate
+the whole-packet probe/ACK/retransmission model. The current implementation and
+its assumptions are described in [receiver_feedback.md](docs/receiver_feedback.md).
+Regenerate experiments before reporting current-model results. In particular,
+the current offline expected-goodput reference is not a bound on realized
+stochastic online costs; the lower-bound discussion below describes the earlier
+deterministic model only.
+
+Current final defaults are 1,000 slots with online horizon 10 and the restored
+correlated lognormal channel (rho 0.68; sigma 0.20/0.45/0.80). Original and
+stationary mean-normalized sweeps have 300 policy-runs each, with historical seed
+ranges 5000–5009 and 6000–6009. Solar has 300 runs and defaults to normalized
+sigma 0.45. The online total is 900; normalized-synthetic/solar references contain
+90 full-episode problems. Use the [current protocol](docs/experiments_1000.md)
+and fresh `results/final_evaluation_continuous_1000/` root.
+
+Numerical gain feedback replaces five-state condition feedback, available at
+0.6 s. ACK departures occur at 3.6 s. The 0.3/0.3/1/1/1/1/0.4-second virtual
+phases, 0.2 J probes, packet IDs/retries, BER outcomes, uniform 0–10 arrivals,
+0–5 attempts and next-interval harvest/arrival availability remain intact.
+The channel-aware baseline preserves the latest numerical threshold 0.8.
+Solar windows retain native intervals, real missing values and overlap records.
+All three real inputs are now present and match their recorded SHA-256 checksums.
+The [input validation records](results/solar_input_check_1000/input_verification.json)
+confirm 30 valid 1,000-sample windows and 300 planned solar policy-runs. ARCO and
+UMass selections are disjoint; NREL has nine overlapping pairs. No new production
+results were generated.
+
+Packet timestamps are now recorded by persistent ID. The initial queue has
+bookkeeping admission time zero and is excluded from primary delay statistics.
+New completed initial-wait and ACK-completion metrics, censoring counts and
+outstanding ages are described in [packet_delays.md](docs/packet_delays.md).
+Historical statements below that packet ages were untracked refer to old results.
+
+Resumed verification on 20 November 2026 passed 94 tests and syntax parsing of
+all 34 Python files. Final fixes bind every packet-run metadata field to its
+run ID during auditing and add valid-run counts to the older consistency summary.
+The saved A5 benchmark was re-audited successfully: 13.4600 s execution,
+13.1270 ms per optimization call and no decision-budget overruns. Its runtime
+was reused, not remeasured. See the [resumed verification
+records](docs/packet_delays.md#resumed-verification-20-november-2026).
+No production matrix was launched. Adaptive penalty-weight updates are excluded;
+the two supplementary studies are now prepared as described below.
+
+Subsequent real-input verification passed 94 tests in 50.470 seconds and syntax
+parsing of all 34 Python files. Short runs covered all ten final solar policies
+(60 twelve-slot runs) and all seven older-simulator policies (21 twelve-slot runs
+using prefixes of validated 1,000-slot windows). Packet/battery conservation,
+ACK/retry timing, delay ledgers, full run identifiers, summary/pair counts and
+source audits passed. The final-policy workflow exercised every action 0–5,
+25 failed attempts and 20 intervals without an affordable probe, with no decision
+budget overruns. [Saved evidence](results/solar_packet_delay_smoke_real/verification.json)
+completes the action/delay verification and resolves the missing-input blocker.
+The production study remains deferred for the final system/model review.
+
+The [supplementary protocol](docs/supplementary_studies.md) fixes two 120-run
+studies: energy weights 0.15/15/150 and future-channel forecast amplitudes
+0/0.25/0.50. Both use normalized sigma 0.45, rho 0.68, harvest 0.6/1.2, seeds
+6000–6009, nominal/adaptive_all, 1,000 slots and horizon 10. Weights remain constant
+within a run. Common-reference scores use the main weights. Channel perturbations
+are keyed by scenario/origin/lead, preserve current reports, precede margins and
+are scored in adaptive history. Main defaults and matched physical random streams
+are preserved. Baseline repetitions across studies are documented, not additional
+independent observations. No supplementary offline matrix is added. Production
+commands, output semantics and final verification are in the linked protocol.
+
+Final readiness checks passed **101 tests in 73.673 seconds** and syntax parsing
+of all **39 Python files**. Both temporary supplementary workflows passed their
+analysis/audits/plots, and exactly one 1,000-slot benchmark per study passed its
+independent audit. Policy execution times were 13.1787 s at energy weight 15
+and 13.0524 s at forecast amplitude 0.25; neither overran the decision budget.
+All real inputs/windows and previous main/real-solar records were rechecked.
+The [readiness record](results/supplementary_verification/readiness.json) finds
+no remaining implementation/data blocker under the documented assumptions.
+Main and supplementary full experiments remain prepared but unexecuted. No
+performance improvement is inferred from smoke runs or these timing benchmarks.
+
+The completed historical 80-slot experiments and reproduction examples below
+retain their historical meaning. Their numerical results are not current-model
+results. The five-state intermediate stage and its 400-run protocol are superseded.
 
 ## Core question and implementation
 

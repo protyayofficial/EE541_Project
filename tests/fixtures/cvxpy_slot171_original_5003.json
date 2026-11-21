@@ -1,0 +1,81 @@
+{
+  "scenario": {
+    "harvest_mean": 0.6,
+    "channel_sigma": 0.8,
+    "seed": 5003,
+    "mode": "adaptive_all",
+    "slots": 1000,
+    "horizon": 10,
+    "mean_normalize": false
+  },
+  "slot": 171,
+  "b0": 32,
+  "e0": 2.156548932564143,
+  "gain": [
+    1.969855230222089,
+    1.3113494174484062,
+    1.3123189530588408,
+    1.2437368634429256,
+    1.16773465101954,
+    1.103965965274656,
+    1.0555986598224552,
+    1.020598431244418,
+    0.9958899101518202,
+    0.9786899393934334
+  ],
+  "arrival": [
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0
+  ],
+  "harvest": [
+    0.3049355969341952,
+    0.3049355969341952,
+    0.3049355969341952,
+    0.3049355969341952,
+    0.3049355969341952,
+    0.3049355969341952,
+    0.3049355969341952,
+    0.3049355969341952,
+    0.3049355969341952,
+    0.3049355969341952
+  ],
+  "config": {
+    "buffer_max": 32.0,
+    "energy_max": 12.0,
+    "power_max": 3.0,
+    "data_max": 5.0,
+    "tau": 1.0,
+    "slot_seconds": 5.0,
+    "bandwidth_hz": 3000.0,
+    "packet_bits": 256.0,
+    "bit_error_probability": 9.89e-06,
+    "probe_seconds": 0.3,
+    "channel_report_seconds": 0.3,
+    "decision_seconds": 1.0,
+    "ack_seconds": 1.0,
+    "update_seconds": 1.0,
+    "probe_energy": 0.2,
+    "channel_report_energy": 0.0,
+    "ack_energy": 0.0,
+    "noise_psd": 1e-09,
+    "drop_weight": 35.0,
+    "energy_weight": 0.15,
+    "terminal_weight": 6.0,
+    "horizon": 10,
+    "segments": 12,
+    "channel_rho": 0.68,
+    "channel_sigma": 0.8,
+    "channel_mean_normalize": false
+  },
+  "kwargs": {
+    "first_slot_drop_cap": null
+  }
+}
