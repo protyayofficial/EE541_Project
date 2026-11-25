@@ -1,0 +1,1428 @@
+{
+  "windows": 10,
+  "slots": 1000,
+  "horizon": 10,
+  "out": "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/solar",
+  "validate_only": false,
+  "config": {
+    "buffer_max": 32.0,
+    "energy_max": 12.0,
+    "power_max": 3.0,
+    "data_max": 5.0,
+    "tau": 1.0,
+    "slot_seconds": 5.0,
+    "bandwidth_hz": 3000.0,
+    "packet_bits": 256.0,
+    "bit_error_probability": 9.89e-06,
+    "probe_seconds": 0.3,
+    "channel_report_seconds": 0.3,
+    "decision_seconds": 1.0,
+    "ack_seconds": 1.0,
+    "update_seconds": 1.0,
+    "probe_energy": 0.2,
+    "channel_report_energy": 0.0,
+    "ack_energy": 0.0,
+    "noise_psd": 1e-09,
+    "drop_weight": 35.0,
+    "energy_weight": 0.15,
+    "terminal_weight": 6.0,
+    "horizon": 10,
+    "segments": 12,
+    "channel_rho": 0.68,
+    "channel_sigma": 0.45,
+    "channel_mean_normalize": true
+  },
+  "radio_model": "gain-probe-ack-v3",
+  "packet_delay_model": "virtual-packet-delays-v1",
+  "packet_timestamps": "virtual seconds: initial admission 0 (prehistory unknown); new offers/admissions at interval end; first burst start; first ACK at ACK end; no within-burst serialization",
+  "delay_statistics": "completed initial-wait/ACK-delay observations among newly admitted packets only; initial packets counted separately; unfinished delays missing, outstanding ages at episode end",
+  "phase_timing_model": "fixed-phases-v1",
+  "phase_boundaries_seconds": {
+    "interval_start_s": 0.0,
+    "probe_start_s": 0.0,
+    "probe_end_s": 0.3,
+    "channel_report_start_s": 0.3,
+    "channel_report_end_s": 0.6,
+    "decision_start_s": 0.6,
+    "decision_end_s": 1.6,
+    "data_start_s": 1.6,
+    "data_end_s": 2.6,
+    "ack_start_s": 2.6,
+    "ack_end_s": 3.6,
+    "update_start_s": 3.6,
+    "update_end_s": 4.6,
+    "guard_start_s": 4.6,
+    "guard_end_s": 5.0,
+    "interval_end_s": 5.0
+  },
+  "timing": "virtual seconds; reserved windows also advance for A0/inactive slots; next queue, arrivals, harvest and history commit at interval end; no sleeping",
+  "decision_deadline": "log-only: measure solver call and full decision separately against decision_seconds; flag overruns without changing action or simulated time",
+  "phase_energy_costs": {
+    "probe_joules": 0.2,
+    "channel_report_joules": 0.0,
+    "ack_receive_joules": 0.0,
+    "data": "applied power * tau; attempted packets including failures",
+    "decision_joules": 0.0,
+    "update_joules": 0.0,
+    "guard_joules": 0.0,
+    "assumption": "durations do not imply hardware energy; decision/update/idle energy abstracted"
+  },
+  "initial_state": {
+    "queue_packets": 12,
+    "energy_joules": 7.0
+  },
+  "objective": "sum(beginning backlog + drop_weight*rejected arrivals + energy_weight*total TX energy) + terminal_weight*final backlog",
+  "forecast": "channel: conditional lognormal mean with actual observation gaps; arrivals: prior weight 8 at mean 5 (prior total 40); harvest: prior weight 8 at mean 1.1 until 3 samples, then last-12 mean",
+  "margins": {
+    "fixed": [
+      0.38,
+      1.0,
+      0.25
+    ],
+    "proposal_quantile": 0.8,
+    "proposal_window": 50,
+    "proposal_warmup": 12,
+    "legacy_window": 40,
+    "legacy_warmup": 8,
+    "timing": "residuals from the current interval become available to the following decision"
+  },
+  "arrival_model": {
+    "distribution": "discrete_uniform",
+    "support": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "probabilities": [
+      0.09090909090909091,
+      0.09090909090909091,
+      0.09090909090909091,
+      0.09090909090909091,
+      0.09090909090909091,
+      0.09090909090909091,
+      0.09090909090909091,
+      0.09090909090909091,
+      0.09090909090909091,
+      0.09090909090909091,
+      0.09090909090909091
+    ],
+    "mean": 5.0
+  },
+  "channel_model": {
+    "version": "correlated-lognormal-v1",
+    "distribution": "correlated_lognormal",
+    "rho": 0.68,
+    "sigma": 0.45,
+    "mean_normalize": true,
+    "stationary_log_variance": 0.37667410714285726,
+    "initialization": "stationary_normal",
+    "units": "effective SNR per watt (1/W), not RSSI",
+    "feedback": "accurate_numerical_gain",
+    "random_stream": "default_rng(SeedSequence([scenario_seed,42017])); independent of traffic/harvest/actions",
+    "planning_gain_floor": 1e-09
+  },
+  "actions": "whole attempted packets 0..5; continuous planner bound 5.0",
+  "arrival_forecast": "prior mean 5 with weight 8 (total 40); raw and adjusted estimates clipped to [0,10]; custom actual traces preserved",
+  "traffic_scenario": "high_load",
+  "maximum_expected_service": 4.987356749576516,
+  "mean_arrival_excess": 0.012643250423484353,
+  "battery_accounting": "subtract full data energy plus control energy before harvest; energy_weight scales objective penalty only",
+  "packet_success_probability": 0.9974713499153032,
+  "channel_feedback": "reliable exact numerical gain at channel_report_end_s, before decision_start_s; effective SNR per watt",
+  "ack_feedback": "reliable at ack_end_s, including empty ACKs; only then remove acknowledged IDs",
+  "packet_accounting": "IDs and timestamps are simulation metadata excluded from payload and control costs; delay bookkeeping adds no modeled energy",
+  "reception": "independent bit errors, packet success (1-BER)^packet_bits; added to Shannon capacity",
+  "randomness": "BLAKE2b(seed:packet_id:retry), retry 0 is first attempt; missing trace seed defaults to 0",
+  "control": "affordable probe always charged; then affordable report and ACK stages; reserve ACK before data; harvest afterward",
+  "planning": "continuous attempted service and expected goodput; future full controls relaxed to [0,1]; actual first-slot partial controls fixed",
+  "channel_baseline": "2.4 W if reported gain >= 0.8, 0.45 W otherwise; latest numerical threshold preserved, battery clipped",
+  "modes": [
+    "fixed",
+    "channel",
+    "greedy",
+    "nominal",
+    "fixed_margin",
+    "adaptive_harvest",
+    "adaptive_all",
+    "fixed_fraction",
+    "adaptive_channel",
+    "adaptive_arrival"
+  ],
+  "dataset_slot_seconds": {
+    "arco": 60.0,
+    "umass_home_c": 60.0,
+    "nrel_tmy3": 3600.0
+  },
+  "dataset_sha256": {
+    "data/arco/dataset.csv": "9c9d66ef8d9d6507623186067d8f7e3e06dc1029c9e2f2f02f4e55a32418e2a8",
+    "data/umass/homeC-generation.tar.gz": "f47cca12cfe82a95a427142757f82e033a722dcf49a12d6f20ecf31fc8453454",
+    "data/nrel/723170TYA.CSV": "1e96f84638ce98e6b29002bc45a27aa69bb29b0ed0368d3b52b7b1f81610c6c9"
+  },
+  "recorded_reference_sha256": {
+    "data/arco/dataset.csv": "9c9d66ef8d9d6507623186067d8f7e3e06dc1029c9e2f2f02f4e55a32418e2a8",
+    "data/umass/homeC-generation.tar.gz": "f47cca12cfe82a95a427142757f82e033a722dcf49a12d6f20ecf31fc8453454",
+    "data/nrel/723170TYA.CSV": "1e96f84638ce98e6b29002bc45a27aa69bb29b0ed0368d3b52b7b1f81610c6c9"
+  },
+  "matches_recorded_checksums": {
+    "arco": true,
+    "umass_home_c": true,
+    "nrel_tmy3": true
+  },
+  "window_selection_version": "consecutive-valid-v1",
+  "window_manifest": {
+    "arco": {
+      "selection_version": "consecutive-valid-v1",
+      "source_samples": 93577,
+      "valid_samples": 93437,
+      "valid_starts": 3087,
+      "maximum_disjoint_windows": 34,
+      "selection_rule": "spread_disjoint",
+      "slot_seconds": 60.0,
+      "windows": [
+        {
+          "window": "2018-08-01 05:15:00",
+          "scenario_index": 0,
+          "seed": 7000,
+          "start_position": 968,
+          "end_position_exclusive": 1968,
+          "length": 1000,
+          "source_start": "2018-08-01 05:15:00",
+          "source_last": "2018-08-01 21:54:00",
+          "start_timestamp": "2018-08-01 05:15:00",
+          "end_timestamp_exclusive": "2018-08-01 21:55:00"
+        },
+        {
+          "window": "2018-08-05 08:43:00",
+          "scenario_index": 1,
+          "seed": 7001,
+          "start_position": 6936,
+          "end_position_exclusive": 7936,
+          "length": 1000,
+          "source_start": "2018-08-05 08:43:00",
+          "source_last": "2018-08-06 01:22:00",
+          "start_timestamp": "2018-08-05 08:43:00",
+          "end_timestamp_exclusive": "2018-08-06 01:23:00"
+        },
+        {
+          "window": "2018-08-11 07:31:00",
+          "scenario_index": 2,
+          "seed": 7002,
+          "start_position": 15504,
+          "end_position_exclusive": 16504,
+          "length": 1000,
+          "source_start": "2018-08-11 07:31:00",
+          "source_last": "2018-08-12 00:10:00",
+          "start_timestamp": "2018-08-11 07:31:00",
+          "end_timestamp_exclusive": "2018-08-12 00:11:00"
+        },
+        {
+          "window": "2018-09-17 15:25:00",
+          "scenario_index": 3,
+          "seed": 7003,
+          "start_position": 69258,
+          "end_position_exclusive": 70258,
+          "length": 1000,
+          "source_start": "2018-09-17 15:25:00",
+          "source_last": "2018-09-18 08:04:00",
+          "start_timestamp": "2018-09-17 15:25:00",
+          "end_timestamp_exclusive": "2018-09-18 08:05:00"
+        },
+        {
+          "window": "2018-09-19 19:51:00",
+          "scenario_index": 4,
+          "seed": 7004,
+          "start_position": 72404,
+          "end_position_exclusive": 73404,
+          "length": 1000,
+          "source_start": "2018-09-19 19:51:00",
+          "source_last": "2018-09-20 12:30:00",
+          "start_timestamp": "2018-09-19 19:51:00",
+          "end_timestamp_exclusive": "2018-09-20 12:31:00"
+        },
+        {
+          "window": "2018-09-22 17:57:00",
+          "scenario_index": 5,
+          "seed": 7005,
+          "start_position": 76610,
+          "end_position_exclusive": 77610,
+          "length": 1000,
+          "source_start": "2018-09-22 17:57:00",
+          "source_last": "2018-09-23 10:36:00",
+          "start_timestamp": "2018-09-22 17:57:00",
+          "end_timestamp_exclusive": "2018-09-23 10:37:00"
+        },
+        {
+          "window": "2018-09-25 15:57:00",
+          "scenario_index": 6,
+          "seed": 7006,
+          "start_position": 80810,
+          "end_position_exclusive": 81810,
+          "length": 1000,
+          "source_start": "2018-09-25 15:57:00",
+          "source_last": "2018-09-26 08:36:00",
+          "start_timestamp": "2018-09-25 15:57:00",
+          "end_timestamp_exclusive": "2018-09-26 08:37:00"
+        },
+        {
+          "window": "2018-09-27 20:28:00",
+          "scenario_index": 7,
+          "seed": 7007,
+          "start_position": 83961,
+          "end_position_exclusive": 84961,
+          "length": 1000,
+          "source_start": "2018-09-27 20:28:00",
+          "source_last": "2018-09-28 13:07:00",
+          "start_timestamp": "2018-09-27 20:28:00",
+          "end_timestamp_exclusive": "2018-09-28 13:08:00"
+        },
+        {
+          "window": "2018-09-30 18:18:00",
+          "scenario_index": 8,
+          "seed": 7008,
+          "start_position": 88151,
+          "end_position_exclusive": 89151,
+          "length": 1000,
+          "source_start": "2018-09-30 18:18:00",
+          "source_last": "2018-10-01 10:57:00",
+          "start_timestamp": "2018-09-30 18:18:00",
+          "end_timestamp_exclusive": "2018-10-01 10:58:00"
+        },
+        {
+          "window": "2018-10-03 16:07:00",
+          "scenario_index": 9,
+          "seed": 7009,
+          "start_position": 92340,
+          "end_position_exclusive": 93340,
+          "length": 1000,
+          "source_start": "2018-10-03 16:07:00",
+          "source_last": "2018-10-04 08:46:00",
+          "start_timestamp": "2018-10-03 16:07:00",
+          "end_timestamp_exclusive": "2018-10-04 08:47:00"
+        }
+      ],
+      "pairwise_overlap": [
+        {
+          "window_a": "2018-08-01 05:15:00",
+          "window_b": "2018-08-05 08:43:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-01 05:15:00",
+          "window_b": "2018-08-11 07:31:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-01 05:15:00",
+          "window_b": "2018-09-17 15:25:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-01 05:15:00",
+          "window_b": "2018-09-19 19:51:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-01 05:15:00",
+          "window_b": "2018-09-22 17:57:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-01 05:15:00",
+          "window_b": "2018-09-25 15:57:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-01 05:15:00",
+          "window_b": "2018-09-27 20:28:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-01 05:15:00",
+          "window_b": "2018-09-30 18:18:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-01 05:15:00",
+          "window_b": "2018-10-03 16:07:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-05 08:43:00",
+          "window_b": "2018-08-11 07:31:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-05 08:43:00",
+          "window_b": "2018-09-17 15:25:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-05 08:43:00",
+          "window_b": "2018-09-19 19:51:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-05 08:43:00",
+          "window_b": "2018-09-22 17:57:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-05 08:43:00",
+          "window_b": "2018-09-25 15:57:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-05 08:43:00",
+          "window_b": "2018-09-27 20:28:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-05 08:43:00",
+          "window_b": "2018-09-30 18:18:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-05 08:43:00",
+          "window_b": "2018-10-03 16:07:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-11 07:31:00",
+          "window_b": "2018-09-17 15:25:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-11 07:31:00",
+          "window_b": "2018-09-19 19:51:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-11 07:31:00",
+          "window_b": "2018-09-22 17:57:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-11 07:31:00",
+          "window_b": "2018-09-25 15:57:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-11 07:31:00",
+          "window_b": "2018-09-27 20:28:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-11 07:31:00",
+          "window_b": "2018-09-30 18:18:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-08-11 07:31:00",
+          "window_b": "2018-10-03 16:07:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-17 15:25:00",
+          "window_b": "2018-09-19 19:51:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-17 15:25:00",
+          "window_b": "2018-09-22 17:57:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-17 15:25:00",
+          "window_b": "2018-09-25 15:57:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-17 15:25:00",
+          "window_b": "2018-09-27 20:28:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-17 15:25:00",
+          "window_b": "2018-09-30 18:18:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-17 15:25:00",
+          "window_b": "2018-10-03 16:07:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-19 19:51:00",
+          "window_b": "2018-09-22 17:57:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-19 19:51:00",
+          "window_b": "2018-09-25 15:57:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-19 19:51:00",
+          "window_b": "2018-09-27 20:28:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-19 19:51:00",
+          "window_b": "2018-09-30 18:18:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-19 19:51:00",
+          "window_b": "2018-10-03 16:07:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-22 17:57:00",
+          "window_b": "2018-09-25 15:57:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-22 17:57:00",
+          "window_b": "2018-09-27 20:28:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-22 17:57:00",
+          "window_b": "2018-09-30 18:18:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-22 17:57:00",
+          "window_b": "2018-10-03 16:07:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-25 15:57:00",
+          "window_b": "2018-09-27 20:28:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-25 15:57:00",
+          "window_b": "2018-09-30 18:18:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-25 15:57:00",
+          "window_b": "2018-10-03 16:07:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-27 20:28:00",
+          "window_b": "2018-09-30 18:18:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-27 20:28:00",
+          "window_b": "2018-10-03 16:07:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2018-09-30 18:18:00",
+          "window_b": "2018-10-03 16:07:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        }
+      ],
+      "overlapping_pairs": 0,
+      "position_definition": "loaded source grid; absent timestamps/hours remain missing; end positions exclusive",
+      "dependence": "shared observations and common source/season; windows are not independent solar records",
+      "energy_conversion_factor": 0.01
+    },
+    "umass_home_c": {
+      "selection_version": "consecutive-valid-v1",
+      "source_samples": 135360,
+      "valid_samples": 129172,
+      "valid_starts": 127174,
+      "maximum_disjoint_windows": 128,
+      "selection_rule": "spread_disjoint",
+      "slot_seconds": 60.0,
+      "windows": [
+        {
+          "window": "2011-07-30 00:00:00+00:00",
+          "scenario_index": 0,
+          "seed": 7000,
+          "start_position": 0,
+          "end_position_exclusive": 1000,
+          "length": 1000,
+          "source_start": "2011-07-30 00:00:00+00:00",
+          "source_last": "2011-07-30 16:39:00+00:00",
+          "start_timestamp": "2011-07-30 00:00:00+00:00",
+          "end_timestamp_exclusive": "2011-07-30 16:40:00+00:00"
+        },
+        {
+          "window": "2011-08-08 17:20:00+00:00",
+          "scenario_index": 1,
+          "seed": 7001,
+          "start_position": 14000,
+          "end_position_exclusive": 15000,
+          "length": 1000,
+          "source_start": "2011-08-08 17:20:00+00:00",
+          "source_last": "2011-08-09 09:59:00+00:00",
+          "start_timestamp": "2011-08-08 17:20:00+00:00",
+          "end_timestamp_exclusive": "2011-08-09 10:00:00+00:00"
+        },
+        {
+          "window": "2011-08-18 10:40:00+00:00",
+          "scenario_index": 2,
+          "seed": 7002,
+          "start_position": 28000,
+          "end_position_exclusive": 29000,
+          "length": 1000,
+          "source_start": "2011-08-18 10:40:00+00:00",
+          "source_last": "2011-08-19 03:19:00+00:00",
+          "start_timestamp": "2011-08-18 10:40:00+00:00",
+          "end_timestamp_exclusive": "2011-08-19 03:20:00+00:00"
+        },
+        {
+          "window": "2011-09-02 02:08:00+00:00",
+          "scenario_index": 3,
+          "seed": 7003,
+          "start_position": 49088,
+          "end_position_exclusive": 50088,
+          "length": 1000,
+          "source_start": "2011-09-02 02:08:00+00:00",
+          "source_last": "2011-09-02 18:47:00+00:00",
+          "start_timestamp": "2011-09-02 02:08:00+00:00",
+          "end_timestamp_exclusive": "2011-09-02 18:48:00+00:00"
+        },
+        {
+          "window": "2011-09-11 19:28:00+00:00",
+          "scenario_index": 4,
+          "seed": 7004,
+          "start_position": 63088,
+          "end_position_exclusive": 64088,
+          "length": 1000,
+          "source_start": "2011-09-11 19:28:00+00:00",
+          "source_last": "2011-09-12 12:07:00+00:00",
+          "start_timestamp": "2011-09-11 19:28:00+00:00",
+          "end_timestamp_exclusive": "2011-09-12 12:08:00+00:00"
+        },
+        {
+          "window": "2011-09-21 12:48:00+00:00",
+          "scenario_index": 5,
+          "seed": 7005,
+          "start_position": 77088,
+          "end_position_exclusive": 78088,
+          "length": 1000,
+          "source_start": "2011-09-21 12:48:00+00:00",
+          "source_last": "2011-09-22 05:27:00+00:00",
+          "start_timestamp": "2011-09-21 12:48:00+00:00",
+          "end_timestamp_exclusive": "2011-09-22 05:28:00+00:00"
+        },
+        {
+          "window": "2011-10-01 06:08:00+00:00",
+          "scenario_index": 6,
+          "seed": 7006,
+          "start_position": 91088,
+          "end_position_exclusive": 92088,
+          "length": 1000,
+          "source_start": "2011-10-01 06:08:00+00:00",
+          "source_last": "2011-10-01 22:47:00+00:00",
+          "start_timestamp": "2011-10-01 06:08:00+00:00",
+          "end_timestamp_exclusive": "2011-10-01 22:48:00+00:00"
+        },
+        {
+          "window": "2011-10-10 23:28:00+00:00",
+          "scenario_index": 7,
+          "seed": 7007,
+          "start_position": 105088,
+          "end_position_exclusive": 106088,
+          "length": 1000,
+          "source_start": "2011-10-10 23:28:00+00:00",
+          "source_last": "2011-10-11 16:07:00+00:00",
+          "start_timestamp": "2011-10-10 23:28:00+00:00",
+          "end_timestamp_exclusive": "2011-10-11 16:08:00+00:00"
+        },
+        {
+          "window": "2011-10-20 16:48:00+00:00",
+          "scenario_index": 8,
+          "seed": 7008,
+          "start_position": 119088,
+          "end_position_exclusive": 120088,
+          "length": 1000,
+          "source_start": "2011-10-20 16:48:00+00:00",
+          "source_last": "2011-10-21 09:27:00+00:00",
+          "start_timestamp": "2011-10-20 16:48:00+00:00",
+          "end_timestamp_exclusive": "2011-10-21 09:28:00+00:00"
+        },
+        {
+          "window": "2011-10-31 02:48:00+00:00",
+          "scenario_index": 9,
+          "seed": 7009,
+          "start_position": 134088,
+          "end_position_exclusive": 135088,
+          "length": 1000,
+          "source_start": "2011-10-31 02:48:00+00:00",
+          "source_last": "2011-10-31 19:27:00+00:00",
+          "start_timestamp": "2011-10-31 02:48:00+00:00",
+          "end_timestamp_exclusive": "2011-10-31 19:28:00+00:00"
+        }
+      ],
+      "pairwise_overlap": [
+        {
+          "window_a": "2011-07-30 00:00:00+00:00",
+          "window_b": "2011-08-08 17:20:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-07-30 00:00:00+00:00",
+          "window_b": "2011-08-18 10:40:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-07-30 00:00:00+00:00",
+          "window_b": "2011-09-02 02:08:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-07-30 00:00:00+00:00",
+          "window_b": "2011-09-11 19:28:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-07-30 00:00:00+00:00",
+          "window_b": "2011-09-21 12:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-07-30 00:00:00+00:00",
+          "window_b": "2011-10-01 06:08:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-07-30 00:00:00+00:00",
+          "window_b": "2011-10-10 23:28:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-07-30 00:00:00+00:00",
+          "window_b": "2011-10-20 16:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-07-30 00:00:00+00:00",
+          "window_b": "2011-10-31 02:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-08-08 17:20:00+00:00",
+          "window_b": "2011-08-18 10:40:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-08-08 17:20:00+00:00",
+          "window_b": "2011-09-02 02:08:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-08-08 17:20:00+00:00",
+          "window_b": "2011-09-11 19:28:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-08-08 17:20:00+00:00",
+          "window_b": "2011-09-21 12:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-08-08 17:20:00+00:00",
+          "window_b": "2011-10-01 06:08:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-08-08 17:20:00+00:00",
+          "window_b": "2011-10-10 23:28:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-08-08 17:20:00+00:00",
+          "window_b": "2011-10-20 16:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-08-08 17:20:00+00:00",
+          "window_b": "2011-10-31 02:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-08-18 10:40:00+00:00",
+          "window_b": "2011-09-02 02:08:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-08-18 10:40:00+00:00",
+          "window_b": "2011-09-11 19:28:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-08-18 10:40:00+00:00",
+          "window_b": "2011-09-21 12:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-08-18 10:40:00+00:00",
+          "window_b": "2011-10-01 06:08:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-08-18 10:40:00+00:00",
+          "window_b": "2011-10-10 23:28:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-08-18 10:40:00+00:00",
+          "window_b": "2011-10-20 16:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-08-18 10:40:00+00:00",
+          "window_b": "2011-10-31 02:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-09-02 02:08:00+00:00",
+          "window_b": "2011-09-11 19:28:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-09-02 02:08:00+00:00",
+          "window_b": "2011-09-21 12:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-09-02 02:08:00+00:00",
+          "window_b": "2011-10-01 06:08:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-09-02 02:08:00+00:00",
+          "window_b": "2011-10-10 23:28:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-09-02 02:08:00+00:00",
+          "window_b": "2011-10-20 16:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-09-02 02:08:00+00:00",
+          "window_b": "2011-10-31 02:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-09-11 19:28:00+00:00",
+          "window_b": "2011-09-21 12:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-09-11 19:28:00+00:00",
+          "window_b": "2011-10-01 06:08:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-09-11 19:28:00+00:00",
+          "window_b": "2011-10-10 23:28:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-09-11 19:28:00+00:00",
+          "window_b": "2011-10-20 16:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-09-11 19:28:00+00:00",
+          "window_b": "2011-10-31 02:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-09-21 12:48:00+00:00",
+          "window_b": "2011-10-01 06:08:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-09-21 12:48:00+00:00",
+          "window_b": "2011-10-10 23:28:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-09-21 12:48:00+00:00",
+          "window_b": "2011-10-20 16:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-09-21 12:48:00+00:00",
+          "window_b": "2011-10-31 02:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-10-01 06:08:00+00:00",
+          "window_b": "2011-10-10 23:28:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-10-01 06:08:00+00:00",
+          "window_b": "2011-10-20 16:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-10-01 06:08:00+00:00",
+          "window_b": "2011-10-31 02:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-10-10 23:28:00+00:00",
+          "window_b": "2011-10-20 16:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-10-10 23:28:00+00:00",
+          "window_b": "2011-10-31 02:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "2011-10-20 16:48:00+00:00",
+          "window_b": "2011-10-31 02:48:00+00:00",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        }
+      ],
+      "overlapping_pairs": 0,
+      "position_definition": "loaded source grid; absent timestamps/hours remain missing; end positions exclusive",
+      "dependence": "shared observations and common source/season; windows are not independent solar records",
+      "energy_conversion_factor": 0.1
+    },
+    "nrel_tmy3": {
+      "selection_version": "consecutive-valid-v1",
+      "source_samples": 8760,
+      "valid_samples": 8760,
+      "valid_starts": 7761,
+      "maximum_disjoint_windows": 8,
+      "selection_rule": "spread_valid_starts_overlap_required",
+      "slot_seconds": 3600.0,
+      "windows": [
+        {
+          "window": "tmy_hour_index_0",
+          "scenario_index": 0,
+          "seed": 7000,
+          "start_position": 0,
+          "end_position_exclusive": 1000,
+          "length": 1000,
+          "source_start": "0",
+          "source_last": "999",
+          "start_timestamp": null,
+          "end_timestamp_exclusive": null
+        },
+        {
+          "window": "tmy_hour_index_862",
+          "scenario_index": 1,
+          "seed": 7001,
+          "start_position": 862,
+          "end_position_exclusive": 1862,
+          "length": 1000,
+          "source_start": "862",
+          "source_last": "1861",
+          "start_timestamp": null,
+          "end_timestamp_exclusive": null
+        },
+        {
+          "window": "tmy_hour_index_1724",
+          "scenario_index": 2,
+          "seed": 7002,
+          "start_position": 1724,
+          "end_position_exclusive": 2724,
+          "length": 1000,
+          "source_start": "1724",
+          "source_last": "2723",
+          "start_timestamp": null,
+          "end_timestamp_exclusive": null
+        },
+        {
+          "window": "tmy_hour_index_2586",
+          "scenario_index": 3,
+          "seed": 7003,
+          "start_position": 2586,
+          "end_position_exclusive": 3586,
+          "length": 1000,
+          "source_start": "2586",
+          "source_last": "3585",
+          "start_timestamp": null,
+          "end_timestamp_exclusive": null
+        },
+        {
+          "window": "tmy_hour_index_3448",
+          "scenario_index": 4,
+          "seed": 7004,
+          "start_position": 3448,
+          "end_position_exclusive": 4448,
+          "length": 1000,
+          "source_start": "3448",
+          "source_last": "4447",
+          "start_timestamp": null,
+          "end_timestamp_exclusive": null
+        },
+        {
+          "window": "tmy_hour_index_4311",
+          "scenario_index": 5,
+          "seed": 7005,
+          "start_position": 4311,
+          "end_position_exclusive": 5311,
+          "length": 1000,
+          "source_start": "4311",
+          "source_last": "5310",
+          "start_timestamp": null,
+          "end_timestamp_exclusive": null
+        },
+        {
+          "window": "tmy_hour_index_5173",
+          "scenario_index": 6,
+          "seed": 7006,
+          "start_position": 5173,
+          "end_position_exclusive": 6173,
+          "length": 1000,
+          "source_start": "5173",
+          "source_last": "6172",
+          "start_timestamp": null,
+          "end_timestamp_exclusive": null
+        },
+        {
+          "window": "tmy_hour_index_6035",
+          "scenario_index": 7,
+          "seed": 7007,
+          "start_position": 6035,
+          "end_position_exclusive": 7035,
+          "length": 1000,
+          "source_start": "6035",
+          "source_last": "7034",
+          "start_timestamp": null,
+          "end_timestamp_exclusive": null
+        },
+        {
+          "window": "tmy_hour_index_6897",
+          "scenario_index": 8,
+          "seed": 7008,
+          "start_position": 6897,
+          "end_position_exclusive": 7897,
+          "length": 1000,
+          "source_start": "6897",
+          "source_last": "7896",
+          "start_timestamp": null,
+          "end_timestamp_exclusive": null
+        },
+        {
+          "window": "tmy_hour_index_7760",
+          "scenario_index": 9,
+          "seed": 7009,
+          "start_position": 7760,
+          "end_position_exclusive": 8760,
+          "length": 1000,
+          "source_start": "7760",
+          "source_last": "8759",
+          "start_timestamp": null,
+          "end_timestamp_exclusive": null
+        }
+      ],
+      "pairwise_overlap": [
+        {
+          "window_a": "tmy_hour_index_0",
+          "window_b": "tmy_hour_index_862",
+          "overlap_samples": 138,
+          "overlap_fraction": 0.138
+        },
+        {
+          "window_a": "tmy_hour_index_0",
+          "window_b": "tmy_hour_index_1724",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_0",
+          "window_b": "tmy_hour_index_2586",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_0",
+          "window_b": "tmy_hour_index_3448",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_0",
+          "window_b": "tmy_hour_index_4311",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_0",
+          "window_b": "tmy_hour_index_5173",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_0",
+          "window_b": "tmy_hour_index_6035",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_0",
+          "window_b": "tmy_hour_index_6897",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_0",
+          "window_b": "tmy_hour_index_7760",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_862",
+          "window_b": "tmy_hour_index_1724",
+          "overlap_samples": 138,
+          "overlap_fraction": 0.138
+        },
+        {
+          "window_a": "tmy_hour_index_862",
+          "window_b": "tmy_hour_index_2586",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_862",
+          "window_b": "tmy_hour_index_3448",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_862",
+          "window_b": "tmy_hour_index_4311",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_862",
+          "window_b": "tmy_hour_index_5173",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_862",
+          "window_b": "tmy_hour_index_6035",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_862",
+          "window_b": "tmy_hour_index_6897",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_862",
+          "window_b": "tmy_hour_index_7760",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_1724",
+          "window_b": "tmy_hour_index_2586",
+          "overlap_samples": 138,
+          "overlap_fraction": 0.138
+        },
+        {
+          "window_a": "tmy_hour_index_1724",
+          "window_b": "tmy_hour_index_3448",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_1724",
+          "window_b": "tmy_hour_index_4311",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_1724",
+          "window_b": "tmy_hour_index_5173",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_1724",
+          "window_b": "tmy_hour_index_6035",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_1724",
+          "window_b": "tmy_hour_index_6897",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_1724",
+          "window_b": "tmy_hour_index_7760",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_2586",
+          "window_b": "tmy_hour_index_3448",
+          "overlap_samples": 138,
+          "overlap_fraction": 0.138
+        },
+        {
+          "window_a": "tmy_hour_index_2586",
+          "window_b": "tmy_hour_index_4311",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_2586",
+          "window_b": "tmy_hour_index_5173",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_2586",
+          "window_b": "tmy_hour_index_6035",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_2586",
+          "window_b": "tmy_hour_index_6897",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_2586",
+          "window_b": "tmy_hour_index_7760",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_3448",
+          "window_b": "tmy_hour_index_4311",
+          "overlap_samples": 137,
+          "overlap_fraction": 0.137
+        },
+        {
+          "window_a": "tmy_hour_index_3448",
+          "window_b": "tmy_hour_index_5173",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_3448",
+          "window_b": "tmy_hour_index_6035",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_3448",
+          "window_b": "tmy_hour_index_6897",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_3448",
+          "window_b": "tmy_hour_index_7760",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_4311",
+          "window_b": "tmy_hour_index_5173",
+          "overlap_samples": 138,
+          "overlap_fraction": 0.138
+        },
+        {
+          "window_a": "tmy_hour_index_4311",
+          "window_b": "tmy_hour_index_6035",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_4311",
+          "window_b": "tmy_hour_index_6897",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_4311",
+          "window_b": "tmy_hour_index_7760",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_5173",
+          "window_b": "tmy_hour_index_6035",
+          "overlap_samples": 138,
+          "overlap_fraction": 0.138
+        },
+        {
+          "window_a": "tmy_hour_index_5173",
+          "window_b": "tmy_hour_index_6897",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_5173",
+          "window_b": "tmy_hour_index_7760",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_6035",
+          "window_b": "tmy_hour_index_6897",
+          "overlap_samples": 138,
+          "overlap_fraction": 0.138
+        },
+        {
+          "window_a": "tmy_hour_index_6035",
+          "window_b": "tmy_hour_index_7760",
+          "overlap_samples": 0,
+          "overlap_fraction": 0.0
+        },
+        {
+          "window_a": "tmy_hour_index_6897",
+          "window_b": "tmy_hour_index_7760",
+          "overlap_samples": 137,
+          "overlap_fraction": 0.137
+        }
+      ],
+      "overlapping_pairs": 9,
+      "position_definition": "loaded source grid; absent timestamps/hours remain missing; end positions exclusive",
+      "dependence": "shared observations and common source/season; windows are not independent solar records",
+      "energy_conversion_factor": 0.005,
+      "time_basis": "TMY hourly template; stitched months, not a chronological year"
+    }
+  },
+  "planned_policy_runs": 300,
+  "seed_ids": [
+    7000,
+    7001,
+    7002,
+    7003,
+    7004,
+    7005,
+    7006,
+    7007,
+    7008,
+    7009
+  ],
+  "selection": "prefer spread disjoint consecutive valid windows; otherwise spread distinct valid starts across available range; overlap recorded in window_manifest",
+  "uncertainty_intervals": "approximate/descriptive paired scenario-level t intervals; shared solar observations and source dependence; slots are not independent repetitions",
+  "caveat": "one source per dataset; windows share sites/seasons and may share observations; not independent solar records; energy conversion assumed, traffic/channel synthetic; TMY stitched and hourly; no exclusion of earlier-study windows",
+  "arrival": "IID discrete uniform integers 0..10 inclusive, probability 1/11 each, mean 5",
+  "scales": {
+    "arco": 0.01,
+    "umass_home_c": 0.1,
+    "nrel_tmy3": 0.005
+  },
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.39"
+}

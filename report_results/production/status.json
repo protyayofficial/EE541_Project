@@ -1,0 +1,354 @@
+{
+  "status": "completed",
+  "started_at": "2026-11-20T07:53:29+00:00",
+  "pid": 4,
+  "output_root": "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28",
+  "current_stage": null,
+  "stages": [
+    {
+      "stage": "preflight",
+      "status": "completed",
+      "log": "logs/01_preflight.log",
+      "command": "check approved configuration, real checksums and 30 full windows",
+      "started_at": "2026-11-20T07:53:29+00:00",
+      "ended_at": "2026-11-20T07:53:31+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "solar_validate",
+      "status": "completed",
+      "log": "logs/02_solar_validate.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "final_solar_evaluation.py",
+        "--validate-only",
+        "--windows",
+        "10",
+        "--slots",
+        "1000",
+        "--horizon",
+        "10",
+        "--out",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/solar"
+      ],
+      "started_at": "2026-11-20T07:53:31+00:00",
+      "ended_at": "2026-11-20T07:53:33+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "solver_checks",
+      "status": "completed",
+      "log": "logs/03_solver_checks.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "solver_crosscheck.py",
+        "--out",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/solver"
+      ],
+      "started_at": "2026-11-20T07:53:33+00:00",
+      "ended_at": "2026-11-20T07:53:35+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "solver_audit",
+      "status": "completed",
+      "log": "logs/04_solver_audit.log",
+      "command": "validate all 12 recorded solves; failures are fatal",
+      "started_at": "2026-11-20T07:53:35+00:00",
+      "ended_at": "2026-11-20T07:53:35+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "sweep",
+      "status": "completed",
+      "log": "logs/05_sweep.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "final_evaluation.py",
+        "--seeds",
+        "10",
+        "--rho",
+        "0.68",
+        "--sigma",
+        "0.2",
+        "0.45",
+        "0.8",
+        "--slots",
+        "1000",
+        "--horizon",
+        "10",
+        "--seed-start",
+        "5000",
+        "--out",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/sweep"
+      ],
+      "started_at": "2026-11-20T07:53:35+00:00",
+      "ended_at": "2026-11-20T08:37:10+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "sweep_audit",
+      "status": "completed",
+      "log": "logs/06_sweep_audit.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "audit_final_evaluation.py",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/sweep"
+      ],
+      "started_at": "2026-11-20T08:37:10+00:00",
+      "ended_at": "2026-11-20T08:40:34+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "sweep_normalized",
+      "status": "completed",
+      "log": "logs/07_sweep_normalized.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "final_evaluation.py",
+        "--mean-normalize",
+        "--seeds",
+        "10",
+        "--rho",
+        "0.68",
+        "--sigma",
+        "0.2",
+        "0.45",
+        "0.8",
+        "--slots",
+        "1000",
+        "--horizon",
+        "10",
+        "--seed-start",
+        "6000",
+        "--out",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/sweep_normalized"
+      ],
+      "started_at": "2026-11-20T08:40:34+00:00",
+      "ended_at": "2026-11-20T09:22:26+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "normalized_audit",
+      "status": "completed",
+      "log": "logs/08_normalized_audit.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "audit_final_evaluation.py",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/sweep_normalized"
+      ],
+      "started_at": "2026-11-20T09:22:26+00:00",
+      "ended_at": "2026-11-20T09:25:57+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "solar",
+      "status": "completed",
+      "log": "logs/09_solar.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "final_solar_evaluation.py",
+        "--windows",
+        "10",
+        "--slots",
+        "1000",
+        "--horizon",
+        "10",
+        "--out",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/solar"
+      ],
+      "started_at": "2026-11-20T09:25:57+00:00",
+      "ended_at": "2026-11-20T09:52:23+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "solar_action_audit",
+      "status": "completed",
+      "log": "logs/10_solar_action_audit.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "audit_comparison.py",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/solar"
+      ],
+      "started_at": "2026-11-20T09:52:23+00:00",
+      "ended_at": "2026-11-20T09:55:49+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "solar_source_audit",
+      "status": "completed",
+      "log": "logs/11_solar_source_audit.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "audit_final_solar.py",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/solar"
+      ],
+      "started_at": "2026-11-20T09:55:49+00:00",
+      "ended_at": "2026-11-20T09:55:53+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "delay_energy",
+      "status": "completed",
+      "log": "logs/12_delay_energy.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "supplementary_studies.py",
+        "delay_energy",
+        "--seeds",
+        "10",
+        "--slots",
+        "1000",
+        "--horizon",
+        "10",
+        "--out",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/supplementary/delay_energy"
+      ],
+      "started_at": "2026-11-20T09:55:53+00:00",
+      "ended_at": "2026-11-20T10:29:39+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "delay_energy_analysis_plots",
+      "status": "completed",
+      "log": "logs/13_delay_energy_analysis_plots.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "analyze_supplementary.py",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/supplementary/delay_energy"
+      ],
+      "started_at": "2026-11-20T10:29:39+00:00",
+      "ended_at": "2026-11-20T10:29:40+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "delay_energy_audit",
+      "status": "completed",
+      "log": "logs/14_delay_energy_audit.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "audit_supplementary.py",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/supplementary/delay_energy"
+      ],
+      "started_at": "2026-11-20T10:29:40+00:00",
+      "ended_at": "2026-11-20T10:32:27+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "forecast_sensitivity",
+      "status": "completed",
+      "log": "logs/15_forecast_sensitivity.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "supplementary_studies.py",
+        "forecast_sensitivity",
+        "--seeds",
+        "10",
+        "--slots",
+        "1000",
+        "--horizon",
+        "10",
+        "--out",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/supplementary/forecast_sensitivity"
+      ],
+      "started_at": "2026-11-20T10:32:27+00:00",
+      "ended_at": "2026-11-20T11:06:30+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "forecast_analysis_plots",
+      "status": "completed",
+      "log": "logs/16_forecast_analysis_plots.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "analyze_supplementary.py",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/supplementary/forecast_sensitivity"
+      ],
+      "started_at": "2026-11-20T11:06:30+00:00",
+      "ended_at": "2026-11-20T11:06:32+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "forecast_audit",
+      "status": "completed",
+      "log": "logs/17_forecast_audit.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "audit_supplementary.py",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/supplementary/forecast_sensitivity"
+      ],
+      "started_at": "2026-11-20T11:06:32+00:00",
+      "ended_at": "2026-11-20T11:09:19+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "offline_references",
+      "status": "completed",
+      "log": "logs/18_offline_references.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "offline_reference.py",
+        "--root",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28"
+      ],
+      "started_at": "2026-11-20T11:09:19+00:00",
+      "ended_at": "2026-11-20T11:09:35+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "offline_audit",
+      "status": "completed",
+      "log": "logs/19_offline_audit.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "audit_offline.py",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/offline"
+      ],
+      "started_at": "2026-11-20T11:09:35+00:00",
+      "ended_at": "2026-11-20T11:09:38+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "main_figures",
+      "status": "completed",
+      "log": "logs/20_main_figures.log",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "plot_final_figures.py",
+        "--root",
+        "results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28"
+      ],
+      "started_at": "2026-11-20T11:09:38+00:00",
+      "ended_at": "2026-11-20T11:09:39+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "completion_audit",
+      "status": "completed",
+      "log": "logs/21_completion_audit.log",
+      "command": "check exact counts, saved seed ranges, lengths, audits and plots",
+      "started_at": "2026-11-20T11:09:39+00:00",
+      "ended_at": "2026-11-20T11:09:39+00:00",
+      "exit_code": 0
+    }
+  ],
+  "ended_at": "2026-11-20T11:09:39+00:00"
+}

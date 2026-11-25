@@ -1,0 +1,431 @@
+harvest 0.6 sigma 0.2 seed 5000 mode greedy
+harvest 0.6 sigma 0.2 seed 5000 mode nominal
+harvest 0.6 sigma 0.2 seed 5000 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 5000 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 5000 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 5001 mode greedy
+harvest 0.6 sigma 0.2 seed 5001 mode nominal
+harvest 0.6 sigma 0.2 seed 5001 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 5001 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 5001 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 5002 mode greedy
+harvest 0.6 sigma 0.2 seed 5002 mode nominal
+harvest 0.6 sigma 0.2 seed 5002 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 5002 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 5002 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 5003 mode greedy
+harvest 0.6 sigma 0.2 seed 5003 mode nominal
+harvest 0.6 sigma 0.2 seed 5003 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 5003 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 5003 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 5004 mode greedy
+harvest 0.6 sigma 0.2 seed 5004 mode nominal
+harvest 0.6 sigma 0.2 seed 5004 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 5004 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 5004 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 5005 mode greedy
+harvest 0.6 sigma 0.2 seed 5005 mode nominal
+harvest 0.6 sigma 0.2 seed 5005 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 5005 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 5005 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 5006 mode greedy
+harvest 0.6 sigma 0.2 seed 5006 mode nominal
+harvest 0.6 sigma 0.2 seed 5006 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 5006 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 5006 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 5007 mode greedy
+harvest 0.6 sigma 0.2 seed 5007 mode nominal
+harvest 0.6 sigma 0.2 seed 5007 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 5007 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 5007 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 5008 mode greedy
+harvest 0.6 sigma 0.2 seed 5008 mode nominal
+harvest 0.6 sigma 0.2 seed 5008 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.2 seed 5008 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 5008 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 5009 mode greedy
+harvest 0.6 sigma 0.2 seed 5009 mode nominal
+harvest 0.6 sigma 0.2 seed 5009 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 5009 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 5009 mode adaptive_all
+harvest 0.6 sigma 0.45 seed 5000 mode greedy
+harvest 0.6 sigma 0.45 seed 5000 mode nominal
+harvest 0.6 sigma 0.45 seed 5000 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 5000 mode adaptive_harvest
+harvest 0.6 sigma 0.45 seed 5000 mode adaptive_all
+harvest 0.6 sigma 0.45 seed 5001 mode greedy
+harvest 0.6 sigma 0.45 seed 5001 mode nominal
+harvest 0.6 sigma 0.45 seed 5001 mode fixed_margin
+harvest 0.6 sigma 0.45 seed 5001 mode adaptive_harvest
+harvest 0.6 sigma 0.45 seed 5001 mode adaptive_all
+harvest 0.6 sigma 0.45 seed 5002 mode greedy
+harvest 0.6 sigma 0.45 seed 5002 mode nominal
+harvest 0.6 sigma 0.45 seed 5002 mode fixed_margin
+harvest 0.6 sigma 0.45 seed 5002 mode adaptive_harvest
+harvest 0.6 sigma 0.45 seed 5002 mode adaptive_all
+harvest 0.6 sigma 0.45 seed 5003 mode greedy
+harvest 0.6 sigma 0.45 seed 5003 mode nominal
+harvest 0.6 sigma 0.45 seed 5003 mode fixed_margin
+harvest 0.6 sigma 0.45 seed 5003 mode adaptive_harvest
+harvest 0.6 sigma 0.45 seed 5003 mode adaptive_all
+harvest 0.6 sigma 0.45 seed 5004 mode greedy
+harvest 0.6 sigma 0.45 seed 5004 mode nominal
+harvest 0.6 sigma 0.45 seed 5004 mode fixed_margin
+harvest 0.6 sigma 0.45 seed 5004 mode adaptive_harvest
+harvest 0.6 sigma 0.45 seed 5004 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 5005 mode greedy
+harvest 0.6 sigma 0.45 seed 5005 mode nominal
+harvest 0.6 sigma 0.45 seed 5005 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 5005 mode adaptive_harvest
+harvest 0.6 sigma 0.45 seed 5005 mode adaptive_all
+harvest 0.6 sigma 0.45 seed 5006 mode greedy
+harvest 0.6 sigma 0.45 seed 5006 mode nominal
+harvest 0.6 sigma 0.45 seed 5006 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 5006 mode adaptive_harvest
+harvest 0.6 sigma 0.45 seed 5006 mode adaptive_all
+harvest 0.6 sigma 0.45 seed 5007 mode greedy
+harvest 0.6 sigma 0.45 seed 5007 mode nominal
+harvest 0.6 sigma 0.45 seed 5007 mode fixed_margin
+harvest 0.6 sigma 0.45 seed 5007 mode adaptive_harvest
+harvest 0.6 sigma 0.45 seed 5007 mode adaptive_all
+harvest 0.6 sigma 0.45 seed 5008 mode greedy
+harvest 0.6 sigma 0.45 seed 5008 mode nominal
+harvest 0.6 sigma 0.45 seed 5008 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 5008 mode adaptive_harvest
+harvest 0.6 sigma 0.45 seed 5008 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 5009 mode greedy
+harvest 0.6 sigma 0.45 seed 5009 mode nominal
+harvest 0.6 sigma 0.45 seed 5009 mode fixed_margin
+harvest 0.6 sigma 0.45 seed 5009 mode adaptive_harvest
+harvest 0.6 sigma 0.45 seed 5009 mode adaptive_all
+harvest 0.6 sigma 0.8 seed 5000 mode greedy
+harvest 0.6 sigma 0.8 seed 5000 mode nominal
+harvest 0.6 sigma 0.8 seed 5000 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5000 mode adaptive_harvest
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5000 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5001 mode greedy
+harvest 0.6 sigma 0.8 seed 5001 mode nominal
+harvest 0.6 sigma 0.8 seed 5001 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5001 mode adaptive_harvest
+harvest 0.6 sigma 0.8 seed 5001 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5002 mode greedy
+harvest 0.6 sigma 0.8 seed 5002 mode nominal
+harvest 0.6 sigma 0.8 seed 5002 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5002 mode adaptive_harvest
+harvest 0.6 sigma 0.8 seed 5002 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5003 mode greedy
+harvest 0.6 sigma 0.8 seed 5003 mode nominal
+harvest 0.6 sigma 0.8 seed 5003 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5003 mode adaptive_harvest
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5003 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5004 mode greedy
+harvest 0.6 sigma 0.8 seed 5004 mode nominal
+harvest 0.6 sigma 0.8 seed 5004 mode fixed_margin
+harvest 0.6 sigma 0.8 seed 5004 mode adaptive_harvest
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5004 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5005 mode greedy
+harvest 0.6 sigma 0.8 seed 5005 mode nominal
+harvest 0.6 sigma 0.8 seed 5005 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5005 mode adaptive_harvest
+harvest 0.6 sigma 0.8 seed 5005 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5006 mode greedy
+harvest 0.6 sigma 0.8 seed 5006 mode nominal
+harvest 0.6 sigma 0.8 seed 5006 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5006 mode adaptive_harvest
+harvest 0.6 sigma 0.8 seed 5006 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5007 mode greedy
+harvest 0.6 sigma 0.8 seed 5007 mode nominal
+harvest 0.6 sigma 0.8 seed 5007 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5007 mode adaptive_harvest
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5007 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5008 mode greedy
+harvest 0.6 sigma 0.8 seed 5008 mode nominal
+harvest 0.6 sigma 0.8 seed 5008 mode fixed_margin
+harvest 0.6 sigma 0.8 seed 5008 mode adaptive_harvest
+harvest 0.6 sigma 0.8 seed 5008 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5009 mode greedy
+harvest 0.6 sigma 0.8 seed 5009 mode nominal
+harvest 0.6 sigma 0.8 seed 5009 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 5009 mode adaptive_harvest
+harvest 0.6 sigma 0.8 seed 5009 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.2 seed 5000 mode greedy
+harvest 1.2 sigma 0.2 seed 5000 mode nominal
+harvest 1.2 sigma 0.2 seed 5000 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 5000 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 5000 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 5001 mode greedy
+harvest 1.2 sigma 0.2 seed 5001 mode nominal
+harvest 1.2 sigma 0.2 seed 5001 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 5001 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 5001 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 5002 mode greedy
+harvest 1.2 sigma 0.2 seed 5002 mode nominal
+harvest 1.2 sigma 0.2 seed 5002 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 5002 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 5002 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 5003 mode greedy
+harvest 1.2 sigma 0.2 seed 5003 mode nominal
+harvest 1.2 sigma 0.2 seed 5003 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 5003 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 5003 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 5004 mode greedy
+harvest 1.2 sigma 0.2 seed 5004 mode nominal
+harvest 1.2 sigma 0.2 seed 5004 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 5004 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 5004 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 5005 mode greedy
+harvest 1.2 sigma 0.2 seed 5005 mode nominal
+harvest 1.2 sigma 0.2 seed 5005 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 5005 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 5005 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 5006 mode greedy
+harvest 1.2 sigma 0.2 seed 5006 mode nominal
+harvest 1.2 sigma 0.2 seed 5006 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 5006 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 5006 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 5007 mode greedy
+harvest 1.2 sigma 0.2 seed 5007 mode nominal
+harvest 1.2 sigma 0.2 seed 5007 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 5007 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 5007 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 5008 mode greedy
+harvest 1.2 sigma 0.2 seed 5008 mode nominal
+harvest 1.2 sigma 0.2 seed 5008 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 5008 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 5008 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 5009 mode greedy
+harvest 1.2 sigma 0.2 seed 5009 mode nominal
+harvest 1.2 sigma 0.2 seed 5009 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 5009 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 5009 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 5000 mode greedy
+harvest 1.2 sigma 0.45 seed 5000 mode nominal
+harvest 1.2 sigma 0.45 seed 5000 mode fixed_margin
+harvest 1.2 sigma 0.45 seed 5000 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 5000 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 5001 mode greedy
+harvest 1.2 sigma 0.45 seed 5001 mode nominal
+harvest 1.2 sigma 0.45 seed 5001 mode fixed_margin
+harvest 1.2 sigma 0.45 seed 5001 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 5001 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 5002 mode greedy
+harvest 1.2 sigma 0.45 seed 5002 mode nominal
+harvest 1.2 sigma 0.45 seed 5002 mode fixed_margin
+harvest 1.2 sigma 0.45 seed 5002 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 5002 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 5003 mode greedy
+harvest 1.2 sigma 0.45 seed 5003 mode nominal
+harvest 1.2 sigma 0.45 seed 5003 mode fixed_margin
+harvest 1.2 sigma 0.45 seed 5003 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 5003 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 5004 mode greedy
+harvest 1.2 sigma 0.45 seed 5004 mode nominal
+harvest 1.2 sigma 0.45 seed 5004 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.45 seed 5004 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 5004 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 5005 mode greedy
+harvest 1.2 sigma 0.45 seed 5005 mode nominal
+harvest 1.2 sigma 0.45 seed 5005 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.45 seed 5005 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 5005 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 5006 mode greedy
+harvest 1.2 sigma 0.45 seed 5006 mode nominal
+harvest 1.2 sigma 0.45 seed 5006 mode fixed_margin
+harvest 1.2 sigma 0.45 seed 5006 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 5006 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 5007 mode greedy
+harvest 1.2 sigma 0.45 seed 5007 mode nominal
+harvest 1.2 sigma 0.45 seed 5007 mode fixed_margin
+harvest 1.2 sigma 0.45 seed 5007 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 5007 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 5008 mode greedy
+harvest 1.2 sigma 0.45 seed 5008 mode nominal
+harvest 1.2 sigma 0.45 seed 5008 mode fixed_margin
+harvest 1.2 sigma 0.45 seed 5008 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 5008 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 5009 mode greedy
+harvest 1.2 sigma 0.45 seed 5009 mode nominal
+harvest 1.2 sigma 0.45 seed 5009 mode fixed_margin
+harvest 1.2 sigma 0.45 seed 5009 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 5009 mode adaptive_all
+harvest 1.2 sigma 0.8 seed 5000 mode greedy
+harvest 1.2 sigma 0.8 seed 5000 mode nominal
+harvest 1.2 sigma 0.8 seed 5000 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5000 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 5000 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5001 mode greedy
+harvest 1.2 sigma 0.8 seed 5001 mode nominal
+harvest 1.2 sigma 0.8 seed 5001 mode fixed_margin
+harvest 1.2 sigma 0.8 seed 5001 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 5001 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5002 mode greedy
+harvest 1.2 sigma 0.8 seed 5002 mode nominal
+harvest 1.2 sigma 0.8 seed 5002 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5002 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 5002 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5003 mode greedy
+harvest 1.2 sigma 0.8 seed 5003 mode nominal
+harvest 1.2 sigma 0.8 seed 5003 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5003 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 5003 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5004 mode greedy
+harvest 1.2 sigma 0.8 seed 5004 mode nominal
+harvest 1.2 sigma 0.8 seed 5004 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5004 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 5004 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5005 mode greedy
+harvest 1.2 sigma 0.8 seed 5005 mode nominal
+harvest 1.2 sigma 0.8 seed 5005 mode fixed_margin
+harvest 1.2 sigma 0.8 seed 5005 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 5005 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5006 mode greedy
+harvest 1.2 sigma 0.8 seed 5006 mode nominal
+harvest 1.2 sigma 0.8 seed 5006 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5006 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 5006 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5007 mode greedy
+harvest 1.2 sigma 0.8 seed 5007 mode nominal
+harvest 1.2 sigma 0.8 seed 5007 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5007 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 5007 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5008 mode greedy
+harvest 1.2 sigma 0.8 seed 5008 mode nominal
+harvest 1.2 sigma 0.8 seed 5008 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5008 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 5008 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5009 mode greedy
+harvest 1.2 sigma 0.8 seed 5009 mode nominal
+harvest 1.2 sigma 0.8 seed 5009 mode fixed_margin
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 5009 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 5009 mode adaptive_all
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+Max violation: 9.404673489932236e-05 inaccurate: 0
+                                             realized_cost  drop_ratio    queue      energy
+harvest_mean channel_sigma mode
+0.6          0.20          adaptive_all       23888.182354    0.032839  18.0239  539.215695
+                           adaptive_harvest   23885.881402    0.032818  18.0251  539.209345
+                           fixed_margin       23896.282358    0.032879  18.0250  539.215719
+                           greedy             23896.282358    0.032879  18.0250  539.215719
+                           nominal            23896.282358    0.032879  18.0250  539.215719
+             0.45          adaptive_all       26900.543669    0.044970  18.9138  572.291124
+                           adaptive_harvest   27251.475804    0.046354  19.0269  571.172024
+                           fixed_margin       26918.174264    0.045107  18.9103  573.161762
+                           greedy             27540.317782    0.048092  19.0142  574.785213
+                           nominal            27172.467020    0.046214  18.9719  574.446800
+             0.80          adaptive_all       38757.517823    0.096007  21.8968  596.785488
+                           adaptive_harvest   40021.029643    0.102919  21.9654  595.530952
+                           fixed_margin       39178.778632    0.099450  21.7271  598.524211
+                           greedy             42040.213650    0.113800  22.0952  602.091002
+                           nominal            40036.421146    0.103529  21.8731  601.474307
+1.2          0.20          adaptive_all       23828.303412    0.032575  18.0095  539.356082
+                           adaptive_harvest   23828.303412    0.032575  18.0095  539.356082
+                           fixed_margin       23828.303412    0.032575  18.0095  539.356082
+                           greedy             23828.303412    0.032575  18.0095  539.356082
+                           nominal            23828.303412    0.032575  18.0095  539.356082
+             0.45          adaptive_all       23846.388401    0.032635  18.0098  587.922670
+                           adaptive_harvest   23846.388401    0.032635  18.0098  587.922670
+                           fixed_margin       23846.388401    0.032635  18.0098  587.922670
+                           greedy             23846.388401    0.032635  18.0098  587.922670
+                           nominal            23846.388401    0.032635  18.0098  587.922670
+             0.80          adaptive_all       25629.497688    0.038532  18.7481  716.651253
+                           adaptive_harvest   25529.564984    0.038348  18.6796  717.099892
+                           fixed_margin       25262.280746    0.037166  18.6183  720.538309
+                           greedy             25245.135823    0.037106  18.6116  720.905486
+                           nominal            25247.310499    0.037086  18.6173  720.736661

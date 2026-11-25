@@ -64,34 +64,43 @@ describes the study design. Run `python final_evaluation.py --help` or
 
 The full design uses 1,000-slot episodes. It includes two 300-run synthetic
 sweeps, 300 solar runs, 120 runs per supplementary study, 90 offline references,
-and 12 solver checks. To build the report figures and tables from a completed
-full run, replace the input path with the directory printed by the launcher:
+and 12 solver checks.
+
+### Regenerate the report figures
+
+Use the bundled analysis inputs to rebuild the published figures and tables
+without rerunning the simulations:
 
 ```bash
 python prepare_report_figures.py \
-  --input runs/COMPLETED_RUN_DIRECTORY \
+  --input report_results/report_figures/inputs \
   --out runs/report_figures \
   --zip runs/report_figures.zip
 ```
+
+To plot a new full experiment, use its completed run directory as `--input`.
 
 ## Included results
 
 | Output | Contents |
 | --- | --- |
-| [Current-model verification](results/submission_verification) | Saved summaries, figures, settings and audit results from the merged implementation |
-| [Earlier evaluation](results/final_evaluation) | Synthetic and solar comparisons, offline reference and solver checks from the earlier simulator |
-| [Development studies](results) | Earlier proposal runs and exploratory policy tuning under their original settings |
+| [Production results](report_results) | Run matrices, settings, tables, audit records and plots for the 1,000-slot experiment design |
+| [Report figures and tables](report_results/report_figures/INDEX.md) | PDF and PNG figures, captions, plotted data and analysis tables |
+| [Verification runs](results/submission_verification) | Audited short workflow and a separate two-seed, 1,000-slot comparison |
+| [Earlier evaluation](results/final_evaluation) | Saved comparisons from the earlier simulator |
 
-The included current-model verification covers the short workflow and a
-two-seed, 1,000-slot normalized synthetic comparison at channel volatility
-`sigma = 0.45`. The original November 20 production output files described in
-the branch history were absent from the GitHub branches. A new full run
-produces the complete set of outputs for the current model.
+In the normalized synthetic sweep, adaptive margins on all forecasts lowered
+weighted cost relative to nominal MPC in the 0.6 J harvest regime at channel
+volatilities 0.45 and 0.80. At 1.2 J and volatility 0.80, the same policy
+increased cost. Each comparison uses ten matched seeds. See the
+[synthetic comparisons](report_results/report_figures/main/01_normalized_cost_rejection.pdf)
+and the [results notes](report_results/report_figures/FINDINGS.md) for
+differences, paired intervals and interpretation.
 
-In the included 1,000-slot check, the policy with adaptive margins on all
-forecasts lowered mean weighted cost by 4.2% relative to nominal MPC at 0.6 J
-mean harvest. At 1.2 J, its cost was 0.5% higher. Each comparison uses two
-matched seeds, so these differences describe the included runs.
+The submitted production results include the saved run-level data. The full
+launcher additionally generates per-slot and per-packet records and offline
+plans, which are much larger. The verification runs include their raw records
+for auditing examples.
 
 A generated study directory contains `settings.json`, a run matrix,
 `per_seed.csv` or `per_window.csv`, aggregate and paired comparison tables, and

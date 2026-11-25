@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "trajectories": 300,
+  "checks": "complete configured policy matrix; exact consecutive windows, manifest and pairwise overlap reconstruction; generated channel, uniform 0..10 arrivals and source-specific harvest match",
+  "overlapping_pairs_by_source": {
+    "arco": 0,
+    "umass_home_c": 0,
+    "nrel_tmy3": 9
+  },
+  "prior_window_files_checked": [
+    "results/proposal_final/per_window.csv",
+    "results/proposal_consistency/per_window.csv"
+  ],
+  "earlier_study_overlap": [
+    {
+      "dataset": "arco",
+      "window": "2018-08-01 05:15:00",
+      "earlier_start": "2018-08-01 08:00:00"
+    },
+    {
+      "dataset": "nrel_tmy3",
+      "window": "tmy_hour_index_1724",
+      "earlier_start": "2664"
+    },
+    {
+      "dataset": "nrel_tmy3",
+      "window": "tmy_hour_index_1724",
+      "earlier_start": "2232"
+    },
+    {
+      "dataset": "nrel_tmy3",
+      "window": "tmy_hour_index_1724",
+      "earlier_start": "2304"
+    },
+    {
+      "dataset": "nrel_tmy3",
+      "window": "tmy_hour_index_1724",
+      "earlier_start": "2448"
+    },
+    {
+      "dataset": "nrel_tmy3",
+      "window": "tmy_hour_index_1724",
+      "earlier_start": "2376"
+    },
+    {
+      "dataset": "nrel_tmy3",
+      "window": "tmy_hour_index_1724",
+      "earlier_start": "2160"
+    },
+    {
+      "dataset": "nrel_tmy3",
+      "window": "tmy_hour_index_1724",
+      "earlier_start": "2592"
+    },
+    {
+      "dataset": "nrel_tmy3",
+      "window": "tmy_hour_index_1724",
+      "earlier_start": "2520"
+    },
+    {
+      "dataset": "nrel_tmy3",
+      "window": "tmy_hour_index_2586",
+      "earlier_start": "2664"
+    },
+    {
+      "dataset": "nrel_tmy3",
+      "window": "tmy_hour_index_2586",
+      "earlier_start": "2736"
+    },
+    {
+      "dataset": "nrel_tmy3",
+      "window": "tmy_hour_index_2586",
+      "earlier_start": "2592"
+    },
+    {
+      "dataset": "nrel_tmy3",
+      "window": "tmy_hour_index_2586",
+      "earlier_start": "2808"
+    },
+    {
+      "dataset": "nrel_tmy3",
+      "window": "tmy_hour_index_3448",
+      "earlier_start": "4104"
+    },
+    {
+      "dataset": "nrel_tmy3",
+      "window": "tmy_hour_index_3448",
+      "earlier_start": "4176"
+    },
+    {
+      "dataset": "nrel_tmy3",
+      "window": "tmy_hour_index_3448",
+      "earlier_start": "4032"
+    },
+    {
+      "dataset": "nrel_tmy3",
+      "window": "tmy_hour_index_3448",
+      "earlier_start": "4248"
+    },
+    {
+      "dataset": "umass_home_c",
+      "window": "2011-07-30 00:00:00+00:00",
+      "earlier_start": "2011-07-30 08:00:00+00:00"
+    }
+  ],
+  "scope": "shared source observations/sites/seasons; scenario intervals approximate/descriptive, not independent slot repetitions; action audit recorded separately"
+}

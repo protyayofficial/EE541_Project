@@ -1,0 +1,228 @@
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6000, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6000, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6000, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6000, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6000, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6000, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6001, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6001, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6001, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6001, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6001, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6001, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6002, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6002, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6002, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6002, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6002, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6002, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6003, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6003, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6003, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6003, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6003, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6003, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6004, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6004, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6004, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6004, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6004, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6004, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6005, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6005, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6005, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6005, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6005, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6005, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6006, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6006, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6006, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6006, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6006, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6006, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6007, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6007, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6007, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6007, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6007, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6007, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6008, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6008, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6008, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6008, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6008, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6008, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6009, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6009, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6009, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6009, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6009, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 0.6, 'seed': 6009, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6000, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6000, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6000, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6000, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6000, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6000, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6001, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6001, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6001, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6001, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6001, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6001, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6002, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6002, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6002, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6002, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6002, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6002, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6003, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6003, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6003, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6003, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6003, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6003, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6004, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6004, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6004, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6004, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6004, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6004, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6005, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6005, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6005, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6005, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6005, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6005, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6006, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6006, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6006, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6006, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6006, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6006, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6007, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6007, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6007, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6007, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6007, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6007, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6008, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6008, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6008, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6008, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6008, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6008, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6009, 'mode': 'nominal', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6009, 'mode': 'nominal', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6009, 'mode': 'nominal', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6009, 'mode': 'adaptive_all', 'study_value': 0.15, 'energy_weight': 0.15, 'forecast_perturbation': 0.0}
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6009, 'mode': 'adaptive_all', 'study_value': 15.0, 'energy_weight': 15.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+{'study': 'delay_energy', 'harvest_mean': 1.2, 'seed': 6009, 'mode': 'adaptive_all', 'study_value': 150.0, 'energy_weight': 150.0, 'forecast_perturbation': 0.0}
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(

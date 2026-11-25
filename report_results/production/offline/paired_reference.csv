@@ -1,0 +1,601 @@
+dataset,window,seed,channel_sigma,mode,online_cost,offline_objective,online_minus_offline,offline_status,reference_kind
+synthetic,harvest_0.6_sigma_0.2,6000,0.2,greedy,21190.376718059477,16665.704018534965,4524.672699524512,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6000,0.2,nominal,21190.376718059477,16665.704018534965,4524.672699524512,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6000,0.2,fixed_margin,21190.376718059477,16665.704018534965,4524.672699524512,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6000,0.2,adaptive_harvest,21190.376718059477,16665.704018534965,4524.672699524512,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6000,0.2,adaptive_all,21190.376718059477,16665.704018534965,4524.672699524512,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6001,0.2,greedy,31328.30478865225,21442.71209610215,9885.5926925501,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6001,0.2,nominal,31328.30478865225,21442.71209610215,9885.5926925501,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6001,0.2,fixed_margin,31328.30478865225,21442.71209610215,9885.5926925501,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6001,0.2,adaptive_harvest,31328.30478865225,21442.71209610215,9885.5926925501,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6001,0.2,adaptive_all,31328.30478865225,21442.71209610215,9885.5926925501,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6002,0.2,greedy,30648.00971906662,21496.83511773727,9151.174601329349,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6002,0.2,nominal,30648.00971906662,21496.83511773727,9151.174601329349,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6002,0.2,fixed_margin,30648.00971906662,21496.83511773727,9151.174601329349,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6002,0.2,adaptive_harvest,30550.012134235487,21496.83511773727,9053.177016498215,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6002,0.2,adaptive_all,30648.00971906662,21496.83511773727,9151.174601329349,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6003,0.2,greedy,25928.922446270364,19759.26502586208,6169.657420408283,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6003,0.2,nominal,25928.922446270364,19759.26502586208,6169.657420408283,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6003,0.2,fixed_margin,25928.922446270364,19759.26502586208,6169.657420408283,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6003,0.2,adaptive_harvest,25928.922446270364,19759.26502586208,6169.657420408283,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6003,0.2,adaptive_all,25928.922446270364,19759.26502586208,6169.657420408283,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6004,0.2,greedy,34908.731249715485,23246.282502677474,11662.448747038012,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6004,0.2,nominal,34908.731249715485,23246.282502677474,11662.448747038012,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6004,0.2,fixed_margin,34908.731249715485,23246.282502677474,11662.448747038012,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6004,0.2,adaptive_harvest,34908.731249715485,23246.282502677474,11662.448747038012,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6004,0.2,adaptive_all,34908.731249715485,23246.282502677474,11662.448747038012,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6005,0.2,greedy,24661.6303763617,18783.289414071896,5878.340962289803,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6005,0.2,nominal,24661.6303763617,18783.289414071896,5878.340962289803,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6005,0.2,fixed_margin,24661.6303763617,18783.289414071896,5878.340962289803,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6005,0.2,adaptive_harvest,24661.6303763617,18783.289414071896,5878.340962289803,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6005,0.2,adaptive_all,24661.6303763617,18783.289414071896,5878.340962289803,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6006,0.2,greedy,18559.402424069744,15133.228886956455,3426.173537113289,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6006,0.2,nominal,18559.402424069744,15133.228886956455,3426.173537113289,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6006,0.2,fixed_margin,18559.402424069744,15133.228886956455,3426.173537113289,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6006,0.2,adaptive_harvest,18559.402424069744,15133.228886956455,3426.173537113289,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6006,0.2,adaptive_all,18559.402424069744,15133.228886956455,3426.173537113289,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6007,0.2,greedy,33950.84247170698,21362.962824276965,12587.879647430014,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6007,0.2,nominal,33501.83438037291,21362.962824276965,12138.871556095943,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6007,0.2,fixed_margin,33950.84247170698,21362.962824276965,12587.879647430014,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6007,0.2,adaptive_harvest,32979.83961615843,21362.962824276965,11616.876791881466,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6007,0.2,adaptive_all,33268.83963245517,21362.962824276965,11905.876808178207,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6008,0.2,greedy,28133.737312728877,20765.34047190723,7368.396840821646,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6008,0.2,nominal,28133.737312728877,20765.34047190723,7368.396840821646,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6008,0.2,fixed_margin,28133.737312728877,20765.34047190723,7368.396840821646,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6008,0.2,adaptive_harvest,28133.737312728877,20765.34047190723,7368.396840821646,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6008,0.2,adaptive_all,28133.737312728877,20765.34047190723,7368.396840821646,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6009,0.2,greedy,24016.507481476714,18794.816747373894,5221.69073410282,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6009,0.2,nominal,24016.507481476714,18794.816747373894,5221.69073410282,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6009,0.2,fixed_margin,24016.507481476714,18794.816747373894,5221.69073410282,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6009,0.2,adaptive_harvest,24016.507481476714,18794.816747373894,5221.69073410282,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.2,6009,0.2,adaptive_all,24016.507481476714,18794.816747373894,5221.69073410282,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6000,0.45,greedy,41581.01885181197,21127.993620501256,20453.025231310712,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6000,0.45,nominal,38603.000414829694,21127.993620501256,17475.006794328438,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6000,0.45,fixed_margin,38114.00591575621,21127.993620501256,16986.01229525495,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6000,0.45,adaptive_harvest,36687.50759077201,21127.993620501256,15559.513970270753,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6000,0.45,adaptive_all,36337.92033868549,21127.993620501256,15209.926718184237,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6001,0.45,greedy,44944.67325400964,25420.695644954736,19523.977609054906,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6001,0.45,nominal,43781.52996076414,25420.695644954736,18360.834315809407,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6001,0.45,fixed_margin,43341.45862558279,25420.695644954736,17920.762980628053,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6001,0.45,adaptive_harvest,42854.0545932427,25420.695644954736,17433.35894828796,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6001,0.45,adaptive_all,42567.40763318541,25420.695644954736,17146.711988230672,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6002,0.45,greedy,50582.6728413473,28491.885107772112,22090.78773357519,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6002,0.45,nominal,48065.67517464156,28491.885107772112,19573.79006686945,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6002,0.45,fixed_margin,46886.675977502055,28491.885107772112,18394.790869729943,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6002,0.45,adaptive_harvest,46050.36618216076,28491.885107772112,17558.48107438865,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6002,0.45,adaptive_all,45597.672861341336,28491.885107772112,17105.787753569224,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6003,0.45,greedy,39920.042907130664,23875.241165221163,16044.801741909501,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6003,0.45,nominal,38112.019466816564,23875.241165221163,14236.778301595401,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6003,0.45,fixed_margin,37292.98181146442,23875.241165221163,13417.74064624326,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6003,0.45,adaptive_harvest,38341.02925976147,23875.241165221163,14465.788094540305,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6003,0.45,adaptive_all,36467.89464323048,23875.241165221163,12592.653478009317,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6004,0.45,greedy,41943.820348994144,25060.159534424278,16883.660814569866,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6004,0.45,nominal,40505.789167466886,25060.159534424278,15445.629633042608,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6004,0.45,fixed_margin,39798.75564336552,25060.159534424278,14738.596108941241,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6004,0.45,adaptive_harvest,40719.19923672671,25060.159534424278,15659.03970230243,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6004,0.45,adaptive_all,39712.51941337528,25060.159534424278,14652.359878951003,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6005,0.45,greedy,45030.049031246475,24161.17980372892,20868.869227517556,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6005,0.45,nominal,42263.05035218701,24161.17980372892,18101.870548458093,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6005,0.45,fixed_margin,41095.04609769732,24161.17980372892,16933.8662939684,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6005,0.45,adaptive_harvest,40487.859204678985,24161.17980372892,16326.679400950066,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6005,0.45,adaptive_all,40167.950495575606,24161.17980372892,16006.770691846687,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6006,0.45,greedy,32960.36268853885,17768.562147130328,15191.800541408524,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6006,0.45,nominal,31330.202176703526,17768.562147130328,13561.640029573198,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6006,0.45,fixed_margin,30859.201276166958,17768.562147130328,13090.63912903663,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6006,0.45,adaptive_harvest,29623.671220394317,17768.562147130328,11855.10907326399,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6006,0.45,adaptive_all,30327.12018911606,17768.562147130328,12558.558041985732,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6007,0.45,greedy,63556.11829006532,32971.974606818665,30584.143683246657,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6007,0.45,nominal,58966.00878544514,32971.974606818665,25994.034178626476,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6007,0.45,fixed_margin,58145.85475321851,32971.974606818665,25173.880146399846,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6007,0.45,adaptive_harvest,55956.00802426773,32971.974606818665,22984.033417449064,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6007,0.45,adaptive_all,56024.78893394628,32971.974606818665,23052.814327127613,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6008,0.45,greedy,43831.99945156589,23820.34948001367,20011.649971552222,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6008,0.45,nominal,42319.00005573755,23820.34948001367,18498.650575723885,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6008,0.45,fixed_margin,41317.99711774355,23820.34948001367,17497.647637729882,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6008,0.45,adaptive_harvest,40232.598000568396,23820.34948001367,16412.248520554727,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6008,0.45,adaptive_all,39423.00681614937,23820.34948001367,15602.6573361357,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6009,0.45,greedy,49708.49372867992,23713.589918527763,25994.903810152155,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6009,0.45,nominal,46902.490425288895,23713.589918527763,23188.900506761132,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6009,0.45,fixed_margin,44847.456230173884,23713.589918527763,21133.86631164612,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6009,0.45,adaptive_harvest,41478.36789832286,23713.589918527763,17764.777979795097,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.45,6009,0.45,adaptive_all,42559.45181331956,23713.589918527763,18845.861894791797,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6000,0.8,greedy,82468.14752550006,43592.84418926503,38875.303336235025,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6000,0.8,nominal,74067.16254631111,43592.84418926503,30474.318357046082,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6000,0.8,fixed_margin,69792.1715510857,43592.84418926503,26199.327361820673,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6000,0.8,adaptive_harvest,72943.12788230943,43592.84418926503,29350.283693044403,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6000,0.8,adaptive_all,69433.16606603253,43592.84418926503,25840.3218767675,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6001,0.8,greedy,86588.79893497648,45390.14416023194,41198.654774744544,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6001,0.8,nominal,78652.7758019798,45390.14416023194,33262.63164174787,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6001,0.8,fixed_margin,73840.79176578726,45390.14416023194,28450.64760555532,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6001,0.8,adaptive_harvest,77016.76253871903,45390.14416023194,31626.618378487095,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6001,0.8,adaptive_all,73896.78213209014,45390.14416023194,28506.637971858203,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6002,0.8,greedy,93111.6421734341,51517.944048590194,41593.698124843904,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6002,0.8,nominal,85159.57491551747,51517.944048590194,33641.63086692728,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6002,0.8,fixed_margin,79728.45173224261,51517.944048590194,28210.507683652417,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6002,0.8,adaptive_harvest,82917.04528189196,51517.944048590194,31399.101233301764,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6002,0.8,adaptive_all,81700.30819791657,51517.944048590194,30182.36414932638,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6003,0.8,greedy,78114.16938815585,41657.95540004281,36456.213988113035,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6003,0.8,nominal,71881.14325724174,41657.95540004281,30223.18785719893,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6003,0.8,fixed_margin,65904.18141804513,41657.95540004281,24246.226018002322,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6003,0.8,adaptive_harvest,68828.15043252725,41657.95540004281,27170.195032484444,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6003,0.8,adaptive_all,66736.15321346125,41657.95540004281,25078.19781341844,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6004,0.8,greedy,82621.09044466286,44774.05426268253,37847.03618198032,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6004,0.8,nominal,76571.11628263793,44774.05426268253,31797.062019955396,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6004,0.8,fixed_margin,72425.08846082009,44774.05426268253,27651.034198137553,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6004,0.8,adaptive_harvest,75530.09083072984,44774.05426268253,30756.036568047304,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6004,0.8,adaptive_all,74044.08321402964,44774.05426268253,29270.028951347107,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6005,0.8,greedy,83371.05123486272,44139.363499144805,39231.68773571792,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6005,0.8,nominal,76077.04649014049,44139.363499144805,31937.682990995687,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6005,0.8,fixed_margin,71668.04273168244,44139.363499144805,27528.67923253763,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6005,0.8,adaptive_harvest,75117.04712718177,44139.363499144805,30977.68362803696,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6005,0.8,adaptive_all,73498.03949225607,44139.363499144805,29358.67599311126,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6006,0.8,greedy,75280.76477153084,38021.890000903775,37258.874770627066,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6006,0.8,nominal,69422.74272073952,38021.890000903775,31400.852719835748,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6006,0.8,fixed_margin,63950.757709776575,38021.890000903775,25928.8677088728,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6006,0.8,adaptive_harvest,66485.54526407723,38021.890000903775,28463.655263173452,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6006,0.8,adaptive_all,64700.76100874985,38021.890000903775,26678.87100784607,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6007,0.8,greedy,104509.48773455415,57072.17721595376,47437.31051860039,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6007,0.8,nominal,94582.36454812127,57072.17721595376,37510.187332167516,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6007,0.8,fixed_margin,89693.40980179938,57072.17721595376,32621.232585845624,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6007,0.8,adaptive_harvest,93377.99665371556,57072.17721595376,36305.8194377618,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6007,0.8,adaptive_all,89564.30960714657,57072.17721595376,32492.132391192812,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6008,0.8,greedy,85799.86552055596,46225.54743296964,39574.318087586325,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6008,0.8,nominal,78886.789329955,46225.54743296964,32661.241896985368,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6008,0.8,fixed_margin,75364.50617004509,46225.54743296964,29138.958737075453,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6008,0.8,adaptive_harvest,79234.02692166487,46225.54743296964,33008.47948869524,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6008,0.8,adaptive_all,74615.35448610119,46225.54743296964,28389.807053131553,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6009,0.8,greedy,90065.59253005784,47294.45436577705,42771.13816428079,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6009,0.8,nominal,83021.51467249778,47294.45436577705,35727.060306720734,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6009,0.8,fixed_margin,77088.5396430824,47294.45436577705,29794.085277305356,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6009,0.8,adaptive_harvest,80643.49888629276,47294.45436577705,33349.04452051571,optimal,deterministic_expected_goodput
+synthetic,harvest_0.6_sigma_0.8,6009,0.8,adaptive_all,76928.60751975245,47294.45436577705,29634.1531539754,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6000,0.2,greedy,21190.376718059477,16665.704013735383,4524.6727043240935,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6000,0.2,nominal,21190.376718059477,16665.704013735383,4524.6727043240935,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6000,0.2,fixed_margin,21190.376718059477,16665.704013735383,4524.6727043240935,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6000,0.2,adaptive_harvest,21190.376718059477,16665.704013735383,4524.6727043240935,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6000,0.2,adaptive_all,21190.376718059477,16665.704013735383,4524.6727043240935,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6001,0.2,greedy,31328.30478865225,21442.71206697177,9885.592721680481,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6001,0.2,nominal,31328.30478865225,21442.71206697177,9885.592721680481,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6001,0.2,fixed_margin,31328.30478865225,21442.71206697177,9885.592721680481,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6001,0.2,adaptive_harvest,31328.30478865225,21442.71206697177,9885.592721680481,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6001,0.2,adaptive_all,31328.30478865225,21442.71206697177,9885.592721680481,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6002,0.2,greedy,28868.559526204084,21322.177060288504,7546.38246591558,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6002,0.2,nominal,28868.559526204084,21322.177060288504,7546.38246591558,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6002,0.2,fixed_margin,28868.559526204084,21322.177060288504,7546.38246591558,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6002,0.2,adaptive_harvest,28868.559526204084,21322.177060288504,7546.38246591558,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6002,0.2,adaptive_all,28868.559526204084,21322.177060288504,7546.38246591558,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6003,0.2,greedy,25928.922446270364,19759.265023922875,6169.657422347489,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6003,0.2,nominal,25928.922446270364,19759.265023922875,6169.657422347489,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6003,0.2,fixed_margin,25928.922446270364,19759.265023922875,6169.657422347489,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6003,0.2,adaptive_harvest,25928.922446270364,19759.265023922875,6169.657422347489,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6003,0.2,adaptive_all,25928.922446270364,19759.265023922875,6169.657422347489,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6004,0.2,greedy,34908.731249715485,23246.282510176774,11662.448739538711,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6004,0.2,nominal,34908.731249715485,23246.282510176774,11662.448739538711,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6004,0.2,fixed_margin,34908.731249715485,23246.282510176774,11662.448739538711,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6004,0.2,adaptive_harvest,34908.731249715485,23246.282510176774,11662.448739538711,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6004,0.2,adaptive_all,34908.731249715485,23246.282510176774,11662.448739538711,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6005,0.2,greedy,24661.6303763617,18783.28942067969,5878.340955682012,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6005,0.2,nominal,24661.6303763617,18783.28942067969,5878.340955682012,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6005,0.2,fixed_margin,24661.6303763617,18783.28942067969,5878.340955682012,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6005,0.2,adaptive_harvest,24661.6303763617,18783.28942067969,5878.340955682012,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6005,0.2,adaptive_all,24661.6303763617,18783.28942067969,5878.340955682012,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6006,0.2,greedy,18559.402424069744,15133.22887967536,3426.1735443943835,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6006,0.2,nominal,18559.402424069744,15133.22887967536,3426.1735443943835,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6006,0.2,fixed_margin,18559.402424069744,15133.22887967536,3426.1735443943835,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6006,0.2,adaptive_harvest,18559.402424069744,15133.22887967536,3426.1735443943835,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6006,0.2,adaptive_all,18559.402424069744,15133.22887967536,3426.1735443943835,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6007,0.2,greedy,28958.662163393477,20714.24065048372,8244.421512909757,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6007,0.2,nominal,28958.662163393477,20714.24065048372,8244.421512909757,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6007,0.2,fixed_margin,28958.662163393477,20714.24065048372,8244.421512909757,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6007,0.2,adaptive_harvest,28958.662163393477,20714.24065048372,8244.421512909757,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6007,0.2,adaptive_all,28958.662163393477,20714.24065048372,8244.421512909757,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6008,0.2,greedy,28133.737312728877,20765.340854404414,7368.396458324463,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6008,0.2,nominal,28133.737312728877,20765.340854404414,7368.396458324463,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6008,0.2,fixed_margin,28133.737312728877,20765.340854404414,7368.396458324463,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6008,0.2,adaptive_harvest,28133.737312728877,20765.340854404414,7368.396458324463,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6008,0.2,adaptive_all,28133.737312728877,20765.340854404414,7368.396458324463,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6009,0.2,greedy,24016.507481476714,18794.816722219213,5221.690759257501,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6009,0.2,nominal,24016.507481476714,18794.816722219213,5221.690759257501,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6009,0.2,fixed_margin,24016.507481476714,18794.816722219213,5221.690759257501,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6009,0.2,adaptive_harvest,24016.507481476714,18794.816722219213,5221.690759257501,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.2,6009,0.2,adaptive_all,24016.507481476714,18794.816722219213,5221.690759257501,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6000,0.45,greedy,21209.68713594667,16684.88049262681,4524.806643319862,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6000,0.45,nominal,21209.68713594667,16684.88049262681,4524.806643319862,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6000,0.45,fixed_margin,21209.68713594667,16684.88049262681,4524.806643319862,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6000,0.45,adaptive_harvest,21209.68713594667,16684.88049262681,4524.806643319862,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6000,0.45,adaptive_all,21209.68713594667,16684.88049262681,4524.806643319862,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6001,0.45,greedy,31529.962510835252,21510.301020194333,10019.66149064092,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6001,0.45,nominal,31566.933530177845,21510.301020194333,10056.632509983512,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6001,0.45,fixed_margin,31564.882456521376,21510.301020194333,10054.581436327044,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6001,0.45,adaptive_harvest,31990.492101026182,21510.301020194333,10480.19108083185,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6001,0.45,adaptive_all,31850.586486889748,21510.301020194333,10340.285466695415,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6002,0.45,greedy,28922.457777839452,21349.06459824437,7573.393179595081,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6002,0.45,nominal,28922.457777839452,21349.06459824437,7573.393179595081,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6002,0.45,fixed_margin,29006.348311205795,21349.06459824437,7657.283712961424,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6002,0.45,adaptive_harvest,29523.6955095083,21349.06459824437,8174.630911263928,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6002,0.45,adaptive_all,29490.724928366937,21349.06459824437,8141.660330122566,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6003,0.45,greedy,26005.95997887387,19794.59082939226,6211.369149481612,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6003,0.45,nominal,26005.95997887387,19794.59082939226,6211.369149481612,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6003,0.45,fixed_margin,26005.95997887387,19794.59082939226,6211.369149481612,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6003,0.45,adaptive_harvest,26005.95997887387,19794.59082939226,6211.369149481612,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6003,0.45,adaptive_all,26005.95997887387,19794.59082939226,6211.369149481612,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6004,0.45,greedy,34923.70539596639,23261.11931446106,11662.586081505331,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6004,0.45,nominal,34923.70539596639,23261.11931446106,11662.586081505331,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6004,0.45,fixed_margin,34923.70539596639,23261.11931446106,11662.586081505331,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6004,0.45,adaptive_harvest,34923.70539596639,23261.11931446106,11662.586081505331,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6004,0.45,adaptive_all,34958.64582399617,23261.11931446106,11697.526509535113,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6005,0.45,greedy,24679.941041210197,18801.168361999273,5878.772679210924,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6005,0.45,nominal,24679.941041210197,18801.168361999273,5878.772679210924,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6005,0.45,fixed_margin,24679.941041210197,18801.168361999273,5878.772679210924,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6005,0.45,adaptive_harvest,24679.941041210197,18801.168361999273,5878.772679210924,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6005,0.45,adaptive_all,24679.941041210197,18801.168361999273,5878.772679210924,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6006,0.45,greedy,18576.73703093084,15150.08687880821,3426.650152122629,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6006,0.45,nominal,18576.73703093084,15150.08687880821,3426.650152122629,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6006,0.45,fixed_margin,18576.73703093084,15150.08687880821,3426.650152122629,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6006,0.45,adaptive_harvest,18576.73703093084,15150.08687880821,3426.650152122629,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6006,0.45,adaptive_all,18576.73703093084,15150.08687880821,3426.650152122629,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6007,0.45,greedy,29155.73740734429,20800.252943231906,8355.484464112385,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6007,0.45,nominal,29155.73740734429,20800.252943231906,8355.484464112385,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6007,0.45,fixed_margin,29155.73740734429,20800.252943231906,8355.484464112385,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6007,0.45,adaptive_harvest,29699.32821016479,20800.252943231906,8899.075266932883,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6007,0.45,adaptive_all,29742.2491859271,20800.252943231906,8941.996242695193,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6008,0.45,greedy,28228.871038705936,20791.45474138184,7437.416297324096,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6008,0.45,nominal,28228.871038705936,20791.45474138184,7437.416297324096,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6008,0.45,fixed_margin,28228.871038705936,20791.45474138184,7437.416297324096,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6008,0.45,adaptive_harvest,28228.871038705936,20791.45474138184,7437.416297324096,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6008,0.45,adaptive_all,28228.871038705936,20791.45474138184,7437.416297324096,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6009,0.45,greedy,24080.309614942817,18820.15875847656,5260.150856466258,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6009,0.45,nominal,24080.309614942817,18820.15875847656,5260.150856466258,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6009,0.45,fixed_margin,24080.309614942817,18820.15875847656,5260.150856466258,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6009,0.45,adaptive_harvest,24167.064552651344,18820.15875847656,5346.905794174785,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.45,6009,0.45,adaptive_all,24148.099437168814,18820.15875847656,5327.9406786922555,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6000,0.8,greedy,33318.3477538907,21411.430529903777,11906.917223986926,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6000,0.8,nominal,32507.82759594643,21411.430529903777,11096.397066042653,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6000,0.8,fixed_margin,33240.34153428035,21411.430529903777,11828.911004376572,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6000,0.8,adaptive_harvest,33822.14357576327,21411.430529903777,12410.713045859495,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6000,0.8,adaptive_all,33589.2561423184,21411.430529903777,12177.825612414625,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6001,0.8,greedy,40492.8717087282,25971.203827771013,14521.667880957186,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6001,0.8,nominal,39833.62425920493,25971.203827771013,13862.420431433919,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6001,0.8,fixed_margin,40125.961449770955,25971.203827771013,14154.757621999943,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6001,0.8,adaptive_harvest,42217.399269177535,25971.203827771013,16246.195441406522,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6001,0.8,adaptive_all,42405.69549880581,25971.203827771013,16434.4916710348,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6002,0.8,greedy,43045.82083010123,28345.55453640912,14700.266293692108,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6002,0.8,nominal,42480.50268173657,28345.55453640912,14134.948145327453,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6002,0.8,fixed_margin,43019.57994390505,28345.55453640912,14674.025407495934,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6002,0.8,adaptive_harvest,44505.7623421677,28345.55453640912,16160.207805758579,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6002,0.8,adaptive_all,44203.16724721184,28345.55453640912,15857.612710802718,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6003,0.8,greedy,35903.516152227116,24441.946528681907,11461.569623545209,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6003,0.8,nominal,35400.01962666487,24441.946528681907,10958.073097982964,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6003,0.8,fixed_margin,35865.86596636342,24441.946528681907,11423.91943768151,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6003,0.8,adaptive_harvest,37882.80450702415,24441.946528681907,13440.857978342243,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6003,0.8,adaptive_all,38290.95100459949,24441.946528681907,13849.004475917583,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6004,0.8,greedy,41634.75509938867,26264.97845533152,15369.77664405715,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6004,0.8,nominal,41584.872613487874,26264.97845533152,15319.894158156356,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6004,0.8,fixed_margin,41662.61346071265,26264.97845533152,15397.635005381133,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6004,0.8,adaptive_harvest,43903.25302822951,26264.97845533152,17638.274572897993,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6004,0.8,adaptive_all,43253.479817347084,26264.97845533152,16988.501362015566,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6005,0.8,greedy,35382.44506193746,23917.442908993107,11465.002152944355,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6005,0.8,nominal,34772.04505000343,23917.442908993107,10854.60214101032,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6005,0.8,fixed_margin,35100.573368918536,23917.442908993107,11183.130459925429,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6005,0.8,adaptive_harvest,36936.41178855563,23917.442908993107,13018.968879562526,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6005,0.8,adaptive_all,36625.10507116942,23917.442908993107,12707.662162176312,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6006,0.8,greedy,27369.17727764928,18830.694486438362,8538.482791210918,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6006,0.8,nominal,26739.70196256489,18830.694486438362,7909.007476126528,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6006,0.8,fixed_margin,26663.422122057018,18830.694486438362,7832.727635618656,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6006,0.8,adaptive_harvest,28447.71193981357,18830.694486438362,9617.017453375207,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6006,0.8,adaptive_all,28635.380717391286,18830.694486438362,9804.686230952924,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6007,0.8,greedy,50759.861868836095,30130.148336275935,20629.71353256016,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6007,0.8,nominal,48628.33205615999,30130.148336275935,18498.183719884055,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6007,0.8,fixed_margin,49487.05865829525,30130.148336275935,19356.910322019317,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6007,0.8,adaptive_harvest,49802.82140502276,30130.148336275935,19672.673068746826,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6007,0.8,adaptive_all,49400.5374084824,30130.148336275935,19270.389072206464,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6008,0.8,greedy,37820.77141217851,24778.655861217067,13042.115550961444,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6008,0.8,nominal,37362.57511848552,24778.655861217067,12583.919257268451,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6008,0.8,fixed_margin,37264.60013913698,24778.655861217067,12485.944277919913,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6008,0.8,adaptive_harvest,39118.445982343204,24778.655861217067,14339.790121126138,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6008,0.8,adaptive_all,38765.899762485584,24778.655861217067,13987.243901268517,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6009,0.8,greedy,34366.038513631196,23141.117534955814,11224.920978675382,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6009,0.8,nominal,33878.96854967744,23141.117534955814,10737.851014721626,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6009,0.8,fixed_margin,34304.52447197357,23141.117534955814,11163.406937017757,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6009,0.8,adaptive_harvest,36456.690715443205,23141.117534955814,13315.57318048739,optimal,deterministic_expected_goodput
+synthetic,harvest_1.2_sigma_0.8,6009,0.8,adaptive_all,35405.05981395497,23141.117534955814,12263.942278999155,optimal,deterministic_expected_goodput
+arco,2018-08-01 05:15:00,7000,0.45,fixed,100463.63695,58784.39270128308,41679.24424871692,optimal,deterministic_expected_goodput
+arco,2018-08-01 05:15:00,7000,0.45,channel,118053.9211,58784.39270128308,59269.528398716924,optimal,deterministic_expected_goodput
+arco,2018-08-01 05:15:00,7000,0.45,greedy,85409.27571101104,58784.39270128308,26624.883009727957,optimal,deterministic_expected_goodput
+arco,2018-08-01 05:15:00,7000,0.45,nominal,84496.0641412753,58784.39270128308,25711.67143999222,optimal,deterministic_expected_goodput
+arco,2018-08-01 05:15:00,7000,0.45,fixed_margin,84589.15451427743,58784.39270128308,25804.761812994344,optimal,deterministic_expected_goodput
+arco,2018-08-01 05:15:00,7000,0.45,adaptive_harvest,84012.06445312589,58784.39270128308,25227.671751842805,optimal,deterministic_expected_goodput
+arco,2018-08-01 05:15:00,7000,0.45,adaptive_all,84400.27413068681,58784.39270128308,25615.88142940373,optimal,deterministic_expected_goodput
+arco,2018-08-01 05:15:00,7000,0.45,fixed_fraction,100074.36055168115,58784.39270128308,41289.96785039807,optimal,deterministic_expected_goodput
+arco,2018-08-01 05:15:00,7000,0.45,adaptive_channel,84938.2760430733,58784.39270128308,26153.88334179022,optimal,deterministic_expected_goodput
+arco,2018-08-01 05:15:00,7000,0.45,adaptive_arrival,84393.06348193028,58784.39270128308,25608.670780647197,optimal,deterministic_expected_goodput
+arco,2018-08-05 08:43:00,7001,0.45,fixed,100323.581,66375.50829001599,33948.072709984015,optimal,deterministic_expected_goodput
+arco,2018-08-05 08:43:00,7001,0.45,channel,121290.83295,66375.50829001599,54915.324659984006,optimal,deterministic_expected_goodput
+arco,2018-08-05 08:43:00,7001,0.45,greedy,90499.96990302885,66375.50829001599,24124.461613012856,optimal,deterministic_expected_goodput
+arco,2018-08-05 08:43:00,7001,0.45,nominal,90188.92146116206,66375.50829001599,23813.413171146065,optimal,deterministic_expected_goodput
+arco,2018-08-05 08:43:00,7001,0.45,fixed_margin,90631.7435583441,66375.50829001599,24256.235268328106,optimal,deterministic_expected_goodput
+arco,2018-08-05 08:43:00,7001,0.45,adaptive_harvest,90205.91521220196,66375.50829001599,23830.406922185968,optimal,deterministic_expected_goodput
+arco,2018-08-05 08:43:00,7001,0.45,adaptive_all,90477.87095969364,66375.50829001599,24102.36266967765,optimal,deterministic_expected_goodput
+arco,2018-08-05 08:43:00,7001,0.45,fixed_fraction,100100.29732605726,66375.50829001599,33724.78903604127,optimal,deterministic_expected_goodput
+arco,2018-08-05 08:43:00,7001,0.45,adaptive_channel,90535.92131367985,66375.50829001599,24160.41302366386,optimal,deterministic_expected_goodput
+arco,2018-08-05 08:43:00,7001,0.45,adaptive_arrival,90234.94019468405,66375.50829001599,23859.43190466806,optimal,deterministic_expected_goodput
+arco,2018-08-11 07:31:00,7002,0.45,fixed,87255.147,52555.94300950231,34699.203990497685,optimal,deterministic_expected_goodput
+arco,2018-08-11 07:31:00,7002,0.45,channel,105302.8484,52555.94300950231,52746.90539049769,optimal,deterministic_expected_goodput
+arco,2018-08-11 07:31:00,7002,0.45,greedy,74896.3041366702,52555.94300950231,22340.361127167882,optimal,deterministic_expected_goodput
+arco,2018-08-11 07:31:00,7002,0.45,nominal,74575.29383783802,52555.94300950231,22019.350828335708,optimal,deterministic_expected_goodput
+arco,2018-08-11 07:31:00,7002,0.45,fixed_margin,74902.2365357306,52555.94300950231,22346.293526228284,optimal,deterministic_expected_goodput
+arco,2018-08-11 07:31:00,7002,0.45,adaptive_harvest,74719.29319978427,52555.94300950231,22163.350190281955,optimal,deterministic_expected_goodput
+arco,2018-08-11 07:31:00,7002,0.45,adaptive_all,74895.30425248433,52555.94300950231,22339.36124298202,optimal,deterministic_expected_goodput
+arco,2018-08-11 07:31:00,7002,0.45,fixed_fraction,87331.30125039865,52555.94300950231,34775.35824089634,optimal,deterministic_expected_goodput
+arco,2018-08-11 07:31:00,7002,0.45,adaptive_channel,74895.30425248433,52555.94300950231,22339.36124298202,optimal,deterministic_expected_goodput
+arco,2018-08-11 07:31:00,7002,0.45,adaptive_arrival,74733.2924695164,52555.94300950231,22177.349460014084,optimal,deterministic_expected_goodput
+arco,2018-09-17 15:25:00,7003,0.45,fixed,171153.31315,129991.29976314258,41162.01338685742,optimal,deterministic_expected_goodput
+arco,2018-09-17 15:25:00,7003,0.45,channel,174619.14895,129991.29976314258,44627.84918685742,optimal,deterministic_expected_goodput
+arco,2018-09-17 15:25:00,7003,0.45,greedy,163830.49135228095,129991.29976314258,33839.19158913837,optimal,deterministic_expected_goodput
+arco,2018-09-17 15:25:00,7003,0.45,nominal,163315.49154708223,129991.29976314258,33324.19178393965,optimal,deterministic_expected_goodput
+arco,2018-09-17 15:25:00,7003,0.45,fixed_margin,163342.49010381833,129991.29976314258,33351.19034067575,optimal,deterministic_expected_goodput
+arco,2018-09-17 15:25:00,7003,0.45,adaptive_harvest,163408.35661185771,129991.29976314258,33417.05684871513,optimal,deterministic_expected_goodput
+arco,2018-09-17 15:25:00,7003,0.45,adaptive_all,163357.25024032197,129991.29976314258,33365.95047717939,optimal,deterministic_expected_goodput
+arco,2018-09-17 15:25:00,7003,0.45,fixed_fraction,170651.8364355867,129991.29976314258,40660.53667244413,optimal,deterministic_expected_goodput
+arco,2018-09-17 15:25:00,7003,0.45,adaptive_channel,163263.48998029105,129991.29976314258,33272.19021714847,optimal,deterministic_expected_goodput
+arco,2018-09-17 15:25:00,7003,0.45,adaptive_arrival,163404.50741074668,129991.29976314258,33413.2076476041,optimal,deterministic_expected_goodput
+arco,2018-09-19 19:51:00,7004,0.45,fixed,165928.09515,131717.4108302265,34210.684319773514,optimal,deterministic_expected_goodput
+arco,2018-09-19 19:51:00,7004,0.45,channel,172029.917,131717.4108302265,40312.50616977349,optimal,deterministic_expected_goodput
+arco,2018-09-19 19:51:00,7004,0.45,greedy,162053.73825048227,131717.4108302265,30336.32742025578,optimal,deterministic_expected_goodput
+arco,2018-09-19 19:51:00,7004,0.45,nominal,161093.6698249422,131717.4108302265,29376.258994715696,optimal,deterministic_expected_goodput
+arco,2018-09-19 19:51:00,7004,0.45,fixed_margin,161263.57126008888,131717.4108302265,29546.160429862386,optimal,deterministic_expected_goodput
+arco,2018-09-19 19:51:00,7004,0.45,adaptive_harvest,161100.66808623954,131717.4108302265,29383.25725601305,optimal,deterministic_expected_goodput
+arco,2018-09-19 19:51:00,7004,0.45,adaptive_all,161123.7473579954,131717.4108302265,29406.3365277689,optimal,deterministic_expected_goodput
+arco,2018-09-19 19:51:00,7004,0.45,fixed_fraction,165147.48520241314,131717.4108302265,33430.074372186646,optimal,deterministic_expected_goodput
+arco,2018-09-19 19:51:00,7004,0.45,adaptive_channel,161151.7349187469,131717.4108302265,29434.3240885204,optimal,deterministic_expected_goodput
+arco,2018-09-19 19:51:00,7004,0.45,adaptive_arrival,161135.65747700178,131717.4108302265,29418.246646775282,optimal,deterministic_expected_goodput
+arco,2018-09-22 17:57:00,7005,0.45,fixed,183083.39465,140989.22282893138,42094.17182106862,optimal,deterministic_expected_goodput
+arco,2018-09-22 17:57:00,7005,0.45,channel,186103.4351,140989.22282893138,45114.21227106862,optimal,deterministic_expected_goodput
+arco,2018-09-22 17:57:00,7005,0.45,greedy,180126.78808086747,140989.22282893138,39137.56525193609,optimal,deterministic_expected_goodput
+arco,2018-09-22 17:57:00,7005,0.45,nominal,179409.67292662116,140989.22282893138,38420.45009768978,optimal,deterministic_expected_goodput
+arco,2018-09-22 17:57:00,7005,0.45,fixed_margin,179615.78974917452,140989.22282893138,38626.566920243145,optimal,deterministic_expected_goodput
+arco,2018-09-22 17:57:00,7005,0.45,adaptive_harvest,179377.6930517583,140989.22282893138,38388.47022282693,optimal,deterministic_expected_goodput
+arco,2018-09-22 17:57:00,7005,0.45,adaptive_all,179378.78924111548,140989.22282893138,38389.5664121841,optimal,deterministic_expected_goodput
+arco,2018-09-22 17:57:00,7005,0.45,fixed_fraction,183834.93034712513,140989.22282893138,42845.707518193754,optimal,deterministic_expected_goodput
+arco,2018-09-22 17:57:00,7005,0.45,adaptive_channel,180100.78981602323,140989.22282893138,39111.56698709185,optimal,deterministic_expected_goodput
+arco,2018-09-22 17:57:00,7005,0.45,adaptive_arrival,179340.67292225856,140989.22282893138,38351.45009332718,optimal,deterministic_expected_goodput
+arco,2018-09-25 15:57:00,7006,0.45,fixed,184882.5337,140592.82003157193,44289.71366842807,optimal,deterministic_expected_goodput
+arco,2018-09-25 15:57:00,7006,0.45,channel,185569.31195,140592.82003157193,44976.49191842807,optimal,deterministic_expected_goodput
+arco,2018-09-25 15:57:00,7006,0.45,greedy,179387.57501060434,140592.82003157193,38794.75497903241,optimal,deterministic_expected_goodput
+arco,2018-09-25 15:57:00,7006,0.45,nominal,179169.57504811007,140592.82003157193,38576.75501653814,optimal,deterministic_expected_goodput
+arco,2018-09-25 15:57:00,7006,0.45,fixed_margin,179160.5767715532,140592.82003157193,38567.75673998127,optimal,deterministic_expected_goodput
+arco,2018-09-25 15:57:00,7006,0.45,adaptive_harvest,179204.57480918267,140592.82003157193,38611.75477761074,optimal,deterministic_expected_goodput
+arco,2018-09-25 15:57:00,7006,0.45,adaptive_all,179312.57597123255,140592.82003157193,38719.75593966062,optimal,deterministic_expected_goodput
+arco,2018-09-25 15:57:00,7006,0.45,fixed_fraction,184410.84911250122,140592.82003157193,43818.02908092929,optimal,deterministic_expected_goodput
+arco,2018-09-25 15:57:00,7006,0.45,adaptive_channel,179312.57597123255,140592.82003157193,38719.75593966062,optimal,deterministic_expected_goodput
+arco,2018-09-25 15:57:00,7006,0.45,adaptive_arrival,179204.57480918267,140592.82003157193,38611.75477761074,optimal,deterministic_expected_goodput
+arco,2018-09-27 20:28:00,7007,0.45,fixed,162082.6127,130429.33732662068,31653.27537337932,optimal,deterministic_expected_goodput
+arco,2018-09-27 20:28:00,7007,0.45,channel,168380.8599,130429.33732662068,37951.522573379334,optimal,deterministic_expected_goodput
+arco,2018-09-27 20:28:00,7007,0.45,greedy,161016.46902116656,130429.33732662068,30587.131694545882,optimal,deterministic_expected_goodput
+arco,2018-09-27 20:28:00,7007,0.45,nominal,161154.37148811834,130429.33732662068,30725.034161497664,optimal,deterministic_expected_goodput
+arco,2018-09-27 20:28:00,7007,0.45,fixed_margin,160944.4733960509,130429.33732662068,30515.136069430213,optimal,deterministic_expected_goodput
+arco,2018-09-27 20:28:00,7007,0.45,adaptive_harvest,161154.37148811834,130429.33732662068,30725.034161497664,optimal,deterministic_expected_goodput
+arco,2018-09-27 20:28:00,7007,0.45,adaptive_all,160979.4680252687,130429.33732662068,30550.13069864802,optimal,deterministic_expected_goodput
+arco,2018-09-27 20:28:00,7007,0.45,fixed_fraction,163655.29759441063,130429.33732662068,33225.96026778995,optimal,deterministic_expected_goodput
+arco,2018-09-27 20:28:00,7007,0.45,adaptive_channel,160979.4680252687,130429.33732662068,30550.13069864802,optimal,deterministic_expected_goodput
+arco,2018-09-27 20:28:00,7007,0.45,adaptive_arrival,161154.37148811834,130429.33732662068,30725.034161497664,optimal,deterministic_expected_goodput
+arco,2018-09-30 18:18:00,7008,0.45,fixed,189237.3884,146682.0976977469,42555.290702253085,optimal,deterministic_expected_goodput
+arco,2018-09-30 18:18:00,7008,0.45,channel,189950.6997,146682.0976977469,43268.60200225309,optimal,deterministic_expected_goodput
+arco,2018-09-30 18:18:00,7008,0.45,greedy,186083.81421306872,146682.0976977469,39401.71651532181,optimal,deterministic_expected_goodput
+arco,2018-09-30 18:18:00,7008,0.45,nominal,185441.80329236033,146682.0976977469,38759.70559461342,optimal,deterministic_expected_goodput
+arco,2018-09-30 18:18:00,7008,0.45,fixed_margin,186155.81242154434,146682.0976977469,39473.71472379743,optimal,deterministic_expected_goodput
+arco,2018-09-30 18:18:00,7008,0.45,adaptive_harvest,185485.77725488762,146682.0976977469,38803.67955714071,optimal,deterministic_expected_goodput
+arco,2018-09-30 18:18:00,7008,0.45,adaptive_all,186082.8153694077,146682.0976977469,39400.717671660794,optimal,deterministic_expected_goodput
+arco,2018-09-30 18:18:00,7008,0.45,fixed_fraction,190429.53311171004,146682.0976977469,43747.43541396313,optimal,deterministic_expected_goodput
+arco,2018-09-30 18:18:00,7008,0.45,adaptive_channel,186269.81308056385,146682.0976977469,39587.71538281694,optimal,deterministic_expected_goodput
+arco,2018-09-30 18:18:00,7008,0.45,adaptive_arrival,185448.8030513534,146682.0976977469,38766.70535360649,optimal,deterministic_expected_goodput
+arco,2018-10-03 16:07:00,7009,0.45,fixed,193406.3605,148541.85194567268,44864.50855432733,optimal,deterministic_expected_goodput
+arco,2018-10-03 16:07:00,7009,0.45,channel,195155.1006,148541.85194567268,46613.248654327326,optimal,deterministic_expected_goodput
+arco,2018-10-03 16:07:00,7009,0.45,greedy,191530.87859369194,148541.85194567268,42989.026648019266,optimal,deterministic_expected_goodput
+arco,2018-10-03 16:07:00,7009,0.45,nominal,190593.87925166494,148541.85194567268,42052.02730599226,optimal,deterministic_expected_goodput
+arco,2018-10-03 16:07:00,7009,0.45,fixed_margin,191187.88043786405,148541.85194567268,42646.02849219137,optimal,deterministic_expected_goodput
+arco,2018-10-03 16:07:00,7009,0.45,adaptive_harvest,190402.88010787973,148541.85194567268,41861.02816220705,optimal,deterministic_expected_goodput
+arco,2018-10-03 16:07:00,7009,0.45,adaptive_all,191187.88043786405,148541.85194567268,42646.02849219137,optimal,deterministic_expected_goodput
+arco,2018-10-03 16:07:00,7009,0.45,fixed_fraction,195469.64800768442,148541.85194567268,46927.79606201174,optimal,deterministic_expected_goodput
+arco,2018-10-03 16:07:00,7009,0.45,adaptive_channel,191391.87860244513,148541.85194567268,42850.02665677245,optimal,deterministic_expected_goodput
+arco,2018-10-03 16:07:00,7009,0.45,adaptive_arrival,190280.87913012362,148541.85194567268,41739.02718445094,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_0,7000,0.45,fixed,135792.3405,42351.79141126526,93440.54908873473,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_0,7000,0.45,channel,148141.8105,42351.79141126526,105790.01908873473,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_0,7000,0.45,greedy,79895.25131366788,42351.79141126526,37543.45990240262,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_0,7000,0.45,nominal,79240.4501126636,42351.79141126526,36888.658701398344,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_0,7000,0.45,fixed_margin,78416.73773198453,42351.79141126526,36064.94632071927,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_0,7000,0.45,adaptive_harvest,77117.01946269738,42351.79141126526,34765.228051432125,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_0,7000,0.45,adaptive_all,76669.7988064689,42351.79141126526,34318.00739520364,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_0,7000,0.45,fixed_fraction,114127.46501788194,42351.79141126526,71775.67360661668,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_0,7000,0.45,adaptive_channel,79035.00299315814,42351.79141126526,36683.21158189288,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_0,7000,0.45,adaptive_arrival,79262.4478565471,42351.79141126526,36910.65644528185,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_1724,7002,0.45,fixed,82491.207,17051.64630145101,65439.56069854899,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_1724,7002,0.45,channel,108682.1695,17051.64630145101,91630.523198549,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_1724,7002,0.45,greedy,26921.792143562183,17051.64630145101,9870.145842111175,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_1724,7002,0.45,nominal,31800.503198036822,17051.64630145101,14748.856896585814,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_1724,7002,0.45,fixed_margin,29703.400317992306,17051.64630145101,12651.754016541297,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_1724,7002,0.45,adaptive_harvest,35249.87790678012,17051.64630145101,18198.231605329114,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_1724,7002,0.45,adaptive_all,30926.22604358687,17051.64630145101,13874.579742135862,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_1724,7002,0.45,fixed_fraction,63725.516993785604,17051.64630145101,46673.870692334596,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_1724,7002,0.45,adaptive_channel,28911.12879650333,17051.64630145101,11859.482495052322,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_1724,7002,0.45,adaptive_arrival,33124.9328584245,17051.64630145101,16073.286556973493,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_2586,7003,0.45,fixed,74250.16675,17419.06051421676,56831.10623578324,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_2586,7003,0.45,channel,102234.12975,17419.06051421676,84815.06923578323,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_2586,7003,0.45,greedy,23593.910913481835,17419.06051421676,6174.850399265077,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_2586,7003,0.45,nominal,26316.415263859686,17419.06051421676,8897.354749642927,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_2586,7003,0.45,fixed_margin,25261.713052601495,17419.06051421676,7842.6525383847365,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_2586,7003,0.45,adaptive_harvest,28383.653982245054,17419.06051421676,10964.593468028295,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_2586,7003,0.45,adaptive_all,26292.88724324107,17419.06051421676,8873.826729024313,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_2586,7003,0.45,fixed_fraction,53765.809071629395,17419.06051421676,36346.74855741263,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_2586,7003,0.45,adaptive_channel,24407.424375616523,17419.06051421676,6988.363861399765,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_2586,7003,0.45,adaptive_arrival,27274.090445031394,17419.06051421676,9855.029930814635,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_3448,7004,0.45,fixed,70690.08825,18292.254190682466,52397.83405931754,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_3448,7004,0.45,channel,100580.25975,18292.254190682466,82288.00555931753,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_3448,7004,0.45,greedy,27316.051355774795,18292.254190682466,9023.797165092328,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_3448,7004,0.45,nominal,29709.40708551549,18292.254190682466,11417.152894833023,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_3448,7004,0.45,fixed_margin,28774.377966222943,18292.254190682466,10482.123775540476,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_3448,7004,0.45,adaptive_harvest,32418.65589658772,18292.254190682466,14126.401705905253,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_3448,7004,0.45,adaptive_all,29592.397252498,18292.254190682466,11300.143061815535,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_3448,7004,0.45,fixed_fraction,56919.63729070246,18292.254190682466,38627.38310002,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_3448,7004,0.45,adaptive_channel,28148.695825283725,18292.254190682466,9856.441634601259,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_3448,7004,0.45,adaptive_arrival,30257.057174228743,18292.254190682466,11964.802983546277,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_4311,7005,0.45,fixed,68592.2195,17730.612119861784,50861.60738013822,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_4311,7005,0.45,channel,102732.97475,17730.612119861784,85002.3626301382,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_4311,7005,0.45,greedy,25575.990036994004,17730.612119861784,7845.37791713222,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_4311,7005,0.45,nominal,28302.025818038815,17730.612119861784,10571.413698177032,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_4311,7005,0.45,fixed_margin,26436.56572006642,17730.612119861784,8705.953600204637,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_4311,7005,0.45,adaptive_harvest,31713.863453478494,17730.612119861784,13983.25133361671,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_4311,7005,0.45,adaptive_all,27619.876768666694,17730.612119861784,9889.26464880491,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_4311,7005,0.45,fixed_fraction,56401.95659390828,17730.612119861784,38671.3444740465,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_4311,7005,0.45,adaptive_channel,26514.886062963058,17730.612119861784,8784.273943101274,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_4311,7005,0.45,adaptive_arrival,28990.667984506377,17730.612119861784,11260.055864644593,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_5173,7006,0.45,fixed,80554.9865,19042.96073207235,61512.02576792765,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_5173,7006,0.45,channel,113026.81175,19042.96073207235,93983.85101792763,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_5173,7006,0.45,greedy,26953.012901624475,19042.96073207235,7910.052169552124,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_5173,7006,0.45,nominal,30877.41782801035,19042.96073207235,11834.457095938,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_5173,7006,0.45,fixed_margin,28817.30564457186,19042.96073207235,9774.34491249951,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_5173,7006,0.45,adaptive_harvest,33150.260445483524,19042.96073207235,14107.299713411172,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_5173,7006,0.45,adaptive_all,29781.43485024806,19042.96073207235,10738.474118175709,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_5173,7006,0.45,fixed_fraction,62130.97924775489,19042.96073207235,43088.01851568254,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_5173,7006,0.45,adaptive_channel,28409.977496264626,19042.96073207235,9367.016764192274,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_5173,7006,0.45,adaptive_arrival,31376.108498040754,19042.96073207235,12333.147765968402,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6035,7007,0.45,fixed,95178.70625,23117.680315380476,72061.02593461952,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6035,7007,0.45,channel,127069.69275,23117.680315380476,103952.01243461952,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6035,7007,0.45,greedy,38340.31231701376,23117.680315380476,15222.632001633287,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6035,7007,0.45,nominal,43398.779470391426,23117.680315380476,20281.09915501095,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6035,7007,0.45,fixed_margin,39952.45496689139,23117.680315380476,16834.774651510914,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6035,7007,0.45,adaptive_harvest,44400.25207449608,23117.680315380476,21282.571759115603,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6035,7007,0.45,adaptive_all,40616.8540641422,23117.680315380476,17499.173748761725,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6035,7007,0.45,fixed_fraction,75466.39948353704,23117.680315380476,52348.71916815656,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6035,7007,0.45,adaptive_channel,39638.00361058467,23117.680315380476,16520.32329520419,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6035,7007,0.45,adaptive_arrival,44224.33670854536,23117.680315380476,21106.65639316488,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6897,7008,0.45,fixed,124340.09025,33561.37300843724,90778.71724156276,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6897,7008,0.45,channel,140389.69125,33561.37300843724,106828.31824156277,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6897,7008,0.45,greedy,60326.557203950135,33561.37300843724,26765.1841955129,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6897,7008,0.45,nominal,61577.0068961889,33561.37300843724,28015.63388775166,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6897,7008,0.45,fixed_margin,60107.72753965938,33561.37300843724,26546.354531222147,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6897,7008,0.45,adaptive_harvest,60882.55096573967,33561.37300843724,27321.177957302432,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6897,7008,0.45,adaptive_all,59336.9962362068,33561.37300843724,25775.623227769567,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6897,7008,0.45,fixed_fraction,100574.39095983142,33561.37300843724,67013.01795139418,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6897,7008,0.45,adaptive_channel,60173.98008234635,33561.37300843724,26612.607073909116,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_6897,7008,0.45,adaptive_arrival,61884.920414079985,33561.37300843724,28323.54740564275,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_7760,7009,0.45,fixed,138266.61875,47627.41824718218,90639.20050281781,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_7760,7009,0.45,channel,146894.50325,47627.41824718218,99267.08500281782,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_7760,7009,0.45,greedy,86434.16490109726,47627.41824718218,38806.746653915085,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_7760,7009,0.45,nominal,85013.12762619939,47627.41824718218,37385.709379017215,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_7760,7009,0.45,fixed_margin,84649.16617709585,47627.41824718218,37021.74792991367,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_7760,7009,0.45,adaptive_harvest,81986.63372372143,47627.41824718218,34359.215476539255,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_7760,7009,0.45,adaptive_all,81684.17127462302,47627.41824718218,34056.75302744084,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_7760,7009,0.45,fixed_fraction,123106.35000748589,47627.41824718218,75478.9317603037,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_7760,7009,0.45,adaptive_channel,85335.17434313337,47627.41824718218,37707.7560959512,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_7760,7009,0.45,adaptive_arrival,84938.10192779455,47627.41824718218,37310.68368061237,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_862,7001,0.45,fixed,108417.8905,29840.652541374628,78577.23795862537,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_862,7001,0.45,channel,126832.92425,29840.652541374628,96992.27170862537,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_862,7001,0.45,greedy,53014.20136223297,29840.652541374628,23173.54882085834,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_862,7001,0.45,nominal,53386.94315866493,29840.652541374628,23546.290617290302,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_862,7001,0.45,fixed_margin,51968.55777819067,29840.652541374628,22127.90523681604,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_862,7001,0.45,adaptive_harvest,54198.32106907612,29840.652541374628,24357.66852770149,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_862,7001,0.45,adaptive_all,50616.569433229655,29840.652541374628,20775.916891855028,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_862,7001,0.45,fixed_fraction,88471.2654331936,29840.652541374628,58630.61289181898,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_862,7001,0.45,adaptive_channel,52148.872901743714,29840.652541374628,22308.220360369087,optimal,deterministic_expected_goodput
+nrel_tmy3,tmy_hour_index_862,7001,0.45,adaptive_arrival,53623.86131502817,29840.652541374628,23783.20877365354,optimal,deterministic_expected_goodput
+umass_home_c,2011-07-30 00:00:00+00:00,7000,0.45,fixed,31115.400791625,20175.08007077029,10940.32072085471,optimal,deterministic_expected_goodput
+umass_home_c,2011-07-30 00:00:00+00:00,7000,0.45,channel,62103.854908875,20175.08007077029,41928.77483810471,optimal,deterministic_expected_goodput
+umass_home_c,2011-07-30 00:00:00+00:00,7000,0.45,greedy,25448.88391410258,20175.08007077029,5273.803843332287,optimal,deterministic_expected_goodput
+umass_home_c,2011-07-30 00:00:00+00:00,7000,0.45,nominal,25448.88391410258,20175.08007077029,5273.803843332287,optimal,deterministic_expected_goodput
+umass_home_c,2011-07-30 00:00:00+00:00,7000,0.45,fixed_margin,25448.88391410258,20175.08007077029,5273.803843332287,optimal,deterministic_expected_goodput
+umass_home_c,2011-07-30 00:00:00+00:00,7000,0.45,adaptive_harvest,25448.88391410258,20175.08007077029,5273.803843332287,optimal,deterministic_expected_goodput
+umass_home_c,2011-07-30 00:00:00+00:00,7000,0.45,adaptive_all,25448.88391410258,20175.08007077029,5273.803843332287,optimal,deterministic_expected_goodput
+umass_home_c,2011-07-30 00:00:00+00:00,7000,0.45,fixed_fraction,31567.604260432436,20175.08007077029,11392.524189662145,optimal,deterministic_expected_goodput
+umass_home_c,2011-07-30 00:00:00+00:00,7000,0.45,adaptive_channel,25448.88391410258,20175.08007077029,5273.803843332287,optimal,deterministic_expected_goodput
+umass_home_c,2011-07-30 00:00:00+00:00,7000,0.45,adaptive_arrival,25448.88391410258,20175.08007077029,5273.803843332287,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-08 17:20:00+00:00,7001,0.45,fixed,29781.138625125,18982.704759929653,10798.433865195348,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-08 17:20:00+00:00,7001,0.45,channel,66055.22749825,18982.704759929653,47072.522738320346,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-08 17:20:00+00:00,7001,0.45,greedy,24792.287822586084,18982.704759929653,5809.583062656431,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-08 17:20:00+00:00,7001,0.45,nominal,24792.287822586084,18982.704759929653,5809.583062656431,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-08 17:20:00+00:00,7001,0.45,fixed_margin,24792.287822586084,18982.704759929653,5809.583062656431,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-08 17:20:00+00:00,7001,0.45,adaptive_harvest,24792.287822586084,18982.704759929653,5809.583062656431,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-08 17:20:00+00:00,7001,0.45,adaptive_all,24792.287822586084,18982.704759929653,5809.583062656431,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-08 17:20:00+00:00,7001,0.45,fixed_fraction,30565.435858397617,18982.704759929653,11582.731098467964,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-08 17:20:00+00:00,7001,0.45,adaptive_channel,24792.287822586084,18982.704759929653,5809.583062656431,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-08 17:20:00+00:00,7001,0.45,adaptive_arrival,24792.287822586084,18982.704759929653,5809.583062656431,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-18 10:40:00+00:00,7002,0.45,fixed,22264.615156625,14925.91978183448,7338.695374790521,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-18 10:40:00+00:00,7002,0.45,channel,56964.420812625,14925.91978183448,42038.50103079052,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-18 10:40:00+00:00,7002,0.45,greedy,18907.20937419096,14925.91978183448,3981.2895923564793,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-18 10:40:00+00:00,7002,0.45,nominal,18907.20937419096,14925.91978183448,3981.2895923564793,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-18 10:40:00+00:00,7002,0.45,fixed_margin,18907.20937419096,14925.91978183448,3981.2895923564793,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-18 10:40:00+00:00,7002,0.45,adaptive_harvest,18907.20937419096,14925.91978183448,3981.2895923564793,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-18 10:40:00+00:00,7002,0.45,adaptive_all,18907.20937419096,14925.91978183448,3981.2895923564793,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-18 10:40:00+00:00,7002,0.45,fixed_fraction,22634.073475111014,14925.91978183448,7708.153693276534,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-18 10:40:00+00:00,7002,0.45,adaptive_channel,18907.20937419096,14925.91978183448,3981.2895923564793,optimal,deterministic_expected_goodput
+umass_home_c,2011-08-18 10:40:00+00:00,7002,0.45,adaptive_arrival,18907.20937419096,14925.91978183448,3981.2895923564793,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-02 02:08:00+00:00,7003,0.45,fixed,23421.48129675,16627.337674439983,6794.143622310017,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-02 02:08:00+00:00,7003,0.45,channel,54450.63958525,16627.337674439983,37823.30191081001,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-02 02:08:00+00:00,7003,0.45,greedy,20833.62983525445,16627.337674439983,4206.292160814468,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-02 02:08:00+00:00,7003,0.45,nominal,20833.62983525445,16627.337674439983,4206.292160814468,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-02 02:08:00+00:00,7003,0.45,fixed_margin,20833.62983525445,16627.337674439983,4206.292160814468,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-02 02:08:00+00:00,7003,0.45,adaptive_harvest,20833.62983525445,16627.337674439983,4206.292160814468,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-02 02:08:00+00:00,7003,0.45,adaptive_all,20833.62983525445,16627.337674439983,4206.292160814468,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-02 02:08:00+00:00,7003,0.45,fixed_fraction,24247.538528420628,16627.337674439983,7620.200853980645,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-02 02:08:00+00:00,7003,0.45,adaptive_channel,20833.62983525445,16627.337674439983,4206.292160814468,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-02 02:08:00+00:00,7003,0.45,adaptive_arrival,20833.62983525445,16627.337674439983,4206.292160814468,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-11 19:28:00+00:00,7004,0.45,fixed,29318.417532625,17923.81934217469,11394.59819045031,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-11 19:28:00+00:00,7004,0.45,channel,58912.04241325,17923.81934217469,40988.22307107531,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-11 19:28:00+00:00,7004,0.45,greedy,25269.07728121321,17923.81934217469,7345.257939038518,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-11 19:28:00+00:00,7004,0.45,nominal,25269.07728121321,17923.81934217469,7345.257939038518,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-11 19:28:00+00:00,7004,0.45,fixed_margin,25269.07728121321,17923.81934217469,7345.257939038518,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-11 19:28:00+00:00,7004,0.45,adaptive_harvest,25269.07728121321,17923.81934217469,7345.257939038518,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-11 19:28:00+00:00,7004,0.45,adaptive_all,25269.07728121321,17923.81934217469,7345.257939038518,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-11 19:28:00+00:00,7004,0.45,fixed_fraction,29424.854555261398,17923.81934217469,11501.035213086707,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-11 19:28:00+00:00,7004,0.45,adaptive_channel,25270.029561617164,17923.81934217469,7346.210219442473,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-11 19:28:00+00:00,7004,0.45,adaptive_arrival,25269.07728121321,17923.81934217469,7345.257939038518,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-21 12:48:00+00:00,7005,0.45,fixed,26677.141609,17220.869342814607,9456.272266185391,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-21 12:48:00+00:00,7005,0.45,channel,66283.6108655,17220.869342814607,49062.74152268539,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-21 12:48:00+00:00,7005,0.45,greedy,22490.600726132172,17220.869342814607,5269.731383317565,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-21 12:48:00+00:00,7005,0.45,nominal,22490.600726132172,17220.869342814607,5269.731383317565,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-21 12:48:00+00:00,7005,0.45,fixed_margin,22490.600726132172,17220.869342814607,5269.731383317565,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-21 12:48:00+00:00,7005,0.45,adaptive_harvest,22490.600726132172,17220.869342814607,5269.731383317565,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-21 12:48:00+00:00,7005,0.45,adaptive_all,22490.600726132172,17220.869342814607,5269.731383317565,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-21 12:48:00+00:00,7005,0.45,fixed_fraction,27372.706689345487,17220.869342814607,10151.83734653088,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-21 12:48:00+00:00,7005,0.45,adaptive_channel,22490.600726132172,17220.869342814607,5269.731383317565,optimal,deterministic_expected_goodput
+umass_home_c,2011-09-21 12:48:00+00:00,7005,0.45,adaptive_arrival,22490.600726132172,17220.869342814607,5269.731383317565,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-01 06:08:00+00:00,7006,0.45,fixed,28114.735560125,17993.351602123537,10121.383958001461,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-01 06:08:00+00:00,7006,0.45,channel,54846.58376375,17993.351602123537,36853.23216162647,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-01 06:08:00+00:00,7006,0.45,greedy,23878.193334574462,17993.351602123537,5884.841732450925,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-01 06:08:00+00:00,7006,0.45,nominal,23878.193334574462,17993.351602123537,5884.841732450925,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-01 06:08:00+00:00,7006,0.45,fixed_margin,23878.193334574462,17993.351602123537,5884.841732450925,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-01 06:08:00+00:00,7006,0.45,adaptive_harvest,23878.193334574462,17993.351602123537,5884.841732450925,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-01 06:08:00+00:00,7006,0.45,adaptive_all,23878.193334574462,17993.351602123537,5884.841732450925,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-01 06:08:00+00:00,7006,0.45,fixed_fraction,28321.585178329977,17993.351602123537,10328.23357620644,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-01 06:08:00+00:00,7006,0.45,adaptive_channel,23923.152723351006,17993.351602123537,5929.801121227469,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-01 06:08:00+00:00,7006,0.45,adaptive_arrival,23878.193334574462,17993.351602123537,5884.841732450925,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-10 23:28:00+00:00,7007,0.45,fixed,32110.10042775,20081.686477333707,12028.413950416292,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-10 23:28:00+00:00,7007,0.45,channel,59323.479991,20081.686477333707,39241.79351366629,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-10 23:28:00+00:00,7007,0.45,greedy,28205.35464667638,20081.686477333707,8123.668169342673,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-10 23:28:00+00:00,7007,0.45,nominal,28205.35464667638,20081.686477333707,8123.668169342673,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-10 23:28:00+00:00,7007,0.45,fixed_margin,28205.35464667638,20081.686477333707,8123.668169342673,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-10 23:28:00+00:00,7007,0.45,adaptive_harvest,28205.35464667638,20081.686477333707,8123.668169342673,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-10 23:28:00+00:00,7007,0.45,adaptive_all,28205.35464667638,20081.686477333707,8123.668169342673,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-10 23:28:00+00:00,7007,0.45,fixed_fraction,33080.94338678671,20081.686477333707,12999.256909453004,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-10 23:28:00+00:00,7007,0.45,adaptive_channel,28205.35464667638,20081.686477333707,8123.668169342673,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-10 23:28:00+00:00,7007,0.45,adaptive_arrival,28205.35464667638,20081.686477333707,8123.668169342673,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-20 16:48:00+00:00,7008,0.45,fixed,29946.139501999998,20061.515035477765,9884.624466522233,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-20 16:48:00+00:00,7008,0.45,channel,57850.346815625,20061.515035477765,37788.83178014724,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-20 16:48:00+00:00,7008,0.45,greedy,27255.34233409001,20061.515035477765,7193.8272986122465,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-20 16:48:00+00:00,7008,0.45,nominal,27255.34233409001,20061.515035477765,7193.8272986122465,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-20 16:48:00+00:00,7008,0.45,fixed_margin,27255.34233409001,20061.515035477765,7193.8272986122465,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-20 16:48:00+00:00,7008,0.45,adaptive_harvest,27255.34233409001,20061.515035477765,7193.8272986122465,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-20 16:48:00+00:00,7008,0.45,adaptive_all,27255.34233409001,20061.515035477765,7193.8272986122465,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-20 16:48:00+00:00,7008,0.45,fixed_fraction,30110.38141712857,20061.515035477765,10048.866381650805,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-20 16:48:00+00:00,7008,0.45,adaptive_channel,27295.300056524964,20061.515035477765,7233.785021047199,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-20 16:48:00+00:00,7008,0.45,adaptive_arrival,27255.34233409001,20061.515035477765,7193.8272986122465,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-31 02:48:00+00:00,7009,0.45,fixed,31171.646337875,17827.432119739857,13344.214218135145,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-31 02:48:00+00:00,7009,0.45,channel,61867.112110125,17827.432119739857,44039.67999038515,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-31 02:48:00+00:00,7009,0.45,greedy,24506.702956918543,17827.432119739857,6679.270837178687,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-31 02:48:00+00:00,7009,0.45,nominal,24506.702956918543,17827.432119739857,6679.270837178687,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-31 02:48:00+00:00,7009,0.45,fixed_margin,24506.702956918543,17827.432119739857,6679.270837178687,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-31 02:48:00+00:00,7009,0.45,adaptive_harvest,24506.702956918543,17827.432119739857,6679.270837178687,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-31 02:48:00+00:00,7009,0.45,adaptive_all,24506.702956918543,17827.432119739857,6679.270837178687,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-31 02:48:00+00:00,7009,0.45,fixed_fraction,31202.22711328956,17827.432119739857,13374.794993549702,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-31 02:48:00+00:00,7009,0.45,adaptive_channel,24506.702956918543,17827.432119739857,6679.270837178687,optimal,deterministic_expected_goodput
+umass_home_c,2011-10-31 02:48:00+00:00,7009,0.45,adaptive_arrival,24506.702956918543,17827.432119739857,6679.270837178687,optimal,deterministic_expected_goodput

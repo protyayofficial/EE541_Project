@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "trajectories": 300,
+  "slots_per_trajectory": 1000,
+  "checks": "matched causal exogenous inputs, bounded arrivals, all execution bounds, channel rate, packet IDs, matched reception draws, ACK queue transitions, total-energy battery transitions, phase/event timestamps, next-interval state availability and runtime budget flags",
+  "packet_delay_checks": "independent per-packet replay, admission/attempt/ACK times, retry stability, censoring, cohorts and completed-observation delay summaries",
+  "scope": "does not independently reconstruct predicted plans, prove optimality, or certify uncertainty coverage"
+}

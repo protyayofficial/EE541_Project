@@ -1,0 +1,94 @@
+synthetic 0.6 0.2 6000
+synthetic 0.6 0.2 6001
+synthetic 0.6 0.2 6002
+synthetic 0.6 0.2 6003
+synthetic 0.6 0.2 6004
+synthetic 0.6 0.2 6005
+synthetic 0.6 0.2 6006
+synthetic 0.6 0.2 6007
+synthetic 0.6 0.2 6008
+src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+synthetic 0.6 0.2 6009
+synthetic 0.6 0.45 6000
+synthetic 0.6 0.45 6001
+synthetic 0.6 0.45 6002
+synthetic 0.6 0.45 6003
+synthetic 0.6 0.45 6004
+synthetic 0.6 0.45 6005
+synthetic 0.6 0.45 6006
+synthetic 0.6 0.45 6007
+synthetic 0.6 0.45 6008
+synthetic 0.6 0.45 6009
+synthetic 0.6 0.8 6000
+synthetic 0.6 0.8 6001
+synthetic 0.6 0.8 6002
+synthetic 0.6 0.8 6003
+synthetic 0.6 0.8 6004
+synthetic 0.6 0.8 6005
+synthetic 0.6 0.8 6006
+synthetic 0.6 0.8 6007
+synthetic 0.6 0.8 6008
+synthetic 0.6 0.8 6009
+synthetic 1.2 0.2 6000
+synthetic 1.2 0.2 6001
+synthetic 1.2 0.2 6002
+synthetic 1.2 0.2 6003
+synthetic 1.2 0.2 6004
+synthetic 1.2 0.2 6005
+synthetic 1.2 0.2 6006
+synthetic 1.2 0.2 6007
+synthetic 1.2 0.2 6008
+synthetic 1.2 0.2 6009
+synthetic 1.2 0.45 6000
+synthetic 1.2 0.45 6001
+synthetic 1.2 0.45 6002
+synthetic 1.2 0.45 6003
+synthetic 1.2 0.45 6004
+synthetic 1.2 0.45 6005
+synthetic 1.2 0.45 6006
+synthetic 1.2 0.45 6007
+synthetic 1.2 0.45 6008
+synthetic 1.2 0.45 6009
+synthetic 1.2 0.8 6000
+synthetic 1.2 0.8 6001
+synthetic 1.2 0.8 6002
+synthetic 1.2 0.8 6003
+synthetic 1.2 0.8 6004
+synthetic 1.2 0.8 6005
+synthetic 1.2 0.8 6006
+synthetic 1.2 0.8 6007
+synthetic 1.2 0.8 6008
+synthetic 1.2 0.8 6009
+solar arco 2018-08-01 05:15:00 7000
+solar arco 2018-08-05 08:43:00 7001
+solar arco 2018-08-11 07:31:00 7002
+solar arco 2018-09-17 15:25:00 7003
+solar arco 2018-09-19 19:51:00 7004
+solar arco 2018-09-22 17:57:00 7005
+solar arco 2018-09-25 15:57:00 7006
+solar arco 2018-09-27 20:28:00 7007
+solar arco 2018-09-30 18:18:00 7008
+solar arco 2018-10-03 16:07:00 7009
+solar nrel_tmy3 tmy_hour_index_0 7000
+solar nrel_tmy3 tmy_hour_index_1724 7002
+solar nrel_tmy3 tmy_hour_index_2586 7003
+solar nrel_tmy3 tmy_hour_index_3448 7004
+solar nrel_tmy3 tmy_hour_index_4311 7005
+solar nrel_tmy3 tmy_hour_index_5173 7006
+solar nrel_tmy3 tmy_hour_index_6035 7007
+solar nrel_tmy3 tmy_hour_index_6897 7008
+solar nrel_tmy3 tmy_hour_index_7760 7009
+solar nrel_tmy3 tmy_hour_index_862 7001
+solar umass_home_c 2011-07-30 00:00:00+00:00 7000
+solar umass_home_c 2011-08-08 17:20:00+00:00 7001
+solar umass_home_c 2011-08-18 10:40:00+00:00 7002
+solar umass_home_c 2011-09-02 02:08:00+00:00 7003
+solar umass_home_c 2011-09-11 19:28:00+00:00 7004
+solar umass_home_c 2011-09-21 12:48:00+00:00 7005
+solar umass_home_c 2011-10-01 06:08:00+00:00 7006
+solar umass_home_c 2011-10-10 23:28:00+00:00 7007
+solar umass_home_c 2011-10-20 16:48:00+00:00 7008
+solar umass_home_c 2011-10-31 02:48:00+00:00 7009
+instances 90 failures 0 inaccurate 0 max residual 7.695210916000735e-05
+minimum online-minus-offline 3426.173537113289
