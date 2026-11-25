@@ -22,7 +22,7 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 from PIL import Image
 
-DEFAULT_INPUT=Path('results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28')
+DEFAULT_INPUT=Path('report_results/production')
 SPEC={'sweep':('per_seed.csv',300,5000),'sweep_normalized':('per_seed.csv',300,6000),
       'solar':('per_window.csv',300,7000),'supplementary/delay_energy':('per_seed.csv',120,6000),
       'supplementary/forecast_sensitivity':('per_seed.csv',120,6000)}

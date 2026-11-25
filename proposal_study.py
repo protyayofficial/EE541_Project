@@ -1,25 +1,18 @@
-"""Proposal-aligned uncertainty-aware weighted convex MPC study.
+"""Online policies for the uncertainty-aware weighted convex MPC experiments.
 All online methods use identical service/admission rules and observed inputs.
 """
-import argparse, hashlib, json, time
-from dataclasses import replace
-from pathlib import Path
+import json
+import time
 import numpy as np
 import pandas as pd
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-from src.course_data import SOURCE_INTERVALS,sources,load_solar
-from src.experiment import make_trace
-from src.scheduling import INITIAL_QUEUE,INITIAL_ENERGY,Config,capacity,planner_action,solve_cvxpy,validate_packet_inputs
+from src.scheduling import INITIAL_QUEUE,INITIAL_ENERGY,capacity,planner_action,solve_cvxpy,validate_packet_inputs
 from src.forecasting import bound_arrivals,raw_forecasts
-from src.radio import PacketRadio,simulation_settings,timing_metrics
+from src.radio import PacketRadio
 from src.channel import CHANNEL_THRESHOLD,bound_gain,validate_trace_model
-from src.packets import attach_packet_ledger,run_delay_metrics,append_packet_run,DELAY_MEASURES,paired_stats
+from src.packets import attach_packet_ledger
 from src.forecast_noise import perturb_channel,NOISE_MODEL
 
 METHODS=('greedy','fixed_fraction','nominal','fixed_margin','adaptive_channel','adaptive_arrival','adaptive_harvest','adaptive_all')
-FILES=('data/arco/dataset.csv','data/umass/homeC-generation.tar.gz','data/nrel/723170TYA.CSV')
 
 def margins(error_history,mode):
     if mode=='nominal':return np.zeros(3)
@@ -143,65 +136,3 @@ def run(trace,cfg,mode,margin_scale=1.0,*,forecast_perturbation=0.,forecast_scen
         frame.attrs['packet_run'].update(forecast_perturbation=float(forecast_perturbation),
                                         forecast_scenario=scenario,forecast_noise_model=NOISE_MODEL)
     return frame
-
-def selected_windows(slots,dev,validation):
-    for name,seconds,windows in sources(slots,dev+validation):
-        if name=='arco':
-            solar=load_solar(FILES[0]);aug=[]
-            for j,day in enumerate(pd.date_range('2018-08-01','2018-08-25',freq='D')):
-                start=day+pd.Timedelta(hours=[8,12,17,21][j%4]);p=solar.reindex(pd.date_range(start,periods=slots,freq='min'))
-                if p.notna().all():aug.append((str(start),p.to_numpy()*.01))
-            windows=windows[:dev]+aug[:validation]
-        if len(windows)<dev+validation:raise ValueError(f'Not enough {name} windows')
-        yield name,seconds,windows[:dev+validation]
-
-def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--development',type=int,default=6);ap.add_argument('--validation',type=int,default=4);ap.add_argument('--slots',type=int,default=60);ap.add_argument('--horizon',type=int,default=10);ap.add_argument('--out',default='results/proposal_course');args=ap.parse_args()
-    if min(args.development,args.validation,args.slots)<2 or args.horizon<2:ap.error('splits/slots >=2 and horizon >=2 required')
-    out=Path(args.out)
-    if any((out/name).exists() for name in ('per_slot.csv','per_window.csv','per_packet.csv')):
-        ap.error('output contains trajectories; choose a fresh --out directory')
-    out.mkdir(parents=True,exist_ok=True);rows=[];frames=[]
-    settings=vars(args)|simulation_settings(replace(Config(),horizon=args.horizon))|{'methods':METHODS,'dataset_slot_seconds':SOURCE_INTERVALS,'dataset_sha256':{f:hashlib.sha256(Path(f).read_bytes()).hexdigest() for f in FILES},
-      'objective':'sum backlog + 35*planned rejection + .15*total TX energy + 6*terminal backlog',
-      'margin':'80th percentile of last 50 raw signed one-step forecast errors after 12-score warm-up; zero-floor; no formal coverage guarantee',
-      'split':f'first {args.development} source windows then {args.validation} other dates; ARCO validation uses August',
-      'limitations':'simulated channel and traffic; solar values converted by assumed proxy factors; NREL TMY stitched and hourly; not an untouched test relative to all prior exploration'}
-    (out/'settings.json').write_text(json.dumps(settings,indent=2)+'\n')
-    for name,seconds,windows in selected_windows(args.slots,args.development,args.validation):
-      for j,(start,harvest) in enumerate(windows):
-        split='development' if j<args.development else 'validation';seed=700+j
-        trace=make_trace(args.slots,seed,harvest_mean=1.1);trace['harvest']=harvest
-        cfg=replace(Config(),horizon=args.horizon,slot_seconds=seconds)
-        for mode in METHODS:
-          print(name,split,start,mode,flush=True);df=run(trace,cfg,mode)
-          terminal=float(df.b_next.iloc[-1]);a=float(df.arrivals.sum())
-          row=dict(dataset=name,split=split,window=start,seed=seed,mode=mode,queue=df.b.mean(),drop_ratio=df['drop'].sum()/max(1,a),
-             throughput=df.throughput_bps.mean(),energy=df.energy.sum(),terminal_queue=terminal,
-             realized_cost=float(df.b.sum()+cfg.drop_weight*df['drop'].sum()+cfg.energy_weight*df.energy.sum()+cfg.terminal_weight*terminal),max_violation=df.plan_violation.max(),
-             inaccurate=int((df.solver_status=='optimal_inaccurate').sum()),mean_solve_ms=df.solve_ms.mean(),
-             covered_gain=df.covered_gain.mean(),covered_arrival=df.covered_arrival.mean(),covered_harvest=df.covered_harvest.mean(),**timing_metrics(df),**run_delay_metrics(df))
-          run_id=append_packet_run(df,out,dict(experiment='proposal',dataset=name,split=split,window=start,seed=seed,mode=mode))
-          rows.append(row|dict(run_id=run_id));df['dataset']=name;df['split']=split;df['window']=start;df['run_id']=run_id;frames.append(df)
-          pd.DataFrame(rows).to_csv(out/'partial_windows.csv',index=False)
-        pd.concat(frames,ignore_index=True).to_csv(out/'partial_slots.csv',index=False)
-    raw=pd.DataFrame(rows);raw.to_csv(out/'per_window.csv',index=False);pd.concat(frames,ignore_index=True).to_csv(out/'per_slot.csv',index=False)
-    raw.groupby(['dataset','split','mode'])[['queue','drop_ratio','energy','throughput','terminal_queue','realized_cost','covered_gain','covered_arrival','covered_harvest',*run_delay_metrics(df)]].agg(['mean','std','count']).to_csv(out/'summary.csv')
-    pairs=[]
-    for (dataset,split),part in raw.groupby(['dataset','split']):
-      base=part[part['mode']=='nominal'].set_index('window')
-      for mode in METHODS:
-       if mode=='nominal':continue
-       candidate=part[part['mode']==mode].set_index('window')
-       for metric in ('queue','drop_ratio','energy','throughput','terminal_queue','realized_cost',*DELAY_MEASURES):
-        diff=candidate[metric]-base[metric]
-        pairs.append(dict(dataset=dataset,split=split,method=mode,metric=metric,**paired_stats(diff)))
-    pd.DataFrame(pairs).to_csv(out/'paired_vs_nominal.csv',index=False)
-    for metric,label in [('drop_ratio','Rejection fraction'),('queue','Average queue (packets)'),('terminal_queue','Final queue (packets)'),('energy','TX data and control energy (J)'),('realized_cost','Realized weighted cost')]:
-      fig,axs=plt.subplots(1,3,figsize=(16,5))
-      for ax,(dataset,group) in zip(axs,raw[raw.split=='validation'].groupby('dataset')):
-        m=group.groupby('mode')[metric].mean().reindex(METHODS);ax.barh(m.index,m.values);ax.set(title=dataset,xlabel=label);ax.grid(axis='x',alpha=.2)
-      fig.tight_layout();fig.savefig(out/f'{metric}.png',dpi=180);plt.close(fig)
-    print(raw.groupby(['dataset','split','mode'])[['queue','drop_ratio','energy','terminal_queue']].mean().to_string())
-    print('max violation',raw.max_violation.max(),'inaccurate',raw.inaccurate.sum())
-if __name__=='__main__':main()

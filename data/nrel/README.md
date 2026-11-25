@@ -12,4 +12,4 @@ curl -L --fail 'https://raw.githubusercontent.com/pvlib/pvlib-python/main/pvlib/
 shasum -a 256 data/nrel/723170TYA.CSV
 ```
 
-The source URL follows its `main` branch; check the resulting hash against `results/submission_verification/smoke/solar/settings.json` before reproducing the saved study.
+The source URL follows its `main` branch; check the resulting hash against `report_results/production/solar/settings.json` before reproducing the saved study.

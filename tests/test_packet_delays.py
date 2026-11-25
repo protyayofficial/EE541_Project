@@ -1,7 +1,5 @@
 """Five-packet actions, virtual packet timestamps, censoring and output audits."""
-import io
 import json
-import os
 from pathlib import Path
 import tempfile
 import unittest
@@ -249,41 +247,6 @@ class FivePacketDelayTests(unittest.TestCase):
                     audit_packet_outputs(directory,trajectories,runs)
             original.to_csv(path,index=False)
             self.assertTrue(audit_packet_outputs(directory,trajectories,runs))
-
-    def test_consistency_summary_counts_valid_delay_runs(self):
-        import consistency_study
-        from src.radio import simulation_settings
-        with tempfile.TemporaryDirectory(prefix='ee541_artificial_consistency_') as directory:
-            root=Path(directory);out=root/'output'
-            original=root/'results/proposal_final';original.mkdir(parents=True)
-            (original/'settings.json').write_text(json.dumps({'dataset_sha256':{}}))
-            windows=[('artificial_empty',np.ones(60)),('artificial_admitted',np.ones(60))]
-            def generated(slots,seed,**kwargs):
-                return trace(np.zeros(slots,dtype=int) if seed==1800 else np.ones(slots,dtype=int))|dict(seed=seed)
-            before=Path.cwd()
-            try:
-                os.chdir(root)
-                with patch('sys.argv',['consistency_study.py','--out',str(out)]),\
-                     patch.object(consistency_study,'FILES',()),\
-                     patch.object(consistency_study,'ALL',('nominal','nominal_forced')),\
-                     patch.object(consistency_study,'fresh_windows',return_value=[('artificial',60.,windows)]),\
-                     patch.object(consistency_study,'make_trace',side_effect=generated),\
-                     patch('sys.stdout',io.StringIO()):
-                    consistency_study.main()
-            finally:os.chdir(before)
-            summary=pd.read_csv(out/'summary.csv',header=[0,1],index_col=[0,1])
-            runs=pd.read_csv(out/'per_window.csv');slots=pd.read_csv(out/'per_slot.csv')
-            for metric in ('mean_initial_wait_s','mean_ack_completion_delay_s'):
-                self.assertTrue((summary[(metric,'count')]==1).all())
-                self.assertEqual(runs[metric].notna().sum(),2)
-            pairs=pd.read_csv(out/'paired.csv');delay=pairs[pairs.metric=='mean_ack_completion_delay_s']
-            selected=delay[delay.fix=='nominal_forced'].iloc[0]
-            self.assertEqual(selected.n_valid_pairs,1)
-            self.assertTrue(np.isnan(selected.ci_low))
-            self.assertTrue(audit_packet_outputs(out,slots,runs))
-            cfg=Config(slot_seconds=60.)
-            for _,group in slots.groupby('run_id'):
-                self.assertTrue(audit_packets(group,cfg,initial_state=simulation_settings(cfg)['initial_state']))
 
     def test_bookkeeping_never_changes_randomness_or_actions(self):
         class NoLedger:

@@ -1,4 +1,0 @@
-dataset,interval_s,selected_windows,overlapping_window_pairs,uncertainty
-arco,60.0,10,0,descriptive paired scenario intervals; shared source/season
-umass_home_c,60.0,10,0,descriptive paired scenario intervals; shared source/season
-nrel_tmy3,3600.0,10,9,descriptive paired scenario intervals; shared source/season

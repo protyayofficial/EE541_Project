@@ -58,9 +58,8 @@ bash scripts/run_experiments.sh --run --output-parent runs
 
 The launcher prints the output directory. In it, `status.json` and `logs/`
 record stage progress, and `COMPLETED` marks a run that passed the final audit.
-Each invocation creates a new directory. The [experiment protocol](docs/experiments_1000.md)
-describes the study design. Run `python final_evaluation.py --help` or
-`python final_solar_evaluation.py --help` for individual study options.
+Each invocation creates a new directory. Run `python final_evaluation.py --help`
+or `python final_solar_evaluation.py --help` for individual study options.
 
 The full design uses 1,000-slot episodes. It includes two 300-run synthetic
 sweeps, 300 solar runs, 120 runs per supplementary study, 90 offline references,
@@ -73,7 +72,7 @@ without rerunning the simulations:
 
 ```bash
 python prepare_report_figures.py \
-  --input report_results/report_figures/inputs \
+  --input report_results/production \
   --out runs/report_figures \
   --zip runs/report_figures.zip
 ```
@@ -84,37 +83,27 @@ To plot a new full experiment, use its completed run directory as `--input`.
 
 | Output | Contents |
 | --- | --- |
-| [Production results](report_results) | Run matrices, settings, tables, audit records and plots for the 1,000-slot experiment design |
-| [Report figures and tables](report_results/report_figures/INDEX.md) | PDF and PNG figures, captions, plotted data and analysis tables |
-| [Verification runs](results/submission_verification) | Audited short workflow and a separate two-seed, 1,000-slot comparison |
-| [Earlier evaluation](results/final_evaluation) | Saved comparisons from the earlier simulator |
+| [Production results](report_results/production) | Run matrices, settings, metrics, paired comparison tables, solver checks and audits |
+| [Report figures](report_results#figures) | Five figures covering the main comparisons and sensitivity analyses |
+| [Completion record](report_results/completion_verification.json) | Run counts, residuals and audit scope |
 
 In the normalized synthetic sweep, adaptive margins on all forecasts lowered
-weighted cost relative to nominal MPC in the 0.6 J harvest regime at channel
+weighted cost relative to nominal MPC at 0.6 J mean harvest and channel
 volatilities 0.45 and 0.80. At 1.2 J and volatility 0.80, the same policy
 increased cost. Each comparison uses ten matched seeds. See the
-[synthetic comparisons](report_results/report_figures/main/01_normalized_cost_rejection.pdf)
-and the [results notes](report_results/report_figures/FINDINGS.md) for
-differences, paired intervals and interpretation.
+[synthetic cost and rejection figure](report_results/report_figures/main/01_normalized_cost_rejection.pdf)
+and the [paired comparison table](report_results/production/sweep_normalized/paired_vs_nominal.csv).
 
-The submitted production results include the saved run-level data. The full
-launcher additionally generates per-slot and per-packet records and offline
-plans, which are much larger. The verification runs include their raw records
-for auditing examples.
-
-A generated study directory contains `settings.json`, a run matrix,
-`per_seed.csv` or `per_window.csv`, aggregate and paired comparison tables, and
-plots. Full runs also save per-slot and per-packet records for auditing. The
-offline reference uses perfect future inputs and continuous expected goodput.
-Its cost comparison with realized online execution is descriptive.
+A full run also generates per-slot and per-packet ledgers and offline plans.
+The offline reference uses perfect future inputs and continuous expected
+goodput. Its difference from realized online cost is descriptive.
 
 ## Model and data notes
 
 - The current simulator uses correlated lognormal channel gains, uniform
   arrivals from 0 to 10 packets, a 32-packet buffer, and up to five transmission
-  attempts per slot. The [proposal](docs/submitted_proposal.tex) records the
-  original assumptions and division of work. The supplementary studies use
-  fixed penalty weights and vary the energy penalty or forecast noise.
+  attempts per slot. The supplementary studies vary the energy penalty
+  or channel forecast noise across runs.
 - ARCO and UMass provide solar-panel current at one-minute resolution after
   aggregation. NREL provides hourly TMY3 irradiance. Each is converted to
   simulated harvest with an assumed scale. Channel and traffic inputs are
@@ -123,8 +112,3 @@ Its cost comparison with realized online execution is descriptive.
 - Review queue, rejection, energy and delay together when interpreting policy
   comparisons. Packet delay statistics use completed observations and report
   the associated cohort counts. Empirical margin coverage is scenario-specific.
-
-Further details appear in the [radio model](docs/receiver_feedback.md),
-[packet-delay definitions](docs/packet_delays.md),
-[supplementary studies](docs/supplementary_studies.md) and
-[solver regression notes](docs/solver_recovery.md).

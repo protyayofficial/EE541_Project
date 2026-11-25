@@ -1,8 +1,0 @@
-{
-  "passed": true,
-  "study": "delay_energy",
-  "policy_runs": 120,
-  "slots_per_run": 1000,
-  "checks": "matrix, fixed config/weights, full trace reconstruction, causal forecast vectors, keyed noise, margins and errors, physical/packet/delay accounting, both costs, run summaries and valid paired counts",
-  "scope": "execution and logged prediction checks; not an optimality or uncertainty-coverage guarantee; no independent packet repetitions"
-}

@@ -201,14 +201,6 @@ class EntryPointSmokeTests(unittest.TestCase):
             solver=pd.read_csv(out/'solver/solver_results.csv')
             self.assertEqual(len(solver),12)
             self.assertFalse((solver.status=='failed').any())
-            cli('proposal_study.py','--development',2,'--validation',2,'--slots',3,'--horizon',2,'--out',out/'proposal')
-            cli('audit_proposal.py',out/'proposal')
-            previous=pd.read_csv(out/'proposal/per_window.csv').realized_cost.to_numpy()
-            slots=pd.read_csv(out/'proposal/per_slot.csv').sample(frac=1.,random_state=1)
-            slots.to_csv(out/'proposal/per_slot.csv',index=False)
-            cli('proposal_analyze.py',out/'proposal')
-            np.testing.assert_allclose(pd.read_csv(out/'proposal/per_window.csv').realized_cost,previous,atol=1e-7)
-            cli('audit_proposal.py',out/'proposal')
 
 
 if __name__=='__main__':unittest.main()

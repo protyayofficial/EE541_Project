@@ -1,7 +1,0 @@
-{
-  "candidate": "guard75_h15",
-  "method": "adaptive_guard75",
-  "margin_scale": 1.0,
-  "horizon": 15,
-  "worst_development_ratio": 1.003314546443735
-}

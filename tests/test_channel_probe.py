@@ -176,14 +176,14 @@ class ChannelProbeTests(unittest.TestCase):
                 self.assertLess(max(verify_plan(sol,12.,7.,gains,[5.]*3,[.6]*3,cfg).values()),1e-4)
         self.assertTrue(dcp and all(dcp))
 
-    def test_matrices_historical_seeds_and_model_settings(self):
+    def test_matrices_production_seeds_and_model_settings(self):
         for normalized,start in ((False,5000),(True,6000)):
             matrix=pd.DataFrame(synthetic_matrix(mean_normalize=normalized))
             self.assertEqual(len(matrix),300)
             self.assertFalse(matrix.duplicated().any())
             self.assertEqual(set(matrix.seed),set(range(start,start+10)))
             folder='sweep_normalized' if normalized else 'sweep'
-            saved=json.loads((Path(__file__).resolve().parents[1]/'results/final_evaluation'/folder/'settings.json').read_text())
+            saved=json.loads((Path(__file__).resolve().parents[1]/'report_results/production'/folder/'settings.json').read_text())
             self.assertEqual(saved['seed_start'],start)
         self.assertEqual(len(solar_matrix()),300)
         cfg=Config();settings=simulation_settings(cfg)
