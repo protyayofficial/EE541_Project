@@ -7,7 +7,7 @@ from unittest.mock import patch
 import numpy as np
 import pandas as pd
 from final_evaluation import evaluate
-from proposal_study import run,METHODS
+from scheduling_policies import run,METHODS
 from src.experiment import run_policy,make_trace,summarize
 from src.scheduling import Config,execute_packets,planner_action,solve_cvxpy,solve_lp,verify_plan
 from src.radio import PacketRadio,PacketQueue,reception_uniform

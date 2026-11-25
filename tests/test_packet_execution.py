@@ -8,7 +8,7 @@ import numpy as np
 from src.scheduling import Config, capacity, execute_packets
 from src.experiment import make_trace, run_policy
 from src.auditing import audit_packets
-from proposal_study import METHODS, run
+from scheduling_policies import METHODS, run
 
 
 class PacketExecutionTests(unittest.TestCase):
@@ -87,7 +87,7 @@ class PacketExecutionTests(unittest.TestCase):
         cfg = Config(bit_error_probability=0.)
         # First slot leaves 12 - 3 + 22 = 31; second leaves 32 with one drop.
         trace = dict(gain=np.ones(2), arrival=np.array([22., 5.]), harvest=np.zeros(2))
-        with patch('proposal_study.solve_cvxpy', return_value=self.plan()):
+        with patch('scheduling_policies.solve_cvxpy', return_value=self.plan()):
             df = run(trace, cfg, 'nominal')
         self.assertEqual(df.b.iloc[1], 31)
         self.assertEqual(df.d.iloc[1], 3)

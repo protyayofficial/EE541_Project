@@ -10,7 +10,7 @@ from src.course_data import SOURCE_INTERVALS,SOURCE_FILES,SOURCE_SCALES,SOURCE_S
 from src.experiment import make_trace
 from src.scheduling import Config
 from src.radio import simulation_settings,timing_metrics
-from proposal_study import run
+from scheduling_policies import run
 from final_evaluation import DEFAULT_ROOT,DEFAULT_SLOTS,evaluate
 from src.packets import run_delay_metrics,append_packet_run,DELAY_MEASURES,paired_stats
 

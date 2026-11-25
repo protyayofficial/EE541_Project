@@ -14,7 +14,7 @@ import numpy as np
 import pandas as pd
 
 from final_evaluation import evaluate,make_evaluation_trace
-from proposal_study import margins,run
+from scheduling_policies import margins,run
 from src.auditing import audit_packets,audit_metrics,trajectory_config
 from src.experiment import _margins,run_policy,summarize
 from src.radio import simulation_settings
@@ -149,21 +149,21 @@ class EntryPointSmokeTests(unittest.TestCase):
                 else:self.assertNotEqual(result.returncode,0)
                 return result
             cli('final_evaluation.py','--seeds',2,'--slots',3,'--horizon',2,'--out',out/'sweep')
-            cli('audit_final_evaluation.py',out/'sweep')
+            cli('verify_synthetic_results.py',out/'sweep')
             matrix_path=out/'sweep/run_matrix.csv';matrix_original=matrix_path.read_bytes()
             corrupt=pd.read_csv(matrix_path);corrupt.loc[0,'mode']='wrong_policy'
             corrupt.to_csv(matrix_path,index=False)
-            cli('audit_final_evaluation.py',out/'sweep',success=False)
+            cli('verify_synthetic_results.py',out/'sweep',success=False)
             matrix_path.write_bytes(matrix_original)
             cli('final_evaluation.py','--mean-normalize','--seeds',2,'--slots',3,'--horizon',2,'--out',out/'sweep_normalized')
-            cli('audit_final_evaluation.py',out/'sweep_normalized')
+            cli('verify_synthetic_results.py',out/'sweep_normalized')
             cli('final_solar_evaluation.py','--validate-only','--windows',2,'--slots',3,'--horizon',2,'--out',out/'solar')
             self.assertTrue((out/'solar/run_matrix.csv').exists())
             self.assertFalse((out/'solar/per_slot.csv').exists())
             self.assertFalse((out/'solar/partial_slots.csv').exists())
             cli('final_solar_evaluation.py','--windows',2,'--slots',3,'--horizon',2,'--out',out/'solar')
-            cli('audit_comparison.py',out/'solar')
-            cli('audit_final_solar.py',out/'solar')
+            cli('verify_solar_actions.py',out/'solar')
+            cli('verify_solar_sources.py',out/'solar')
             settings=json.loads((out/'solar/settings.json').read_text())
             self.assertEqual(settings['dataset_slot_seconds'],dict(arco=60.,umass_home_c=60.,nrel_tmy3=3600.))
             self.assertEqual(settings['planned_policy_runs'],60)
@@ -187,11 +187,11 @@ class EntryPointSmokeTests(unittest.TestCase):
             settings_path=out/'solar/settings.json';original=settings_path.read_text()
             settings['window_manifest']['arco']['pairwise_overlap'][0]['overlap_samples']+=1
             settings_path.write_text(json.dumps(settings))
-            failed=cli('audit_final_solar.py',out/'solar',success=False)
+            failed=cli('verify_solar_sources.py',out/'solar',success=False)
             self.assertIn('manifest mismatch',failed.stderr)
             settings_path.write_text(original)
             cli('offline_reference.py','--root',out)
-            cli('audit_offline.py',out/'offline')
+            cli('verify_offline_reference.py',out/'offline')
             offline=pd.read_csv(out/'offline/per_instance.csv')
             self.assertEqual(len(offline),18)
             self.assertFalse((offline.status=='failed').any())

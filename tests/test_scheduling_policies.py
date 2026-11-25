@@ -2,7 +2,7 @@
 import unittest
 from dataclasses import replace
 import numpy as np
-from proposal_study import margins,apply_margins,raw_forecasts,run
+from scheduling_policies import margins,apply_margins,raw_forecasts,run
 from src.experiment import make_trace
 from src.scheduling import Config,capacity
 

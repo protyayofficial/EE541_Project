@@ -9,10 +9,10 @@ import tempfile
 import unittest
 import numpy as np
 import pandas as pd
-from audit_supplementary import audit,audit_forecasts
+from verify_supplementary_results import audit,audit_forecasts
 from final_evaluation import make_evaluation_trace,planned_runs as main_runs
 from final_solar_evaluation import planned_runs as solar_runs
-from proposal_study import run
+from scheduling_policies import run
 from src.auditing import audit_packets,audit_packet_ledger
 from src.forecast_noise import standard_normal,perturb_channel
 from src.packets import packet_table,run_delay_metrics
@@ -137,7 +137,7 @@ class SupplementaryTests(unittest.TestCase):
                 out=Path(directory)/(study+'_short')
                 cli('supplementary_studies.py',study,'--seeds',2,'--slots',4,'--horizon',3,'--plan-only','--out',out)
                 cli('supplementary_studies.py',study,'--seeds',2,'--slots',4,'--horizon',3,'--out',out)
-                cli('audit_supplementary.py',out)
+                cli('verify_supplementary_results.py',out)
                 raw=pd.read_csv(out/'per_seed.csv');slots=pd.read_csv(out/'per_slot.csv');packets=pd.read_csv(out/'per_packet.csv')
                 self.assertEqual(len(raw),24);self.assertEqual(raw.run_id.nunique(),24)
                 self.assertFalse(packets.duplicated(['run_id','packet_id']).any())

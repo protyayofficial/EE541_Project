@@ -13,7 +13,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from final_evaluation import DEFAULT_ROOT,evaluate,make_evaluation_trace
-from proposal_study import run
+from scheduling_policies import run
 from src.forecast_noise import NOISE_MODEL
 from src.packets import DELAY_MEASURES,append_packet_run,paired_stats
 from src.radio import simulation_settings

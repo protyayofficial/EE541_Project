@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 
 from final_evaluation import evaluate
-from proposal_study import METHODS, run
+from scheduling_policies import METHODS, run
 from src.auditing import audit_metrics, audit_packets, saved_config, trajectory_config
 from src.course_data import SOURCE_INTERVALS
 from src.experiment import make_trace, run_policy, summarize
@@ -194,7 +194,7 @@ class PhaseTimingTests(unittest.TestCase):
     def test_controllers_forecast_after_feedback_using_committed_history(self):
         cfg = Config(horizon=2)
         trace = make_trace(3, 28)
-        for module in ('proposal_study','src.experiment'):
+        for module in ('scheduling_policies','src.experiment'):
             radios = []
             def create(*args, **kwargs):
                 radio = PacketRadio(*args, **kwargs)
@@ -209,7 +209,7 @@ class PhaseTimingTests(unittest.TestCase):
                 return raw_forecasts(history,gain,horizon,**kwargs)
             with self.subTest(module=module), patch(module+'.PacketRadio',side_effect=create), \
                  patch(module+'.raw_forecasts',side_effect=forecast):
-                df = run(trace,cfg,'nominal') if module=='proposal_study' else run_policy(trace,'nominal',cfg)
+                df = run(trace,cfg,'nominal') if module=='scheduling_policies' else run_policy(trace,'nominal',cfg)
             self.assertTrue(audit_packets(df,cfg))
 
     def test_exact_budget_boundary_and_deadline_policy(self):

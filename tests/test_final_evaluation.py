@@ -4,7 +4,7 @@ from dataclasses import replace
 from src.scheduling import Config,solve_cvxpy,verify_plan
 from final_evaluation import make_evaluation_trace, evaluate
 from offline_reference import solve_one
-from proposal_study import run
+from scheduling_policies import run
 
 class FinalEvaluationTests(unittest.TestCase):
     def test_matched_bounded_seeded_trace(self):

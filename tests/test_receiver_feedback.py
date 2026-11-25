@@ -8,7 +8,7 @@ from unittest.mock import patch
 import numpy as np
 import pandas as pd
 
-from proposal_study import run
+from scheduling_policies import run
 from final_evaluation import evaluate
 from src.auditing import audit_packets, saved_config
 from src.experiment import make_trace, run_policy, summarize
@@ -134,7 +134,7 @@ class ReceiverTests(unittest.TestCase):
 
 class FeedbackIntegrationTests(unittest.TestCase):
     def test_every_policy_skips_unaffordable_control_and_resumes_after_harvest(self):
-        from proposal_study import METHODS
+        from scheduling_policies import METHODS
         cfg=Config(horizon=2,probe_energy=8.,channel_report_energy=0.,ack_energy=0.)
         tr=make_trace(2,seed=77);tr['harvest'][:]=5.
         runners=[lambda m=m:run(tr,cfg,m) for m in
@@ -155,10 +155,12 @@ class FeedbackIntegrationTests(unittest.TestCase):
 
     def test_reports_precede_planning_and_history_uses_reports(self):
         tr = make_trace(3,seed=88)
-        for runner, target in ((lambda c:run(tr,c,'nominal'),'proposal_study.solve_cvxpy'),
-                               (lambda c:run_policy(tr,'nominal',c),'src.experiment.solve_lp')):
+        cases = (
+            (lambda c:run(tr,c,'nominal'), 'scheduling_policies.solve_cvxpy', solve_cvxpy),
+            (lambda c:run_policy(tr,'nominal',c), 'src.experiment.solve_lp', solve_lp),
+        )
+        for runner, target, solver in cases:
             seen = []
-            solver = solve_cvxpy if 'proposal' in target else solve_lp
             def check(b,e,g,a,h,c,**kwargs):
                 seen.append(g[0])
                 self.assertEqual(g[0],.8)
@@ -168,7 +170,7 @@ class FeedbackIntegrationTests(unittest.TestCase):
             self.assertEqual(len(seen),3)
             np.testing.assert_array_equal(df.channel_estimate,.8)
         # Gain history must use the report, never the true gain.
-        for target, runner in (('proposal_study.raw_forecasts',lambda:run(tr,Config(),'greedy')),
+        for target, runner in (('scheduling_policies.raw_forecasts',lambda:run(tr,Config(),'greedy')),
                                ('src.experiment.raw_forecasts',lambda:run_policy(tr,'greedy'))):
             from src.forecasting import raw_forecasts
             histories=[]

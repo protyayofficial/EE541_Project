@@ -12,7 +12,7 @@ from src.scheduling import Config,solve_cvxpy,solve_lp,verify_plan
 from src.radio import PacketRadio,Receiver,simulation_settings
 from src.experiment import make_trace,run_policy
 from src.auditing import saved_config,audit_packets
-from proposal_study import run,apply_margins
+from scheduling_policies import run,apply_margins
 from final_evaluation import planned_runs as synthetic_matrix
 from final_solar_evaluation import planned_runs as solar_matrix
 

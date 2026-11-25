@@ -1,4 +1,4 @@
-# Prediction-Aware Packet Scheduling for Energy-Harvesting Sensors
+# Prediction-Aware Convex Optimization for Energy-Harvesting Wireless Packet Scheduling
 
 **EE 541 · University at Buffalo · Fall 2026**
 
@@ -58,7 +58,7 @@ bash scripts/run_experiments.sh --run --output-parent runs
 
 The launcher prints the output directory. In it, `status.json` and `logs/`
 record stage progress, and `COMPLETED` marks a run that passed the final audit.
-The launcher calls the audit scripts to verify run counts, physical constraints,
+The launcher calls the `verify_*.py` scripts to verify run counts, physical constraints,
 and agreement between saved trajectories and summary tables. Each invocation
 creates a new directory. Run `python final_evaluation.py --help`
 or `python final_solar_evaluation.py --help` for individual study options.

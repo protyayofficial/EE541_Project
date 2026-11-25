@@ -7,7 +7,7 @@ from unittest.mock import patch
 import numpy as np
 
 from final_evaluation import make_evaluation_trace
-from proposal_study import apply_margins, run
+from scheduling_policies import apply_margins, run
 from src.auditing import audit_packets, saved_config
 from src.experiment import make_trace, run_policy
 from src.forecasting import raw_forecasts
@@ -70,7 +70,7 @@ class ArrivalActionTests(unittest.TestCase):
         np.testing.assert_array_equal(apply_margins(g,arrivals,h,np.array([0.,100.,0.]),'adaptive_all')[1],10.)
         tr=make_trace(3,seed=10);tr['arrival'][:]=[0.,25.,0.]
         cfg=Config(horizon=2)
-        cases=(('proposal_study.solve_cvxpy','proposal_study.margins',solve_cvxpy,
+        cases=(('scheduling_policies.solve_cvxpy','scheduling_policies.margins',solve_cvxpy,
                 lambda:run(tr,cfg,'adaptive_all')),
                ('src.experiment.solve_lp','src.experiment._margins',solve_lp,
                 lambda:run_policy(tr,'adaptive',cfg)))

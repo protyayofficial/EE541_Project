@@ -11,7 +11,7 @@ import pandas as pd
 
 import final_evaluation
 from final_solar_evaluation import MODES,planned_runs
-from proposal_study import run
+from scheduling_policies import run
 from src.auditing import audit_packets
 from src.course_data import load_solar,load_umass,load_nrel,select_windows
 from src.experiment import make_trace
