@@ -1,1 +1,0 @@
-Partial figure export only. Its completeness check caught a missing supporting copy of the solar paired-cost figure. Preserved unchanged; corrected complete package is generated in the next suffixed directory. No experiments were run or production outputs changed.

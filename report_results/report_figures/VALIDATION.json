@@ -1,0 +1,152 @@
+{
+  "checks_now": [
+    "completed status/marker and final completion audit; exact saved run matrices/counts/seeds",
+    "run-level packet cohort identities, admission/rejection denominators, missing-delay semantics",
+    "run-level queue/terminal conservation, energy components, configured/common score formulas, source-specific throughput units",
+    "streamed solver-name/status/time/t/run-ID metadata only; no packet/battery ledger audit replay",
+    "every plotted mean/difference/CI/sample count independently recomputed with fsum and sample-variance formulas against saved rows; x-axis energy intervals checked separately",
+    "all figures exported as vector PDF and 300-dpi PNG; data and caption/index mappings checked",
+    "exhaustive Cartesian run matrices and matched 60+30 offline scenario identities",
+    "all 600 offline score pairs independently joined to saved online and reference objective values",
+    "final plotted-data CSV values reloaded and independently checked; final production hashes match initial read across all exports",
+    "analysis empty/missing/singleton, missing-pair, seed-alignment and identical-pair checks; syntax check",
+    "visual review of supporting contact sheets and full-resolution main/target delay layouts"
+  ],
+  "previous_raw_audits": [
+    {
+      "path": "sweep/audit.json",
+      "sha256": "bb6d51bec9d84998bc5bf118ff42313a22096961e1adb43591815e4104e1e9db",
+      "passed": true,
+      "replayed_now": false
+    },
+    {
+      "path": "sweep_normalized/audit.json",
+      "sha256": "bb6d51bec9d84998bc5bf118ff42313a22096961e1adb43591815e4104e1e9db",
+      "passed": true,
+      "replayed_now": false
+    },
+    {
+      "path": "solar/audit.json",
+      "sha256": "196d162b81d390f3f0e4a2c0ce481a484c4d0587e946599aa900edfddcabb733",
+      "passed": true,
+      "replayed_now": false
+    },
+    {
+      "path": "solar/source_audit.json",
+      "sha256": "4fd2b5f70a3a0192a3c779364acf48520e1a246ab82311cd6d577daeb22b6b28",
+      "passed": true,
+      "replayed_now": false
+    },
+    {
+      "path": "supplementary/delay_energy/audit.json",
+      "sha256": "84ab09611b9cd477caa43824022bb877f431e275f9a77a38bd64f8ef8f28da32",
+      "passed": true,
+      "replayed_now": false
+    },
+    {
+      "path": "supplementary/forecast_sensitivity/audit.json",
+      "sha256": "c807bc927058ecc75b9e87646cedc01c2fae82fcd4cdf9558ed47dc2d4a353cf",
+      "passed": true,
+      "replayed_now": false
+    },
+    {
+      "path": "offline/audit.json",
+      "sha256": "2fc8084f22943afbe24c5a14cf80533d5903ae1ec5f0f7a2b902d207b572ec2e",
+      "passed": true,
+      "replayed_now": false
+    },
+    {
+      "path": "solver/audit.json",
+      "sha256": "f27fce2e9e7d165ee34cbacbab23a72250cb135db4d95388459cffff02102e14",
+      "passed": true,
+      "replayed_now": false
+    }
+  ],
+  "raw_ledger_audit_replayed": false,
+  "intervals": "unadjusted 95% t; solar intervals descriptive due to shared-source dependence",
+  "plotted_point_interval_checks": 858,
+  "saved_paired_crosschecks": 60,
+  "statistical_fallacy_scan_11_of_11": {
+    "Simpson": "harvest/sigma/source conditions retained; only coverage condition averages within seed",
+    "Ecological": "run-level effects; no inference from aggregate means to individual packets",
+    "Selection/Berkson": "admission and completion selection explicit; conditional delay cohorts counted",
+    "Collider": "no adjusted causal regression; completion-conditioned delays explicitly limited",
+    "Base rates": "offered/admitted/completed denominators and rejection included",
+    "Regression to mean": "fixed predeclared conditions; no extremal subgroup selected as the only evidence",
+    "Survivorship": "unfinished/rejected/initial counts and missing means preserved",
+    "Look elsewhere": "all conditions and unfavorable/equal differences retained; intervals unadjusted",
+    "Forking paths": "no model/policy/grid tuning; plotting selections and complete support collection disclosed",
+    "Causal claims": "controlled simulated channel-forecast perturbation only; no real-world causal claim",
+    "Reverse causality": "future truth only used for saved post-run evaluation, not rebuilt online inputs"
+  },
+  "passed": true,
+  "verified_utc": "2026-11-20T19:36:48.917630+00:00",
+  "input_directory": "/home/wings/Downloads/EE541_Project-master/results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28",
+  "production_files": 113,
+  "production_bytes": 5866627000,
+  "production_file_hashes_unchanged": true,
+  "counts": {
+    "original": 300,
+    "normalized": 300,
+    "solar": 300,
+    "delay_energy": 120,
+    "forecast_sensitivity": 120,
+    "offline": 90,
+    "solver": 12
+  },
+  "revised_supporting_figures": 20,
+  "recommended_main_figures": 5,
+  "additional_outcome_figures": 1,
+  "experiments_rerun": false,
+  "model_or_optimizer_modified": false,
+  "limitations": [
+    "unadjusted small-n t intervals; no multiplicity correction/normality guarantee",
+    "dependent solar windows, nine NREL overlapping pairs",
+    "completed-only delay cohorts differ; missing completions not imputed",
+    "no raw-ledger audit replay in this analysis"
+  ],
+  "source_snapshot_matches_first_read": true,
+  "analysis_code_sha256": "53a1bd21a20f177abab0bf7c8b117eea09b51208a8e2235222c6c9279a065c01",
+  "analysis_self_checks": {
+    "syntax": "passed",
+    "empty_all_missing_singleton_statistics": "passed",
+    "matched_seed_alignment": "passed",
+    "missing_delay_pairs_not_imputed": "passed",
+    "identical_pairs_zero_width_interval": "passed"
+  },
+  "exhaustive_matrix_verification": {
+    "original": 300,
+    "normalized": 300,
+    "solar": 300,
+    "delay_energy": 120,
+    "forecast_sensitivity": 120,
+    "offline_synthetic": 60,
+    "offline_solar": 30,
+    "solver_case_solver_pairs": 12,
+    "offline_score_pairs_joined": 600
+  },
+  "runtime_metadata_totals": {
+    "optimization_calls": 858747,
+    "accepted_optimal_calls": 858747,
+    "accepted_inaccurate_calls": 0,
+    "accepted_other_calls": 0,
+    "solver_budget_exceedances": 0,
+    "decision_budget_exceedances": 0
+  },
+  "visual_review": {
+    "all_twenty_supporting_plots": "contact sheets; representative layouts also at full resolution",
+    "five_main_figures": "each viewed at full resolution",
+    "two_corrected_delay_figures": "each viewed at full resolution",
+    "extra_noise_response": "viewed at full resolution",
+    "result": "no clipped labels or overlapping legends observed; coincident settings retained with nested markers"
+  },
+  "packaging": {
+    "excluded": [
+      "raw slot/packet/offline-plan ledgers",
+      "raw solar downloads",
+      "virtual environment",
+      "historical/failed production runs"
+    ],
+    "checks": "relative member paths, no duplicate names, CRC test"
+  }
+}
