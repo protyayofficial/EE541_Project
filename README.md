@@ -58,7 +58,9 @@ bash scripts/run_experiments.sh --run --output-parent runs
 
 The launcher prints the output directory. In it, `status.json` and `logs/`
 record stage progress, and `COMPLETED` marks a run that passed the final audit.
-Each invocation creates a new directory. Run `python final_evaluation.py --help`
+The launcher calls the audit scripts to verify run counts, physical constraints,
+and agreement between saved trajectories and summary tables. Each invocation
+creates a new directory. Run `python final_evaluation.py --help`
 or `python final_solar_evaluation.py --help` for individual study options.
 
 The full design uses 1,000-slot episodes. It includes two 300-run synthetic

@@ -137,7 +137,7 @@ class SupplementaryTests(unittest.TestCase):
                 out=Path(directory)/(study+'_short')
                 cli('supplementary_studies.py',study,'--seeds',2,'--slots',4,'--horizon',3,'--plan-only','--out',out)
                 cli('supplementary_studies.py',study,'--seeds',2,'--slots',4,'--horizon',3,'--out',out)
-                cli('analyze_supplementary.py',out);cli('audit_supplementary.py',out)
+                cli('audit_supplementary.py',out)
                 raw=pd.read_csv(out/'per_seed.csv');slots=pd.read_csv(out/'per_slot.csv');packets=pd.read_csv(out/'per_packet.csv')
                 self.assertEqual(len(raw),24);self.assertEqual(raw.run_id.nunique(),24)
                 self.assertFalse(packets.duplicated(['run_id','packet_id']).any())

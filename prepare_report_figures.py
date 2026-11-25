@@ -97,7 +97,9 @@ class Report:
     def load(self):
         status=json.loads((self.source/'status.json').read_text())
         assert status['status']=='completed' and all(r['status']=='completed' for r in status['stages'])
-        assert (self.source/'COMPLETED').exists() and 'PASS:' in (self.source/'logs/21_completion_audit.log').read_text()
+        self.completion_log = next(row['log'] for row in status['stages']
+                                   if row['stage'] == 'completion_audit')
+        assert (self.source/'COMPLETED').exists() and 'PASS:' in (self.source/self.completion_log).read_text()
         self.status=status;self.settings={};structure=[]
         for folder,(file,expected,start) in SPEC.items():
             d=pd.read_csv(self.source/folder/file);s=json.loads((self.source/folder/'settings.json').read_text())
@@ -626,7 +628,7 @@ def findings(r):
 
 
 def copy_inputs(r):
-    names={'status.json','status.tsv','preflight.json','COMPLETED','logs/21_completion_audit.log'}
+    names={'status.json','status.tsv','preflight.json','COMPLETED',r.completion_log}
     for p in r.source.rglob('*'):
         if p.is_file() and p.suffix in ('.json','.csv') and p.name not in ('per_slot.csv','partial_slots.csv','per_packet.csv','plans.csv','partial_windows.csv','partial.csv'):
             names.add(str(p.relative_to(r.source)))
