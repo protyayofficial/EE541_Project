@@ -1,0 +1,503 @@
+harvest 0.6 sigma 0.2 seed 6000 mode greedy
+harvest 0.6 sigma 0.2 seed 6000 mode nominal
+harvest 0.6 sigma 0.2 seed 6000 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 6000 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 6000 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 6001 mode greedy
+harvest 0.6 sigma 0.2 seed 6001 mode nominal
+harvest 0.6 sigma 0.2 seed 6001 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 6001 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 6001 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 6002 mode greedy
+harvest 0.6 sigma 0.2 seed 6002 mode nominal
+harvest 0.6 sigma 0.2 seed 6002 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.2 seed 6002 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 6002 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 6003 mode greedy
+harvest 0.6 sigma 0.2 seed 6003 mode nominal
+harvest 0.6 sigma 0.2 seed 6003 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.2 seed 6003 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 6003 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 6004 mode greedy
+harvest 0.6 sigma 0.2 seed 6004 mode nominal
+harvest 0.6 sigma 0.2 seed 6004 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 6004 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 6004 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 6005 mode greedy
+harvest 0.6 sigma 0.2 seed 6005 mode nominal
+harvest 0.6 sigma 0.2 seed 6005 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 6005 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 6005 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 6006 mode greedy
+harvest 0.6 sigma 0.2 seed 6006 mode nominal
+harvest 0.6 sigma 0.2 seed 6006 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 6006 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 6006 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 6007 mode greedy
+harvest 0.6 sigma 0.2 seed 6007 mode nominal
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.2 seed 6007 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 6007 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 6007 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 6008 mode greedy
+harvest 0.6 sigma 0.2 seed 6008 mode nominal
+harvest 0.6 sigma 0.2 seed 6008 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 6008 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 6008 mode adaptive_all
+harvest 0.6 sigma 0.2 seed 6009 mode greedy
+harvest 0.6 sigma 0.2 seed 6009 mode nominal
+harvest 0.6 sigma 0.2 seed 6009 mode fixed_margin
+harvest 0.6 sigma 0.2 seed 6009 mode adaptive_harvest
+harvest 0.6 sigma 0.2 seed 6009 mode adaptive_all
+harvest 0.6 sigma 0.45 seed 6000 mode greedy
+harvest 0.6 sigma 0.45 seed 6000 mode nominal
+harvest 0.6 sigma 0.45 seed 6000 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6000 mode adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6000 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6001 mode greedy
+harvest 0.6 sigma 0.45 seed 6001 mode nominal
+harvest 0.6 sigma 0.45 seed 6001 mode fixed_margin
+harvest 0.6 sigma 0.45 seed 6001 mode adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6001 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6002 mode greedy
+harvest 0.6 sigma 0.45 seed 6002 mode nominal
+harvest 0.6 sigma 0.45 seed 6002 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6002 mode adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6002 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6003 mode greedy
+harvest 0.6 sigma 0.45 seed 6003 mode nominal
+harvest 0.6 sigma 0.45 seed 6003 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6003 mode adaptive_harvest
+harvest 0.6 sigma 0.45 seed 6003 mode adaptive_all
+harvest 0.6 sigma 0.45 seed 6004 mode greedy
+harvest 0.6 sigma 0.45 seed 6004 mode nominal
+harvest 0.6 sigma 0.45 seed 6004 mode fixed_margin
+harvest 0.6 sigma 0.45 seed 6004 mode adaptive_harvest
+harvest 0.6 sigma 0.45 seed 6004 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6005 mode greedy
+harvest 0.6 sigma 0.45 seed 6005 mode nominal
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6005 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6005 mode adaptive_harvest
+harvest 0.6 sigma 0.45 seed 6005 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6006 mode greedy
+harvest 0.6 sigma 0.45 seed 6006 mode nominal
+harvest 0.6 sigma 0.45 seed 6006 mode fixed_margin
+harvest 0.6 sigma 0.45 seed 6006 mode adaptive_harvest
+harvest 0.6 sigma 0.45 seed 6006 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6007 mode greedy
+harvest 0.6 sigma 0.45 seed 6007 mode nominal
+harvest 0.6 sigma 0.45 seed 6007 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6007 mode adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6007 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6008 mode greedy
+harvest 0.6 sigma 0.45 seed 6008 mode nominal
+harvest 0.6 sigma 0.45 seed 6008 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6008 mode adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6008 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6009 mode greedy
+harvest 0.6 sigma 0.45 seed 6009 mode nominal
+harvest 0.6 sigma 0.45 seed 6009 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.45 seed 6009 mode adaptive_harvest
+harvest 0.6 sigma 0.45 seed 6009 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6000 mode greedy
+harvest 0.6 sigma 0.8 seed 6000 mode nominal
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6000 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6000 mode adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6000 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6001 mode greedy
+harvest 0.6 sigma 0.8 seed 6001 mode nominal
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6001 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6001 mode adaptive_harvest
+harvest 0.6 sigma 0.8 seed 6001 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6002 mode greedy
+harvest 0.6 sigma 0.8 seed 6002 mode nominal
+harvest 0.6 sigma 0.8 seed 6002 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6002 mode adaptive_harvest
+harvest 0.6 sigma 0.8 seed 6002 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6003 mode greedy
+harvest 0.6 sigma 0.8 seed 6003 mode nominal
+harvest 0.6 sigma 0.8 seed 6003 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6003 mode adaptive_harvest
+harvest 0.6 sigma 0.8 seed 6003 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6004 mode greedy
+harvest 0.6 sigma 0.8 seed 6004 mode nominal
+harvest 0.6 sigma 0.8 seed 6004 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6004 mode adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6004 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6005 mode greedy
+harvest 0.6 sigma 0.8 seed 6005 mode nominal
+harvest 0.6 sigma 0.8 seed 6005 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6005 mode adaptive_harvest
+harvest 0.6 sigma 0.8 seed 6005 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6006 mode greedy
+harvest 0.6 sigma 0.8 seed 6006 mode nominal
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6006 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6006 mode adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6006 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6007 mode greedy
+harvest 0.6 sigma 0.8 seed 6007 mode nominal
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6007 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6007 mode adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6007 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6008 mode greedy
+harvest 0.6 sigma 0.8 seed 6008 mode nominal
+harvest 0.6 sigma 0.8 seed 6008 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6008 mode adaptive_harvest
+harvest 0.6 sigma 0.8 seed 6008 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6009 mode greedy
+harvest 0.6 sigma 0.8 seed 6009 mode nominal
+harvest 0.6 sigma 0.8 seed 6009 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6009 mode adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 0.6 sigma 0.8 seed 6009 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.2 seed 6000 mode greedy
+harvest 1.2 sigma 0.2 seed 6000 mode nominal
+harvest 1.2 sigma 0.2 seed 6000 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 6000 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 6000 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 6001 mode greedy
+harvest 1.2 sigma 0.2 seed 6001 mode nominal
+harvest 1.2 sigma 0.2 seed 6001 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 6001 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 6001 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 6002 mode greedy
+harvest 1.2 sigma 0.2 seed 6002 mode nominal
+harvest 1.2 sigma 0.2 seed 6002 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 6002 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 6002 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 6003 mode greedy
+harvest 1.2 sigma 0.2 seed 6003 mode nominal
+harvest 1.2 sigma 0.2 seed 6003 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 6003 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 6003 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 6004 mode greedy
+harvest 1.2 sigma 0.2 seed 6004 mode nominal
+harvest 1.2 sigma 0.2 seed 6004 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 6004 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 6004 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 6005 mode greedy
+harvest 1.2 sigma 0.2 seed 6005 mode nominal
+harvest 1.2 sigma 0.2 seed 6005 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 6005 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 6005 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 6006 mode greedy
+harvest 1.2 sigma 0.2 seed 6006 mode nominal
+harvest 1.2 sigma 0.2 seed 6006 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 6006 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 6006 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 6007 mode greedy
+harvest 1.2 sigma 0.2 seed 6007 mode nominal
+harvest 1.2 sigma 0.2 seed 6007 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 6007 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 6007 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 6008 mode greedy
+harvest 1.2 sigma 0.2 seed 6008 mode nominal
+harvest 1.2 sigma 0.2 seed 6008 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 6008 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 6008 mode adaptive_all
+harvest 1.2 sigma 0.2 seed 6009 mode greedy
+harvest 1.2 sigma 0.2 seed 6009 mode nominal
+harvest 1.2 sigma 0.2 seed 6009 mode fixed_margin
+harvest 1.2 sigma 0.2 seed 6009 mode adaptive_harvest
+harvest 1.2 sigma 0.2 seed 6009 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 6000 mode greedy
+harvest 1.2 sigma 0.45 seed 6000 mode nominal
+harvest 1.2 sigma 0.45 seed 6000 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.45 seed 6000 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 6000 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 6001 mode greedy
+harvest 1.2 sigma 0.45 seed 6001 mode nominal
+harvest 1.2 sigma 0.45 seed 6001 mode fixed_margin
+harvest 1.2 sigma 0.45 seed 6001 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 6001 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.45 seed 6002 mode greedy
+harvest 1.2 sigma 0.45 seed 6002 mode nominal
+harvest 1.2 sigma 0.45 seed 6002 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.45 seed 6002 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 6002 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 6003 mode greedy
+harvest 1.2 sigma 0.45 seed 6003 mode nominal
+harvest 1.2 sigma 0.45 seed 6003 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.45 seed 6003 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 6003 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 6004 mode greedy
+harvest 1.2 sigma 0.45 seed 6004 mode nominal
+harvest 1.2 sigma 0.45 seed 6004 mode fixed_margin
+harvest 1.2 sigma 0.45 seed 6004 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 6004 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 6005 mode greedy
+harvest 1.2 sigma 0.45 seed 6005 mode nominal
+harvest 1.2 sigma 0.45 seed 6005 mode fixed_margin
+harvest 1.2 sigma 0.45 seed 6005 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 6005 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 6006 mode greedy
+harvest 1.2 sigma 0.45 seed 6006 mode nominal
+harvest 1.2 sigma 0.45 seed 6006 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.45 seed 6006 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 6006 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 6007 mode greedy
+harvest 1.2 sigma 0.45 seed 6007 mode nominal
+harvest 1.2 sigma 0.45 seed 6007 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.45 seed 6007 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 6007 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.45 seed 6008 mode greedy
+harvest 1.2 sigma 0.45 seed 6008 mode nominal
+harvest 1.2 sigma 0.45 seed 6008 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.45 seed 6008 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 6008 mode adaptive_all
+harvest 1.2 sigma 0.45 seed 6009 mode greedy
+harvest 1.2 sigma 0.45 seed 6009 mode nominal
+harvest 1.2 sigma 0.45 seed 6009 mode fixed_margin
+harvest 1.2 sigma 0.45 seed 6009 mode adaptive_harvest
+harvest 1.2 sigma 0.45 seed 6009 mode adaptive_all
+harvest 1.2 sigma 0.8 seed 6000 mode greedy
+harvest 1.2 sigma 0.8 seed 6000 mode nominal
+harvest 1.2 sigma 0.8 seed 6000 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6000 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 6000 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6001 mode greedy
+harvest 1.2 sigma 0.8 seed 6001 mode nominal
+harvest 1.2 sigma 0.8 seed 6001 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6001 mode adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6001 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6002 mode greedy
+harvest 1.2 sigma 0.8 seed 6002 mode nominal
+harvest 1.2 sigma 0.8 seed 6002 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6002 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 6002 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6003 mode greedy
+harvest 1.2 sigma 0.8 seed 6003 mode nominal
+harvest 1.2 sigma 0.8 seed 6003 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6003 mode adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6003 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6004 mode greedy
+harvest 1.2 sigma 0.8 seed 6004 mode nominal
+harvest 1.2 sigma 0.8 seed 6004 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6004 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 6004 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6005 mode greedy
+harvest 1.2 sigma 0.8 seed 6005 mode nominal
+harvest 1.2 sigma 0.8 seed 6005 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6005 mode adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6005 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6006 mode greedy
+harvest 1.2 sigma 0.8 seed 6006 mode nominal
+harvest 1.2 sigma 0.8 seed 6006 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6006 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 6006 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6007 mode greedy
+harvest 1.2 sigma 0.8 seed 6007 mode nominal
+harvest 1.2 sigma 0.8 seed 6007 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6007 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 6007 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6008 mode greedy
+harvest 1.2 sigma 0.8 seed 6008 mode nominal
+harvest 1.2 sigma 0.8 seed 6008 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6008 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 6008 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6009 mode greedy
+harvest 1.2 sigma 0.8 seed 6009 mode nominal
+harvest 1.2 sigma 0.8 seed 6009 mode fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+harvest 1.2 sigma 0.8 seed 6009 mode adaptive_harvest
+harvest 1.2 sigma 0.8 seed 6009 mode adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+Max violation: 9.388500040685699e-05 inaccurate: 0
+                                             realized_cost  drop_ratio    queue       energy
+harvest_mean channel_sigma mode                                                             
+0.6          0.20          adaptive_all       27264.446215    0.042965  19.4238   557.641433
+                           adaptive_harvest   27225.746455    0.042771  19.4201   557.643032
+                           fixed_margin       27332.646499    0.043316  19.4290   557.643325
+                           greedy             27332.646499    0.043316  19.4290   557.643325
+                           nominal            27287.745690    0.043082  19.4261   557.637931
+             0.45          adaptive_all       40918.573314    0.101218  22.7567   605.822092
+                           adaptive_harvest   41243.066121    0.103608  22.6606   603.107474
+                           fixed_margin       42169.943345    0.107588  22.8797   606.288966
+                           greedy             45405.925139    0.123456  23.3025   606.834262
+                           nominal            43084.876598    0.111999  23.0081   606.510653
+             0.80          adaptive_all       74511.756494    0.264898  27.3974   609.043292
+                           adaptive_harvest   77209.329182    0.279371  27.5455   608.194546
+                           fixed_margin       73945.594098    0.261778  27.3883   609.293990
+                           greedy             86193.061026    0.325424  28.3752   609.740172
+                           nominal            78832.223057    0.286837  27.8407   609.487043
+1.2          0.20          adaptive_all       26655.483449    0.040338  19.2871   559.222991
+                           adaptive_harvest   26655.483449    0.040338  19.2871   559.222991
+                           fixed_margin       26655.483449    0.040338  19.2871   559.222991
+                           greedy             26655.483449    0.040338  19.2871   559.222991
+                           nominal            26655.483449    0.040338  19.2871   559.222991
+             0.45          adaptive_all       26889.150209    0.041251  19.3374   685.001392
+                           adaptive_harvest   26900.548199    0.041309  19.3383   684.987997
+                           fixed_margin       26743.217941    0.040631  19.3033   686.119608
+                           greedy             26731.336893    0.040573  19.3019   686.245955
+                           nominal            26735.033995    0.040592  19.3021   686.226635
+             0.80          adaptive_all       39057.453248    0.092335  22.3813   981.688323
+                           adaptive_harvest   39309.344455    0.093828  22.3673   984.963036
+                           fixed_margin       37673.454112    0.085914  22.1304  1011.694077
+                           greedy             38009.360568    0.087527  22.1807  1017.737119
+                           nominal            37318.846951    0.084196  22.0799  1014.313009

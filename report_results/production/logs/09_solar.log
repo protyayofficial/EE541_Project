@@ -1,0 +1,467 @@
+arco 2018-08-01 05:15:00 seed 7000 fixed
+arco 2018-08-01 05:15:00 seed 7000 channel
+arco 2018-08-01 05:15:00 seed 7000 greedy
+arco 2018-08-01 05:15:00 seed 7000 nominal
+arco 2018-08-01 05:15:00 seed 7000 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+arco 2018-08-01 05:15:00 seed 7000 adaptive_harvest
+arco 2018-08-01 05:15:00 seed 7000 adaptive_all
+arco 2018-08-01 05:15:00 seed 7000 fixed_fraction
+arco 2018-08-01 05:15:00 seed 7000 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+arco 2018-08-01 05:15:00 seed 7000 adaptive_arrival
+arco 2018-08-05 08:43:00 seed 7001 fixed
+arco 2018-08-05 08:43:00 seed 7001 channel
+arco 2018-08-05 08:43:00 seed 7001 greedy
+arco 2018-08-05 08:43:00 seed 7001 nominal
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+arco 2018-08-05 08:43:00 seed 7001 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+arco 2018-08-05 08:43:00 seed 7001 adaptive_harvest
+arco 2018-08-05 08:43:00 seed 7001 adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+arco 2018-08-05 08:43:00 seed 7001 fixed_fraction
+arco 2018-08-05 08:43:00 seed 7001 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+arco 2018-08-05 08:43:00 seed 7001 adaptive_arrival
+arco 2018-08-11 07:31:00 seed 7002 fixed
+arco 2018-08-11 07:31:00 seed 7002 channel
+arco 2018-08-11 07:31:00 seed 7002 greedy
+arco 2018-08-11 07:31:00 seed 7002 nominal
+arco 2018-08-11 07:31:00 seed 7002 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+arco 2018-08-11 07:31:00 seed 7002 adaptive_harvest
+arco 2018-08-11 07:31:00 seed 7002 adaptive_all
+arco 2018-08-11 07:31:00 seed 7002 fixed_fraction
+arco 2018-08-11 07:31:00 seed 7002 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+arco 2018-08-11 07:31:00 seed 7002 adaptive_arrival
+arco 2018-09-17 15:25:00 seed 7003 fixed
+arco 2018-09-17 15:25:00 seed 7003 channel
+arco 2018-09-17 15:25:00 seed 7003 greedy
+arco 2018-09-17 15:25:00 seed 7003 nominal
+arco 2018-09-17 15:25:00 seed 7003 fixed_margin
+arco 2018-09-17 15:25:00 seed 7003 adaptive_harvest
+arco 2018-09-17 15:25:00 seed 7003 adaptive_all
+arco 2018-09-17 15:25:00 seed 7003 fixed_fraction
+arco 2018-09-17 15:25:00 seed 7003 adaptive_channel
+arco 2018-09-17 15:25:00 seed 7003 adaptive_arrival
+arco 2018-09-19 19:51:00 seed 7004 fixed
+arco 2018-09-19 19:51:00 seed 7004 channel
+arco 2018-09-19 19:51:00 seed 7004 greedy
+arco 2018-09-19 19:51:00 seed 7004 nominal
+arco 2018-09-19 19:51:00 seed 7004 fixed_margin
+arco 2018-09-19 19:51:00 seed 7004 adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+arco 2018-09-19 19:51:00 seed 7004 adaptive_all
+arco 2018-09-19 19:51:00 seed 7004 fixed_fraction
+arco 2018-09-19 19:51:00 seed 7004 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+arco 2018-09-19 19:51:00 seed 7004 adaptive_arrival
+arco 2018-09-22 17:57:00 seed 7005 fixed
+arco 2018-09-22 17:57:00 seed 7005 channel
+arco 2018-09-22 17:57:00 seed 7005 greedy
+arco 2018-09-22 17:57:00 seed 7005 nominal
+arco 2018-09-22 17:57:00 seed 7005 fixed_margin
+arco 2018-09-22 17:57:00 seed 7005 adaptive_harvest
+arco 2018-09-22 17:57:00 seed 7005 adaptive_all
+arco 2018-09-22 17:57:00 seed 7005 fixed_fraction
+arco 2018-09-22 17:57:00 seed 7005 adaptive_channel
+arco 2018-09-22 17:57:00 seed 7005 adaptive_arrival
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+arco 2018-09-25 15:57:00 seed 7006 fixed
+arco 2018-09-25 15:57:00 seed 7006 channel
+arco 2018-09-25 15:57:00 seed 7006 greedy
+arco 2018-09-25 15:57:00 seed 7006 nominal
+arco 2018-09-25 15:57:00 seed 7006 fixed_margin
+arco 2018-09-25 15:57:00 seed 7006 adaptive_harvest
+arco 2018-09-25 15:57:00 seed 7006 adaptive_all
+arco 2018-09-25 15:57:00 seed 7006 fixed_fraction
+arco 2018-09-25 15:57:00 seed 7006 adaptive_channel
+arco 2018-09-25 15:57:00 seed 7006 adaptive_arrival
+arco 2018-09-27 20:28:00 seed 7007 fixed
+arco 2018-09-27 20:28:00 seed 7007 channel
+arco 2018-09-27 20:28:00 seed 7007 greedy
+arco 2018-09-27 20:28:00 seed 7007 nominal
+arco 2018-09-27 20:28:00 seed 7007 fixed_margin
+arco 2018-09-27 20:28:00 seed 7007 adaptive_harvest
+arco 2018-09-27 20:28:00 seed 7007 adaptive_all
+arco 2018-09-27 20:28:00 seed 7007 fixed_fraction
+arco 2018-09-27 20:28:00 seed 7007 adaptive_channel
+arco 2018-09-27 20:28:00 seed 7007 adaptive_arrival
+arco 2018-09-30 18:18:00 seed 7008 fixed
+arco 2018-09-30 18:18:00 seed 7008 channel
+arco 2018-09-30 18:18:00 seed 7008 greedy
+arco 2018-09-30 18:18:00 seed 7008 nominal
+arco 2018-09-30 18:18:00 seed 7008 fixed_margin
+arco 2018-09-30 18:18:00 seed 7008 adaptive_harvest
+arco 2018-09-30 18:18:00 seed 7008 adaptive_all
+arco 2018-09-30 18:18:00 seed 7008 fixed_fraction
+arco 2018-09-30 18:18:00 seed 7008 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+arco 2018-09-30 18:18:00 seed 7008 adaptive_arrival
+arco 2018-10-03 16:07:00 seed 7009 fixed
+arco 2018-10-03 16:07:00 seed 7009 channel
+arco 2018-10-03 16:07:00 seed 7009 greedy
+arco 2018-10-03 16:07:00 seed 7009 nominal
+arco 2018-10-03 16:07:00 seed 7009 fixed_margin
+arco 2018-10-03 16:07:00 seed 7009 adaptive_harvest
+arco 2018-10-03 16:07:00 seed 7009 adaptive_all
+arco 2018-10-03 16:07:00 seed 7009 fixed_fraction
+arco 2018-10-03 16:07:00 seed 7009 adaptive_channel
+arco 2018-10-03 16:07:00 seed 7009 adaptive_arrival
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-07-30 00:00:00+00:00 seed 7000 fixed
+umass_home_c 2011-07-30 00:00:00+00:00 seed 7000 channel
+umass_home_c 2011-07-30 00:00:00+00:00 seed 7000 greedy
+umass_home_c 2011-07-30 00:00:00+00:00 seed 7000 nominal
+umass_home_c 2011-07-30 00:00:00+00:00 seed 7000 fixed_margin
+umass_home_c 2011-07-30 00:00:00+00:00 seed 7000 adaptive_harvest
+umass_home_c 2011-07-30 00:00:00+00:00 seed 7000 adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-07-30 00:00:00+00:00 seed 7000 fixed_fraction
+umass_home_c 2011-07-30 00:00:00+00:00 seed 7000 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-07-30 00:00:00+00:00 seed 7000 adaptive_arrival
+umass_home_c 2011-08-08 17:20:00+00:00 seed 7001 fixed
+umass_home_c 2011-08-08 17:20:00+00:00 seed 7001 channel
+umass_home_c 2011-08-08 17:20:00+00:00 seed 7001 greedy
+umass_home_c 2011-08-08 17:20:00+00:00 seed 7001 nominal
+umass_home_c 2011-08-08 17:20:00+00:00 seed 7001 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-08-08 17:20:00+00:00 seed 7001 adaptive_harvest
+umass_home_c 2011-08-08 17:20:00+00:00 seed 7001 adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-08-08 17:20:00+00:00 seed 7001 fixed_fraction
+umass_home_c 2011-08-08 17:20:00+00:00 seed 7001 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-08-08 17:20:00+00:00 seed 7001 adaptive_arrival
+umass_home_c 2011-08-18 10:40:00+00:00 seed 7002 fixed
+umass_home_c 2011-08-18 10:40:00+00:00 seed 7002 channel
+umass_home_c 2011-08-18 10:40:00+00:00 seed 7002 greedy
+umass_home_c 2011-08-18 10:40:00+00:00 seed 7002 nominal
+umass_home_c 2011-08-18 10:40:00+00:00 seed 7002 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-08-18 10:40:00+00:00 seed 7002 adaptive_harvest
+umass_home_c 2011-08-18 10:40:00+00:00 seed 7002 adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-08-18 10:40:00+00:00 seed 7002 fixed_fraction
+umass_home_c 2011-08-18 10:40:00+00:00 seed 7002 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-08-18 10:40:00+00:00 seed 7002 adaptive_arrival
+umass_home_c 2011-09-02 02:08:00+00:00 seed 7003 fixed
+umass_home_c 2011-09-02 02:08:00+00:00 seed 7003 channel
+umass_home_c 2011-09-02 02:08:00+00:00 seed 7003 greedy
+umass_home_c 2011-09-02 02:08:00+00:00 seed 7003 nominal
+umass_home_c 2011-09-02 02:08:00+00:00 seed 7003 fixed_margin
+umass_home_c 2011-09-02 02:08:00+00:00 seed 7003 adaptive_harvest
+umass_home_c 2011-09-02 02:08:00+00:00 seed 7003 adaptive_all
+umass_home_c 2011-09-02 02:08:00+00:00 seed 7003 fixed_fraction
+umass_home_c 2011-09-02 02:08:00+00:00 seed 7003 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-09-02 02:08:00+00:00 seed 7003 adaptive_arrival
+umass_home_c 2011-09-11 19:28:00+00:00 seed 7004 fixed
+umass_home_c 2011-09-11 19:28:00+00:00 seed 7004 channel
+umass_home_c 2011-09-11 19:28:00+00:00 seed 7004 greedy
+umass_home_c 2011-09-11 19:28:00+00:00 seed 7004 nominal
+umass_home_c 2011-09-11 19:28:00+00:00 seed 7004 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-09-11 19:28:00+00:00 seed 7004 adaptive_harvest
+umass_home_c 2011-09-11 19:28:00+00:00 seed 7004 adaptive_all
+umass_home_c 2011-09-11 19:28:00+00:00 seed 7004 fixed_fraction
+umass_home_c 2011-09-11 19:28:00+00:00 seed 7004 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-09-11 19:28:00+00:00 seed 7004 adaptive_arrival
+umass_home_c 2011-09-21 12:48:00+00:00 seed 7005 fixed
+umass_home_c 2011-09-21 12:48:00+00:00 seed 7005 channel
+umass_home_c 2011-09-21 12:48:00+00:00 seed 7005 greedy
+umass_home_c 2011-09-21 12:48:00+00:00 seed 7005 nominal
+umass_home_c 2011-09-21 12:48:00+00:00 seed 7005 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-09-21 12:48:00+00:00 seed 7005 adaptive_harvest
+umass_home_c 2011-09-21 12:48:00+00:00 seed 7005 adaptive_all
+umass_home_c 2011-09-21 12:48:00+00:00 seed 7005 fixed_fraction
+umass_home_c 2011-09-21 12:48:00+00:00 seed 7005 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-09-21 12:48:00+00:00 seed 7005 adaptive_arrival
+umass_home_c 2011-10-01 06:08:00+00:00 seed 7006 fixed
+umass_home_c 2011-10-01 06:08:00+00:00 seed 7006 channel
+umass_home_c 2011-10-01 06:08:00+00:00 seed 7006 greedy
+umass_home_c 2011-10-01 06:08:00+00:00 seed 7006 nominal
+umass_home_c 2011-10-01 06:08:00+00:00 seed 7006 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-10-01 06:08:00+00:00 seed 7006 adaptive_harvest
+umass_home_c 2011-10-01 06:08:00+00:00 seed 7006 adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-10-01 06:08:00+00:00 seed 7006 fixed_fraction
+umass_home_c 2011-10-01 06:08:00+00:00 seed 7006 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-10-01 06:08:00+00:00 seed 7006 adaptive_arrival
+umass_home_c 2011-10-10 23:28:00+00:00 seed 7007 fixed
+umass_home_c 2011-10-10 23:28:00+00:00 seed 7007 channel
+umass_home_c 2011-10-10 23:28:00+00:00 seed 7007 greedy
+umass_home_c 2011-10-10 23:28:00+00:00 seed 7007 nominal
+umass_home_c 2011-10-10 23:28:00+00:00 seed 7007 fixed_margin
+umass_home_c 2011-10-10 23:28:00+00:00 seed 7007 adaptive_harvest
+umass_home_c 2011-10-10 23:28:00+00:00 seed 7007 adaptive_all
+umass_home_c 2011-10-10 23:28:00+00:00 seed 7007 fixed_fraction
+umass_home_c 2011-10-10 23:28:00+00:00 seed 7007 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-10-10 23:28:00+00:00 seed 7007 adaptive_arrival
+umass_home_c 2011-10-20 16:48:00+00:00 seed 7008 fixed
+umass_home_c 2011-10-20 16:48:00+00:00 seed 7008 channel
+umass_home_c 2011-10-20 16:48:00+00:00 seed 7008 greedy
+umass_home_c 2011-10-20 16:48:00+00:00 seed 7008 nominal
+umass_home_c 2011-10-20 16:48:00+00:00 seed 7008 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-10-20 16:48:00+00:00 seed 7008 adaptive_harvest
+umass_home_c 2011-10-20 16:48:00+00:00 seed 7008 adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-10-20 16:48:00+00:00 seed 7008 fixed_fraction
+umass_home_c 2011-10-20 16:48:00+00:00 seed 7008 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-10-20 16:48:00+00:00 seed 7008 adaptive_arrival
+umass_home_c 2011-10-31 02:48:00+00:00 seed 7009 fixed
+umass_home_c 2011-10-31 02:48:00+00:00 seed 7009 channel
+umass_home_c 2011-10-31 02:48:00+00:00 seed 7009 greedy
+umass_home_c 2011-10-31 02:48:00+00:00 seed 7009 nominal
+umass_home_c 2011-10-31 02:48:00+00:00 seed 7009 fixed_margin
+umass_home_c 2011-10-31 02:48:00+00:00 seed 7009 adaptive_harvest
+umass_home_c 2011-10-31 02:48:00+00:00 seed 7009 adaptive_all
+umass_home_c 2011-10-31 02:48:00+00:00 seed 7009 fixed_fraction
+umass_home_c 2011-10-31 02:48:00+00:00 seed 7009 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+umass_home_c 2011-10-31 02:48:00+00:00 seed 7009 adaptive_arrival
+nrel_tmy3 tmy_hour_index_0 seed 7000 fixed
+nrel_tmy3 tmy_hour_index_0 seed 7000 channel
+nrel_tmy3 tmy_hour_index_0 seed 7000 greedy
+nrel_tmy3 tmy_hour_index_0 seed 7000 nominal
+nrel_tmy3 tmy_hour_index_0 seed 7000 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_0 seed 7000 adaptive_harvest
+nrel_tmy3 tmy_hour_index_0 seed 7000 adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_0 seed 7000 fixed_fraction
+nrel_tmy3 tmy_hour_index_0 seed 7000 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_0 seed 7000 adaptive_arrival
+nrel_tmy3 tmy_hour_index_862 seed 7001 fixed
+nrel_tmy3 tmy_hour_index_862 seed 7001 channel
+nrel_tmy3 tmy_hour_index_862 seed 7001 greedy
+nrel_tmy3 tmy_hour_index_862 seed 7001 nominal
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_862 seed 7001 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_862 seed 7001 adaptive_harvest
+nrel_tmy3 tmy_hour_index_862 seed 7001 adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_862 seed 7001 fixed_fraction
+nrel_tmy3 tmy_hour_index_862 seed 7001 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_862 seed 7001 adaptive_arrival
+nrel_tmy3 tmy_hour_index_1724 seed 7002 fixed
+nrel_tmy3 tmy_hour_index_1724 seed 7002 channel
+nrel_tmy3 tmy_hour_index_1724 seed 7002 greedy
+nrel_tmy3 tmy_hour_index_1724 seed 7002 nominal
+nrel_tmy3 tmy_hour_index_1724 seed 7002 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_1724 seed 7002 adaptive_harvest
+nrel_tmy3 tmy_hour_index_1724 seed 7002 adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_1724 seed 7002 fixed_fraction
+nrel_tmy3 tmy_hour_index_1724 seed 7002 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_1724 seed 7002 adaptive_arrival
+nrel_tmy3 tmy_hour_index_2586 seed 7003 fixed
+nrel_tmy3 tmy_hour_index_2586 seed 7003 channel
+nrel_tmy3 tmy_hour_index_2586 seed 7003 greedy
+nrel_tmy3 tmy_hour_index_2586 seed 7003 nominal
+nrel_tmy3 tmy_hour_index_2586 seed 7003 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_2586 seed 7003 adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_2586 seed 7003 adaptive_all
+nrel_tmy3 tmy_hour_index_2586 seed 7003 fixed_fraction
+nrel_tmy3 tmy_hour_index_2586 seed 7003 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_2586 seed 7003 adaptive_arrival
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_3448 seed 7004 fixed
+nrel_tmy3 tmy_hour_index_3448 seed 7004 channel
+nrel_tmy3 tmy_hour_index_3448 seed 7004 greedy
+nrel_tmy3 tmy_hour_index_3448 seed 7004 nominal
+nrel_tmy3 tmy_hour_index_3448 seed 7004 fixed_margin
+nrel_tmy3 tmy_hour_index_3448 seed 7004 adaptive_harvest
+nrel_tmy3 tmy_hour_index_3448 seed 7004 adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_3448 seed 7004 fixed_fraction
+nrel_tmy3 tmy_hour_index_3448 seed 7004 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_3448 seed 7004 adaptive_arrival
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_4311 seed 7005 fixed
+nrel_tmy3 tmy_hour_index_4311 seed 7005 channel
+nrel_tmy3 tmy_hour_index_4311 seed 7005 greedy
+nrel_tmy3 tmy_hour_index_4311 seed 7005 nominal
+nrel_tmy3 tmy_hour_index_4311 seed 7005 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_4311 seed 7005 adaptive_harvest
+nrel_tmy3 tmy_hour_index_4311 seed 7005 adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_4311 seed 7005 fixed_fraction
+nrel_tmy3 tmy_hour_index_4311 seed 7005 adaptive_channel
+nrel_tmy3 tmy_hour_index_4311 seed 7005 adaptive_arrival
+nrel_tmy3 tmy_hour_index_5173 seed 7006 fixed
+nrel_tmy3 tmy_hour_index_5173 seed 7006 channel
+nrel_tmy3 tmy_hour_index_5173 seed 7006 greedy
+nrel_tmy3 tmy_hour_index_5173 seed 7006 nominal
+nrel_tmy3 tmy_hour_index_5173 seed 7006 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_5173 seed 7006 adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_5173 seed 7006 adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_5173 seed 7006 fixed_fraction
+nrel_tmy3 tmy_hour_index_5173 seed 7006 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_5173 seed 7006 adaptive_arrival
+nrel_tmy3 tmy_hour_index_6035 seed 7007 fixed
+nrel_tmy3 tmy_hour_index_6035 seed 7007 channel
+nrel_tmy3 tmy_hour_index_6035 seed 7007 greedy
+nrel_tmy3 tmy_hour_index_6035 seed 7007 nominal
+nrel_tmy3 tmy_hour_index_6035 seed 7007 fixed_margin
+nrel_tmy3 tmy_hour_index_6035 seed 7007 adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_6035 seed 7007 adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_6035 seed 7007 fixed_fraction
+nrel_tmy3 tmy_hour_index_6035 seed 7007 adaptive_channel
+nrel_tmy3 tmy_hour_index_6035 seed 7007 adaptive_arrival
+nrel_tmy3 tmy_hour_index_6897 seed 7008 fixed
+nrel_tmy3 tmy_hour_index_6897 seed 7008 channel
+nrel_tmy3 tmy_hour_index_6897 seed 7008 greedy
+nrel_tmy3 tmy_hour_index_6897 seed 7008 nominal
+nrel_tmy3 tmy_hour_index_6897 seed 7008 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_6897 seed 7008 adaptive_harvest
+nrel_tmy3 tmy_hour_index_6897 seed 7008 adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_6897 seed 7008 fixed_fraction
+nrel_tmy3 tmy_hour_index_6897 seed 7008 adaptive_channel
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_6897 seed 7008 adaptive_arrival
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_7760 seed 7009 fixed
+nrel_tmy3 tmy_hour_index_7760 seed 7009 channel
+nrel_tmy3 tmy_hour_index_7760 seed 7009 greedy
+nrel_tmy3 tmy_hour_index_7760 seed 7009 nominal
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_7760 seed 7009 fixed_margin
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_7760 seed 7009 adaptive_harvest
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_7760 seed 7009 adaptive_all
+/home/wings/Downloads/EE541_Project-master/src/scheduling.py:294: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(
+nrel_tmy3 tmy_hour_index_7760 seed 7009 fixed_fraction
+nrel_tmy3 tmy_hour_index_7760 seed 7009 adaptive_channel
+nrel_tmy3 tmy_hour_index_7760 seed 7009 adaptive_arrival
+                               realized_cost  drop_ratio    queue       energy
+dataset      mode                                                             
+arco         adaptive_all      147119.597599    0.683437  27.6947   230.650657
+             adaptive_arrival  146933.076243    0.682449  27.6797   230.508290
+             adaptive_channel  147283.925200    0.684496  27.6735   230.834669
+             adaptive_harvest  146907.159428    0.682251  27.6888   230.396183
+             channel           161645.607565    0.750204  30.5568   396.717100
+             fixed             153781.606320    0.715450  28.7646   364.708800
+             fixed_fraction    154110.553894    0.717298  28.7721   337.692626
+             fixed_margin      147179.372875    0.683796  27.6915   230.485832
+             greedy            147483.530427    0.685644  27.6736   230.869515
+             nominal           146943.874282    0.682567  27.6695   230.495213
+nrel_tmy3    adaptive_all       45313.721197    0.129368  22.4613   589.474649
+             adaptive_arrival   47495.652518    0.140212  22.7457   589.016788
+             adaptive_channel   45272.314649    0.131537  22.0318   598.097658
+             adaptive_harvest   47950.108898    0.141111  23.0536   578.059320
+             channel           121658.496750    0.522415  30.1544   802.645000
+             fixed              97857.431425    0.395858  28.4026   804.209500
+             fixed_fraction     79468.977010    0.294332  27.7621   705.846733
+             fixed_margin       45408.800690    0.131349  22.2038   594.671264
+             greedy             44837.124445    0.130526  21.7668   606.829633
+             nominal            46962.207646    0.138475  22.5148   590.717638
+umass_home_c adaptive_all       24158.728223    0.033039  18.1596   686.188150
+             adaptive_arrival   24158.728223    0.033039  18.1596   686.188150
+             adaptive_channel   24167.315162    0.033079  18.1612   686.101078
+             adaptive_harvest   24158.728223    0.033039  18.1596   686.188150
+             channel            59865.731876    0.188123  26.7237  1227.545843
+             fixed              28392.081684    0.047996  19.7035  1205.211226
+             fixed_fraction     28852.735046    0.049293  19.9419  1170.233642
+             fixed_margin       24158.728223    0.033039  18.1596   686.188150
+             greedy             24158.728223    0.033039  18.1596   686.188150
+             nominal            24158.728223    0.033039  18.1596   686.188150
+max violation 9.718141212378129e-05 inaccurate 0

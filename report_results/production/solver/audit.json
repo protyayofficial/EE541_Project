@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "solves": 12,
+  "checks": "complete six-by-two matrix; optimal status; finite objectives; residual <=1e-4; relative agreement <=1e-3"
+}
