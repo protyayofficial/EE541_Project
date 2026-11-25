@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "trajectories": 60,
+  "checks": "complete configured policy matrix; exact consecutive windows, manifest and pairwise overlap reconstruction; generated channel, uniform 0..10 arrivals and source-specific harvest match",
+  "overlapping_pairs_by_source": {
+    "arco": 0,
+    "umass_home_c": 0,
+    "nrel_tmy3": 0
+  },
+  "prior_window_files_checked": [
+    "results/proposal_final/per_window.csv",
+    "results/proposal_tuned/per_window.csv",
+    "results/proposal_guarded/per_window.csv",
+    "results/proposal_minimax/per_window.csv",
+    "results/proposal_consistency/per_window.csv"
+  ],
+  "earlier_study_overlap": [],
+  "scope": "shared source observations/sites/seasons; scenario intervals approximate/descriptive, not independent slot repetitions; action audit recorded separately"
+}

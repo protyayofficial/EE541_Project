@@ -1,14 +1,8 @@
 # Fixed supplementary protocols and final readiness
 
-These protocols add sensitivity measurements to the completed packet simulator.
-Adaptive **penalty-weight updates are excluded**. Existing adaptive forecast
-margins remain. The fixed grids below must not be retuned to improve a ranking.
-Flat or unfavorable outcomes are valid study outcomes. Neither full study has
-been executed during implementation; both were subsequently completed in the
-audited production ending 20 November 2026 at 11:09:39 UTC. The
-[completion record](../results/recovery_20261120/completion_verification.json)
-confirms 120 executions per study. Earlier preflight descriptions below retain
-their historical meaning. No further production launch is pending.
+The supplementary studies vary the energy penalty and channel forecast
+noise on fixed grids. Both compare nominal MPC and MPC with adaptive forecast
+margins. The penalty weights are fixed within each run.
 
 ## Design and overlap
 
@@ -136,97 +130,14 @@ checks costs, every forecast lead's evaluation, packet/battery/delay conservatio
 run-identity binding, missing-aware summaries and valid paired counts. It does
 not certify online optimality or formal uncertainty coverage.
 
-## Commands (full studies not launched)
+## Reproduce the studies
 
-Run from the project root. Main, offline, solver and main-figure commands remain
-in the [main protocol](experiments_1000.md#fresh-output-commands-not-executed-as-a-production-study).
-All three real solar inputs and all 30 native windows are already validated;
-the original records are in `results/solar_input_check_1000/`. No data dependency
-remains missing. The main source conversions, overlap qualifications and solar
-policy matrix are unchanged.
+Both studies are included in the [main launcher](../README.md#reproduce-the-experiments).
+To run either individually, choose a fresh output directory:
 
 ```bash
-export MPLCONFIGDIR=/tmp/ee541-matplotlib
-EE541_OUT=results/final_evaluation_continuous_1000
-
-# Plans only: 120 runs each, no policy execution.
-.venv/bin/python -B supplementary_studies.py delay_energy --plan-only --out "$EE541_OUT/supplementary/delay_energy"
-.venv/bin/python -B supplementary_studies.py forecast_sensitivity --plan-only --out "$EE541_OUT/supplementary/forecast_sensitivity"
-
-# Full studies, only when production is authorized. Drivers also analyze/plot.
-.venv/bin/python -B supplementary_studies.py delay_energy --out "$EE541_OUT/supplementary/delay_energy"
-.venv/bin/python -B supplementary_studies.py forecast_sensitivity --out "$EE541_OUT/supplementary/forecast_sensitivity"
-
-# Rebuild analysis/plots and audit each output directory.
-.venv/bin/python -B analyze_supplementary.py "$EE541_OUT/supplementary/delay_energy"
-.venv/bin/python -B audit_supplementary.py "$EE541_OUT/supplementary/delay_energy"
-.venv/bin/python -B analyze_supplementary.py "$EE541_OUT/supplementary/forecast_sensitivity"
-.venv/bin/python -B audit_supplementary.py "$EE541_OUT/supplementary/forecast_sensitivity"
+python supplementary_studies.py delay_energy --out runs/delay_energy
+python audit_supplementary.py runs/delay_energy
+python supplementary_studies.py forecast_sensitivity --out runs/forecast_sensitivity
+python audit_supplementary.py runs/forecast_sensitivity
 ```
-
-For short smoke runs use `--seeds 2 --slots 4 --horizon 3 --out <fresh-temp-dir>`.
-`--benchmark-case --out <fresh-benchmark-dir>` selects exactly one nominal,
-seed-6000, harvest-0.6 case at weight 15 or amplitude 0.25; default episode length
-and horizon stay 1,000/10. It cannot silently use the production default folder.
-
-## Verification, benchmarks and readiness (20 November 2026)
-
-The final complete suite passed **101 tests in 73.673 seconds**. All **39 Python files**
-passed syntax parsing. Seven focused supplementary tests passed, including exact
-zero-noise/default equivalence for both policies, matched traces/normal keys,
-missed probes, future-truth causality, mature adaptive scoring, constant weights,
-common-reference scoring, missing delay cohorts and corruption rejection.
-
-Temporary CLI workflows executed **24 four-slot runs per study** with two seeds
-and horizon three, through plan-only generation, execution, analysis, independent
-audits and figures. The full 120-row plans were separately checked without
-execution. These small studies establish interface/accounting correctness, not
-performance findings. Persistent full plans are under
-`results/supplementary_verification/plans/`.
-
-Exactly one 1,000-slot nominal case per study was benchmarked, both with horizon
-10, seed 6000 and mean harvest 0.6 J:
-
-| Benchmark | Setting | Policy execution | Mean optimization call | Calls | Command including startup/analysis/plots |
-|---|---|---:|---:|---:|---:|
-| Delay–energy | weight 15 | 13.1787 s | 12.7430 ms | 994 | 24.6427 s |
-| Channel-forecast sensitivity | amplitude 0.25 | 13.0524 s | 12.7013 ms | 987 | 24.3576 s |
-
-Both independent audits passed, with no solver/decision budget overruns and
-maximum recorded planning residuals 5.53208e-5 / 6.62825e-7. Existing solver
-fallback/verification handles intermediate numerical-accuracy warnings. The
-benchmarks were collected during implementation verification on the current
-host; they are runtime diagnostics, not supplementary experimental findings.
-Audit command time is additional to the command timings in the table.
-
-Extrapolating policy-execution measurements gives approximately **26.36 minutes**
-for delay–energy and **26.10 minutes** for forecast sensitivity, **52.46 minutes**
-combined. These extrapolate nominal runs to adaptive runs and other settings;
-actual solver behavior and I/O may differ. The earlier main benchmark implies
-about 2.47 hours for its 660 MPC executions. Together these imply about **3.34
-hours of MPC execution**, before 240 heuristic runs, CSV output, analysis, audits,
-the 90 offline references and 12 short solver checks. This is not a measured
-full-study runtime. Single-case startup/plot overhead should not be multiplied
-as though every run launches a new process. Current full-episode offline timing
-was not refreshed in this task.
-
-The original 1,000-slot main benchmark and 60-run real-solar smoke outputs were
-re-audited read-only using the updated code. All three input checksums and the
-30 real solar windows reconstructed successfully again. The main 300/300/300
-matrix, 90 references and source intervals/conversions remain unchanged.
-No missing-data or implementation blocker was found under the documented model.
-Adaptive penalty updates are excluded; no further adaptive-penalty implementation
-is pending. Final authorization to execute production remains separate.
-
-Evidence is under [`results/supplementary_verification/`](../results/supplementary_verification/readiness.json):
-`readiness.json`, `tests.log`, `focused_tests.log`, `benchmarks.json`, full plans,
-and each benchmark's settings, slot/packet/run tables, forecast metrics, figures
-and `audit.json`. Default production output remains absent. No full main,
-supplementary or offline study was launched and historical results were preserved.
-
-Changed files: new `src/forecast_noise.py`, `supplementary_studies.py`,
-`analyze_supplementary.py`, `audit_supplementary.py` and
-`tests/test_supplementary.py`; small opt-in changes in `proposal_study.py` and
-`src/auditing.py`; documentation in `README.md`, `FINAL_HANDOFF.md`,
-`docs/experiments_1000.md`, `docs/packet_delays.md` and this protocol.
-

@@ -1,8 +1,0 @@
-     status_clarabel  objective_clarabel  primal_violation_clarabel status_scs  objective_scs  primal_violation_scs  absolute_objective_difference  relative_objective_difference
-case
-0            optimal           58.820759               8.297890e-09    optimal      58.820839          2.004890e-06                   8.076321e-05                   1.373039e-06
-1            optimal          879.643327               1.597347e-07    optimal     879.643343          5.571191e-09                   1.659205e-05                   1.886225e-08
-2            optimal          249.999998               8.735164e-09    optimal     250.000000          2.004222e-09                   1.894868e-06                   7.579471e-09
-3            optimal         1425.008615               2.908118e-07    optimal    1425.008668          1.346752e-05                   5.299218e-05                   3.718727e-08
-4            optimal           84.128972               1.379922e-08    optimal      84.128972          4.584291e-07                   2.093336e-08                   2.488246e-10
-5            optimal           82.143373               1.147219e-08    optimal      82.143158          6.286435e-06                   2.154360e-04                   2.622682e-06

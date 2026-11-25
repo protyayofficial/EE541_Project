@@ -5,7 +5,7 @@ ee541_project_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
 cd -- "$ee541_project_root"
 export MPLCONFIGDIR="${MPLCONFIGDIR:-/tmp/ee541-matplotlib}"
 export PYTHONUNBUFFERED=1
-exec "$ee541_project_root/.venv/bin/python" -B - "$@" <<'PY'
+exec python -B - "$@" <<'PY'
 import argparse
 import fcntl
 from contextlib import redirect_stdout, redirect_stderr
@@ -24,7 +24,7 @@ import traceback
 import uuid
 
 PROJECT=Path.cwd()
-PYTHON=PROJECT/'.venv/bin/python'
+PYTHON=Path(sys.executable)
 LAUNCHER=PROJECT/'scripts/run_experiments.sh'
 
 
@@ -34,7 +34,7 @@ def utc():return datetime.now(timezone.utc).isoformat(timespec='seconds')
 def digest(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def preflight(output=None,readiness_record=PROJECT/'results/supplementary_verification/readiness.json'):
+def preflight(output=None,readiness_record=None):
     import cvxpy as cp
     import numpy as np
     import pandas as pd
@@ -43,7 +43,7 @@ def preflight(output=None,readiness_record=PROJECT/'results/supplementary_verifi
     import supplementary_studies as supplementary
     from src.scheduling import Config, INITIAL_QUEUE, INITIAL_ENERGY
     from src.forecasting import ARRIVAL_MODEL
-    from src.course_data import SOURCE_FILES, SOURCE_SHA256, SOURCE_INTERVALS, SOURCE_SCALES
+    from src.course_data import SOURCE_FILES, SOURCE_SHA256, SOURCE_INTERVALS, SOURCE_SCALES, evaluation_sources
     expected=dict(buffer_max=32.,energy_max=12.,power_max=3.,data_max=5.,tau=1.,slot_seconds=5.,
         bandwidth_hz=3000.,packet_bits=256.,bit_error_probability=9.89e-6,
         probe_seconds=.3,channel_report_seconds=.3,decision_seconds=1.,ack_seconds=1.,update_seconds=1.,
@@ -72,29 +72,30 @@ def preflight(output=None,readiness_record=PROJECT/'results/supplementary_verifi
     assert SOURCE_INTERVALS=={'arco':60.,'umass_home_c':60.,'nrel_tmy3':3600.}
     assert SOURCE_SCALES=={'arco':.01,'umass_home_c':.1,'nrel_tmy3':.005}
     for name,file in SOURCE_FILES.items():assert digest(file)==SOURCE_SHA256[name], f'input checksum mismatch: {file}'
-    checked=json.loads((PROJECT/'results/solar_input_check_1000/settings.json').read_text())
-    assert checked['slots']==1000 and checked['windows']==10 and checked['planned_policy_runs']==300
-    sources=solar.reconstruct_sources(checked)
+    sources=list(evaluation_sources(slots=1000, count=10))
     assert len(sources)==3
-    for seconds,windows in sources.values():
-        assert len(windows)==10
-        assert all(len(v)==1000 and np.isfinite(v).all() for v in windows.values())
-    approved=json.loads(readiness_record.read_text())
-    assert approved['ready_for_authorized_production']
-    for file,sha in approved['source_sha256'].items():
-        assert digest(PROJECT/file)==sha, f'code changed since passed readiness checks: {file}'
+    for name,seconds,windows,_ in sources:
+        assert seconds==SOURCE_INTERVALS[name] and len(windows)==10
+        assert all(len(values)==1000 and np.isfinite(values).all() for _,values in windows)
+    if readiness_record is not None:
+        approved=json.loads(readiness_record.read_text())
+        assert approved['ready_for_authorized_production']
+        for file,sha in approved['source_sha256'].items():
+            assert digest(PROJECT/file)==sha, f'code changed since passed readiness checks: {file}'
     files={str(p.relative_to(PROJECT)):digest(p) for p in PROJECT.glob('*.py')}
     files.update({str(p.relative_to(PROJECT)):digest(p) for p in (PROJECT/'src').glob('*.py')})
-    files['scripts/run_experiments.sh']=digest(LAUNCHER)
-    files[str(readiness_record)]=digest(readiness_record)
+    files[str(LAUNCHER.relative_to(PROJECT))]=digest(LAUNCHER)
+    if readiness_record is not None:
+        files[str(readiness_record)]=digest(readiness_record)
     files.update({file:digest(file) for file in SOURCE_FILES.values()})
     result=dict(passed=True,time=utc(),config=expected,initial_queue=12,initial_energy=7.,
         seed_ranges=dict(original=[5000,5009],normalized=[6000,6009],solar=[7000,7009],supplementary=[6000,6009]),
         production_counts=dict(main_online=900,delay_energy=120,forecast_sensitivity=120,offline=90,solver_checks=12),
         real_windows=30,input_checksums=SOURCE_SHA256,source_and_input_hashes=files,
-        readiness_record=str(readiness_record),readiness_sha256=digest(readiness_record))
+        readiness_record=str(readiness_record) if readiness_record else None,
+        readiness_sha256=digest(readiness_record) if readiness_record else None)
     if output:(output/'preflight.json').write_text(json.dumps(result,indent=2)+'\n')
-    print('PASS: approved configuration/code; all seed/matrix contracts; 3 real checksums; 30 real 1000-slot windows')
+    print('PASS: configuration, seed and matrix contracts, 3 input checksums and 30 real 1000-slot windows')
     return result
 
 
@@ -133,12 +134,12 @@ def completion_audit(root,seeds,windows,slots,horizon):
     print('PASS: all saved counts, seed ranges, episode lengths, audits and automatic plots')
 
 
-def stages(root,seeds,windows,slots,horizon,readiness_record=PROJECT/'results/supplementary_verification/readiness.json'):
+def stages(root,seeds,windows,slots,horizon,readiness_record=None):
     def command(script,*args):return [str(PYTHON),'-B',script,*map(str,args)]
     common=['--slots',slots,'--horizon',horizon]
     synth=['--seeds',seeds,'--rho',.68,'--sigma',.20,.45,.80,*common]
     return [
-        ('preflight',lambda:preflight(root,readiness_record),'check approved configuration, real checksums and 30 full windows'),
+        ('preflight',lambda:preflight(root,readiness_record),'check configuration, input checksums and 30 full windows'),
         ('solar_validate',command('final_solar_evaluation.py','--validate-only','--windows',windows,*common,'--out',root/'solar'),''),
         ('solver_checks',command('solver_crosscheck.py','--out',root/'solver'),''),
         ('solver_audit',lambda:solver_audit(root),'validate all 12 recorded solves; failures are fatal'),
@@ -232,10 +233,9 @@ def main():
     mode=parser.add_mutually_exclusive_group();mode.add_argument('--plan-only',action='store_true');mode.add_argument('--run',action='store_true')
     parser.add_argument('--smoke',action='store_true',help='4-slot, two-seed/window real-input workflow; production definitions unchanged')
     parser.add_argument('--output-parent',type=Path,help='parent only; launcher always creates a new timestamped child')
-    parser.add_argument('--readiness-record',type=Path,default=PROJECT/'results/supplementary_verification/readiness.json',
-                        help='explicit passed source-provenance record; previous records are preserved')
+    parser.add_argument('--readiness-record',type=Path,help='optional prior source-provenance record to verify')
     args=parser.parse_args()
-    readiness_record=args.readiness_record.expanduser().resolve()
+    readiness_record=args.readiness_record.expanduser().resolve() if args.readiness_record else None
     seeds=windows=2 if args.smoke else 10;slots=4 if args.smoke else 1000;horizon=10
     parent=(args.output_parent or (Path('/tmp') if args.smoke else PROJECT/'results')).expanduser().resolve()
     stamp=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
@@ -254,7 +254,7 @@ def main():
             displayed=[]
             for value in cmd:
                 if value.startswith(str(root)):displayed.append('"${OUTPUT_ROOT}'+value[len(str(root)):]+'"')
-                else:displayed.append(shlex.quote('.venv/bin/python' if value==str(PYTHON) else value))
+                else:displayed.append(shlex.quote('python' if value==str(PYTHON) else value))
             description=' '.join(displayed)
         else:description=f'[internal: {description}]'
         print(f'{i:02d} {name}: {description}',flush=True)

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "plans_audited": 18,
+  "failed_instances": 0,
+  "maximum_rechecked_violation": 2.7662423462970764e-09,
+  "minimum_online_minus_offline": -0.37929825892632607,
+  "checks": "same exogenous traces, saved primal dynamics, bounds, rate and objective; descriptive differences against realized stochastic online costs",
+  "scope": "does not prove solver optimality or establish a bound on realized stochastic costs"
+}

@@ -1,14 +1,9 @@
 # Continuous-channel final experiment protocol: 1,000 slots
 
-The current implementation restores the correlated continuous channel within the
-latest packet/radio simulator. Historical production results remain untouched.
-The full current production completed on 20 November 2026 at 11:09:39 UTC in
-`results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/`, with all
-900 main and 240 supplementary runs, 90 references, 12 solver checks and final
-completion audit verified. See the
-[completion record](../results/recovery_20261120/completion_verification.json).
-Prelaunch verification/command notes below describe the protocol's preparation.
-The intermediate five-state model and its 400-run design are superseded.
+This protocol defines the full experiment matrix for the current continuous
+channel, packet and radio simulator. The experiments compare policies on
+matched inputs. For the results bundled with this repository, see the
+[README](../README.md#included-results).
 
 ## Channel definition, provenance and forecasts
 
@@ -29,11 +24,7 @@ sigma, normalization, log variance, initialization, units and random stream;
 synthetic per-run `channel_sigma` and `scenario_channel_models` specialize the
 base configuration template.
 
-Historical `results/final_evaluation/sweep/settings.json` and
-`sweep_normalized/settings.json` confirm three sigmas, harvest means 0.6/1.2,
-and seed ranges 5000–5009 / 6000–6009. The `.git` directory is empty, so no old
-source or exact historical RNG draw ordering is recoverable. The latest explicit
-independent channel stream is retained:
+The implementation uses a dedicated, reproducible channel stream:
 `default_rng(SeedSequence([scenario_seed,42017]))`. Its normalized variant first
 draws the stationary initialization, then one innovation per interval. Arrival
 and harvest RNG construction is unchanged; varying sigma/normalization does not
@@ -141,16 +132,8 @@ match. Audits/offline reconstruction require the original online input hashes
 and exact regenerated window manifest. A different checksum must be investigated
 as a different input version; recording a hash is not proof of data provenance.
 
-At implementation time all three raw files were absent and download attempts
-failed with DNS resolution errors. This dependency was resolved on 20 November
-2026: all three downloaded files match their recorded reference SHA-256 checksums.
-The saved `--validate-only` settings and 300-run matrix in
-[`results/solar_input_check_1000/`](../results/solar_input_check_1000/settings.json)
-were reconstructed successfully against the actual files. All 30 selected windows
-contain exactly 1,000 finite consecutive samples at their native interval.
-The user's settings/matrix were preserved; independent checksum, matrix and
-overlap checks are saved in
-[`input_verification.json`](../results/solar_input_check_1000/input_verification.json).
+The launcher checks the three input hashes and selects 30 windows of 1,000
+finite consecutive observations at each source's native interval.
 
 | Real source | Loaded grid samples | Finite samples | Selected windows | Overlapping selected pairs |
 |---|---:|---:|---:|---:|
@@ -162,15 +145,6 @@ The NREL pairs share 1,240 samples summed across pairs, with a maximum pairwise
 overlap of 138 samples (13.8% of a window). Their observations are shared, not
 independent solar records. Even disjoint windows retain common source/season
 dependence. No padding, tiling, interpolation or source-interval changes were used.
-
-The action/delay verification also passed short real-input workflows at horizon
-10: 60 final-policy runs and 21 older-simulator runs, each 12 slots. These smoke
-outputs and audits are in
-[`results/solar_packet_delay_smoke_real/`](../results/solar_packet_delay_smoke_real/verification.json).
-They verify execution and accounting, not production performance. The complete
-suite passed 94 tests in 50.470 seconds. The input prerequisite is resolved;
-production remains deferred for the final system/model review. Artificial fixtures
-remain test-only inputs; these real-data checks do not change the study design.
 
 ARCO and UMass retain **60-second samples** and conversion factors 0.01 and 0.1
 J per current-unit sample respectively. UMass sums all three nonnegative solar
@@ -219,100 +193,13 @@ interval formulas are retained and labeled **approximate/descriptive**, with
 `n` equal to scenarios, never 1,000 independent slot repetitions. These are not
 confidence guarantees or comparisons across independent solar records.
 
-## Outputs, verification and measured runtime
+## Reproduction and outputs
 
-Per-slot and per-run tables retain their packet/energy meanings. Synthetic keys
-include harvest mean, channel sigma, seed and policy, so sigma scenarios cannot
-collide. Both sweep drivers and solar save run matrices/settings; slot checkpoints
-append each completed run once and final CSV is copied once. Existing trajectory
-outputs are rejected in favor of a fresh output root. No production results were
-overwritten. Audits reconstruct channel traces, timed conditional forecasts,
-packet/retry outcomes, ACK queue changes, energy, phase times and aggregate costs.
-Offline audits also bind comparison costs to the matching online rows.
-
-The A5/delay-tracking benchmark uses stationary-normalized sigma 0.45,
-seed 6000, harvest mean 0.6 J, 1,000 slots and online horizon 10. Policy execution
-took **13.4600 s**; 994 solver calls averaged **13.1270 ms**. Six intervals had no
-solve. All accepted results were optimal, with maximum primal residual
-3.66235e-5 (<1e-4), and no decision-budget overruns. An intermediate solver
-issued an inaccuracy warning; the existing fallback/verification rules remained
-in place. Packet, battery, aggregate and delay-ledger audits passed. Primary
-completed-observation means were 20.5541 s initial wait and 22.5667 s ACK delay,
-each over 4,360 newly admitted packets; nine new admissions remained unfinished.
-These are benchmark diagnostics, not regenerated study results.
-
-The prior A3 offline timing is historical; this stage refreshes only the requested
-online benchmark. Offline bounds now derive from Config.data_max=5, retaining
-90 full-episode references and the expected-goodput interpretation. Short offline
-reconstruction/audit tests pass; no full reference study was launched.
-
-There are 660 MPC policy-runs plus 240 heuristic runs. The measured episode rate
-extrapolates to about **2.47 hours for MPC execution alone**, before baseline,
-packet/slot CSV, source loading, audits and plotting costs. This is not a measured
-900-run runtime. Plan additional time, particularly for the approximately 4.5
-million offered-packet ledger rows. See [packet_delays.md](packet_delays.md) for
-current cohorts, schemas and verification. The existing paired CI formulas remain
-run-level; individual packets are not independent experimental repetitions.
-
-## Fresh-output commands (not executed as a production study)
-
-From the project root (real inputs and all 30 windows are already verified):
-
-```bash
-export MPLCONFIGDIR=/tmp/ee541-matplotlib
-EE541_OUT=results/final_evaluation_continuous_1000
-
-# Validate real windows only, no policy runs.
-.venv/bin/python -B final_solar_evaluation.py --validate-only --windows 10 --slots 1000 --horizon 10 --out "$EE541_OUT/solar"
-
-# Original, zero-initialized channel: 300 runs.
-.venv/bin/python -B final_evaluation.py --seeds 10 --seed-start 5000 --rho 0.68 --sigma 0.20 0.45 0.80 --slots 1000 --horizon 10 --out "$EE541_OUT/sweep"
-.venv/bin/python -B audit_final_evaluation.py "$EE541_OUT/sweep"
-
-# Stationary mean-normalized channel: 300 runs.
-.venv/bin/python -B final_evaluation.py --mean-normalize --seeds 10 --seed-start 6000 --rho 0.68 --sigma 0.20 0.45 0.80 --slots 1000 --horizon 10 --out "$EE541_OUT/sweep_normalized"
-.venv/bin/python -B audit_final_evaluation.py "$EE541_OUT/sweep_normalized"
-
-# Solar: 300 runs, fixed normalized sigma 0.45.
-.venv/bin/python -B final_solar_evaluation.py --windows 10 --slots 1000 --horizon 10 --out "$EE541_OUT/solar"
-.venv/bin/python -B audit_comparison.py "$EE541_OUT/solar"
-.venv/bin/python -B audit_final_solar.py "$EE541_OUT/solar"
-
-.venv/bin/python -B solver_crosscheck.py --out "$EE541_OUT/solver"
-.venv/bin/python -B offline_reference.py --root "$EE541_OUT"
-.venv/bin/python -B audit_offline.py "$EE541_OUT/offline"
-.venv/bin/python -B plot_final_figures.py --root "$EE541_OUT"
-```
-
-Validation-only output can be used for its subsequent full solar run. Once
-trajectories exist, use a new root for reruns. The complete test command is:
-
-```bash
-MPLCONFIGDIR=/tmp/ee541-matplotlib .venv/bin/python -B -m unittest discover -s tests -v
-```
-
-The continuous-channel stage passed **80 tests in 50.780 seconds** before the
-A5/delay additions. Current verification is recorded in [packet_delays.md](packet_delays.md). All 31 project/test
-Python files passed syntax parsing. Temporary CLI smoke runs covered both
-synthetic variants (60 three-slot policy-runs each), ten-policy solar (60
-three-slot runs), all physical/source audits, 18 short offline references,
-12 solver checks, proposal analysis and plots. Validation-only mode, corrupt
-run matrices/manifests, conditional forecasts, missed probes, overflow, battery,
-packet IDs/retries and policy execution-order independence were checked. These
-fixtures never substitute for production data or validate real solar windows.
-
-Changed implementation files: `src/channel.py`, `src/forecasting.py`,
-`src/radio.py`, `src/scheduling.py`, `src/experiment.py`, `src/auditing.py`,
-`proposal_study.py`, `final_evaluation.py`, `audit_final_evaluation.py`,
-`offline_reference.py`, `audit_offline.py`, `plot_final_figures.py`,
-`solver_crosscheck.py`, `tune_proposal.py`. Existing solar drivers/loaders use the
-new common channel defaults without changing selection or source accounting.
-Changed tests: `test_channel_probe.py`, `test_receiver_feedback.py`,
-`test_phase_timing.py`, `test_audit_workflow.py`, `test_final_evaluation.py`.
-Documentation: `README.md`, `FINAL_HANDOFF.md`, `docs/receiver_feedback.md` and
-this protocol. The current files were edited directly; old source files were
-not restored wholesale and production results were not changed.
-
-Final benchmark artifacts are in `/tmp/ee541_continuous_final_benchmark_w3q3g1vn/`
-(`benchmark.json`, `online_slots.csv`, `offline_plan.csv`). The complete test log
-is `/tmp/ee541_continuous_tests.log`. No production output root was created.
+Run the full design with `bash scripts/run_experiments.sh --run` from the
+activated environment. The launcher validates the input hashes and all 30
+solar windows before running the studies. It creates a fresh output directory
+and audits each study. It writes run matrices, settings, per-run summaries,
+slot and packet ledgers, paired comparisons and figures. The full design takes
+several hours and produces millions of packet rows. See the
+[README](../README.md#reproduce-the-experiments) for the short verification run
+and output directory conventions.

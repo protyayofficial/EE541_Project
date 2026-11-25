@@ -1,101 +1,121 @@
-# EE 541 Project: Prediction-Aware Packet Scheduling
+# Prediction-Aware Packet Scheduling for Energy-Harvesting Sensors
 
-**Team:** Protyay Dey and Arghadeep Saha
+**EE 541 · University at Buffalo · Fall 2026**
 
-**Project:** Convex optimization for scheduling transmissions from an energy-harvesting wireless sensor with a finite battery and packet buffer.
+**Protyay Dey and Arghadeep Saha**
 
-The project develops and evaluates a prediction-aware scheduling method for an energy-harvesting sensor. The submitted [project proposal](docs/submitted_proposal.tex) describes the formulation and planned work.
+Can forecast uncertainty margins help an energy-harvesting wireless sensor
+reduce packet rejection and queue buildup without using more transmission
+energy? We compare receding-horizon convex scheduling policies and simple
+heuristics on matched synthetic and solar-driven scenarios.
 
-The current simulators use correlated continuous lognormal channel gains and
-accurate numerical probe feedback, identifiable 32-byte packets, independent
-BER-based reception, reliable ACK departures and retransmissions. Channel gains
-are effective SNR per watt, held for one interval, with rho 0.68. The original
-zero-log-state and stationary mean-normalized variants use sigma 0.20/0.45/0.80;
-solar defaults to sigma 0.45, normalized. There is no five-state mapping, gain cap
-or full-episode sample normalization. Forecasts use causal conditional means and
-timestamped reports, including observation gaps after missed probes.
+At each interval, the scheduler uses the current queue, battery and any
+available channel probe to plan over a ten-slot horizon. The CVXPY model balances
+queue occupancy, rejected arrivals, energy use and terminal backlog. It plans
+with expected goodput, then executes the first action in a packet simulator
+with whole-packet transmissions, reception errors, acknowledgments and retries.
+The uncertainty-aware policies adjust channel, arrival or harvest forecasts
+with fixed or adaptive margins.
 
-Every executed probe costs 0.2 J, including A0; an unaffordable probe yields no
-fresh report or data. Packet payload remains 256 bits, arrivals uniform 0–10,
-attempts 0–5, buffer 32, and online horizon 10. The five-second virtual interval
-still reserves probe/report/decision/data/ACK/update/guard durations of
-0.3/0.3/1/1/1/1/0.4 seconds. Reports arrive at 0.6 s, ACKs are processed at 3.6 s,
-and arrivals/harvest commit at interval end. Other modeled control energy defaults
-to zero; physical energy is never discounted by objective weights. No real-time
-sleeping occurs. See [the receiver model](docs/receiver_feedback.md).
+## Set up with Conda
 
-Final episodes default to 1,000 slots. The original synthetic sweep uses seeds
-5000–5009 and the normalized sweep 6000–6009: each is two harvest means × three
-sigmas × ten seeds × five policies = 300 runs. Solar retains three sources × ten
-window/seed scenarios × ten policies = 300 runs. The active online total is now
-**900 runs**. Offline references use 60 normalized synthetic plus 30 solar
-scenarios. Solar selection, native intervals, missing-data checks and overlap
-records are preserved; its intervals remain approximate/descriptive summaries of
-dependent windows. All three real solar inputs now match their recorded SHA-256
-checksums. [Input validation](results/solar_input_check_1000/input_verification.json)
-confirmed 30 consecutive 1,000-sample windows and the 300-run solar matrix.
-**Production completed on 20 November 2026 at 11:09:39 UTC.** The
-[completed timestamped root](results/final_evaluation_continuous_1000_20261120T075329Z_4_f31b28/status.json)
-passed all 21 stages and final completion audit. It contains 900 main runs,
-240 supplementary runs, 90 references and 12 solver checks. See the
-[completion reconciliation](results/recovery_20261120/completion_verification.json)
-and [current protocol](docs/experiments_1000.md). Future reruns require a fresh root.
-Historical results and their original assumptions remain preserved.
+On macOS or Linux, install [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main)
+or [Miniforge](https://github.com/conda-forge/miniforge), then run:
 
-The shared attempted-service cap is now **5**, with actions 0–5 in both simulators.
-Actual virtual-time packet ledgers are exported to `per_packet.csv`. Initial
-waiting measures admission to first data-burst start; ACK-completion delay measures
-admission to successful ACK/departure and includes retries. Primary completed-
-observation statistics exclude initial packets; rejected and unfinished packets
-retain missing delays and explicit cohort/censoring fields. See
-[packet timing, fields and audit definitions](docs/packet_delays.md).
-Real-input checks passed on 60 short final-policy runs and 21 short older-simulator
-runs, preserving native solar intervals. The complete suite passed 94 tests in
-50.470 seconds. [Verification records](results/solar_packet_delay_smoke_real/verification.json)
-cover source reconstruction, packet/delay and battery audits, and run-level summaries.
+```bash
+git clone --branch master https://github.com/protyayofficial/EE541_Project.git
+cd EE541_Project
+conda env create -f environment.yml
+conda activate ee541
+```
 
-Two [fixed supplementary studies](docs/supplementary_studies.md) are completed:
-120 delay–energy executions and 120 channel-forecast-sensitivity executions.
-They preserve the main 900-run matrix and repeat its baseline cases as documented;
-the repeats are not additional independent repetitions. Adaptive penalty-weight
-updates are explicitly excluded. Full main and supplementary production runs
-passed their audits; earlier implementation verification used smoke runs and benchmarks.
-Final checks passed **101 tests** and both 1,000-slot supplementary benchmark
-audits. [Readiness evidence](results/supplementary_verification/readiness.json)
-records the preserved main behavior, real-input checks and runtime estimates.
+The environment uses Python 3.11 and pins NumPy, SciPy, pandas, Matplotlib,
+CVXPY, CLARABEL and SCS. Run the following commands from the repository root.
+All three input files are under [`data/`](data), with source attribution and
+SHA-256 checksums.
 
-## Implemented work
+## Reproduce the experiments
 
-- A CVXPY implementation of the proposal's weighted finite-horizon objective and its channel-rate, queue, battery, service and energy constraints.
-- Causal receding-horizon scheduling with nominal forecasts, fixed uncertainty margins, adaptive margins, and separate channel, arrival and harvest ablations.
-- Matched comparisons with greedy, fixed-power, channel-aware and fixed-fraction heuristics; the final solar study also includes separate channel and arrival margin ablations.
-- The two active correlated-channel volatility sweeps and comparisons on ten windows from each of three solar-data sources, plus a full-horizon expected-goodput reference. Historical saved results use the earlier model; the completed timestamped production above uses the current model.
-- A CLARABEL-versus-SCS comparison on six optimization instances, unit tests, and audits of the saved physical actions and offline plans. The audits check stated conditions; they do not prove global online optimality or guaranteed uncertainty coverage.
+Start with the unit tests and a short run through the full workflow:
 
-Historical results and diagnostic outputs are under [`results/final_evaluation`](results/final_evaluation). New runs use the fresh `results/final_evaluation_continuous_1000/` root. The [technical documentation](FINAL_HANDOFF.md) describes the assumptions, evaluation settings and limitations in more detail.
+```bash
+python -m unittest discover -s tests -v
+bash scripts/run_experiments.sh --run --smoke --output-parent runs
+```
 
-### Historical findings
+The smoke run uses four slots per episode and exercises both synthetic sweeps,
+all three solar sources, both supplementary studies, the offline reference,
+the solver comparison, and the corresponding audits. It is a workflow check.
+Use the full run below for the ten-seed and ten-window comparisons.
 
-The uncertainty-aware approach improves the proposal's weighted cost in some tested conditions but not all. For example, on a mean-normalized synthetic scenario with scarce harvest, adaptive harvest margins reduced average cost against nominal MPC; in a higher-harvest scenario they increased it. Solar-source results also vary, and the 10 windows per source can be correlated. **The results do not support saying that our method is better than every baseline or in every scenario.**
+```bash
+# Inspect the full plan and verify the input checksums and window selections.
+bash scripts/run_experiments.sh --plan-only
 
-The final analysis should explain when uncertainty margins help and when conservatism can hurt. Consider queue occupancy, rejected arrivals, transmission energy, throughput and final backlog together. Report measured differences and their uncertainty without treating a small number of runs as a universal guarantee.
+# Run the full study. Allow several hours and multiple GB of disk space.
+bash scripts/run_experiments.sh --run --output-parent runs
+```
 
-## Remaining tasks for the course project
+The launcher prints the output directory. In it, `status.json` and `logs/`
+record stage progress, and `COMPLETED` marks a run that passed the final audit.
+Each invocation creates a new directory. The [experiment protocol](docs/experiments_1000.md)
+describes the study design. Run `python final_evaluation.py --help` or
+`python final_solar_evaluation.py --help` for individual study options.
 
-1. **Review the full formulation and implementation.** Check the variables, weighted objective, Shannon-rate constraint, energy causality, queue and battery dynamics, terminal constraints, and why the resulting finite-horizon model is convex. Be prepared to explain the receding-horizon decisions and the uncertainty-aware extension in the presentation and Q&A.
-2. **Validate the simulation and results.** Review the saved solver statuses, feasibility residuals, CLARABEL/SCS comparison, physical-state audits and offline-reference audit. Confirm that the nominal, fixed-margin and adaptive comparisons use matched traces and that conclusions reflect the recorded evidence. Investigate numerical warnings rather than suppressing them.
-3. **Resolve the model assumptions before finalizing the report.** The optimizer can plan rejection while the current simulator rejects only actual forced overflow; the older simulator optionally also rejects arrivals proactively. The optional first-slot consistency constraint is an experiment, not a proven performance improvement. Current synthetic and solar traffic is uniform on 0–10; saved results used earlier arrival settings. Planning uses continuous expected goodput with attempted service capped at 5, while execution uses whole packets and ACK departures. Use the measured initial waiting and ACK-completion delays with their completed-observation cohorts, censoring and counts; average queue occupancy remains a separate metric in packets.
-4. **Review the real-data scenarios and their physical interpretation.** ARCO panel current, UMass household panel current and NREL TMY3 irradiance are used as solar-shaped inputs with **assumed**, uncalibrated conversions to harvested energy. Their slot lengths differ, and channel and traffic are synthetic. Verify the dataset provenance and hashes, describe the conversions and timing clearly, and avoid interpreting these as three directly measured IoT harvesting systems. Add a conversion or operating-condition sensitivity check if the professor expects stronger physical validation.
-5. **Interpret the baselines and uncertainty-aware extension.** Distinguish nominal, fixed-margin and adaptive MPC; explain the one-step error margins, warm-up period and empirical coverage. Identify which margins help or hurt and why. The full-horizon reference now uses deterministic expected goodput and perfect future inputs. Its differences against realized stochastic online costs are descriptive and imply no pathwise bound.
-6. **Choose the final evidence and figures.** Select two to four clear figures or tables showing the main question, performance trade-offs, empirical forecast-bound behavior and numerical correctness. Use the saved sample sizes and paired comparisons, label units and different slot lengths, and make clear that correlated solar windows limit statistical interpretation. A starting set is linked below.
-7. **Finish the course deliverables.** Prepare the final technical report and presentation, including the system model, methodology, evidence, limitations, references and each team member's actual contribution. Review the professor's requirements, any permitted-tool disclosure, and citation obligations. Both team members must be ready to explain the entire project, not only their individual component.
+The full design uses 1,000-slot episodes. It includes two 300-run synthetic
+sweeps, 300 solar runs, 120 runs per supplementary study, 90 offline references,
+and 12 solver checks. To build the report figures and tables from a completed
+full run, replace the input path with the directory printed by the launcher:
 
-## Results and supporting material
+```bash
+python prepare_report_figures.py \
+  --input runs/COMPLETED_RUN_DIRECTORY \
+  --out runs/report_figures \
+  --zip runs/report_figures.zip
+```
 
-- [Mean-normalized synthetic comparison](results/final_evaluation/sweep_normalized/realized_cost.png) and [rejection comparison](results/final_evaluation/sweep_normalized/drop_ratio.png).
-- [Empirical one-step uncertainty-bound coverage](results/final_evaluation/figures/one_step_coverage.png).
-- [Paired solar-source cost differences](results/final_evaluation/figures/solar_paired_cost.png).
-- [Solver comparison](results/final_evaluation/solver/solver_comparison.csv), [solar results](results/final_evaluation/solar/per_window.csv), and [clairvoyant-reference audit](results/final_evaluation/offline/audit.json).
-- [Dataset provenance and attribution](data/arco/README.md), [UMass](data/umass/README.md), and [NREL](data/nrel/README.md). Raw datasets are not included; the recorded checksums are in the relevant experiment settings.
+## Included results
 
-The final report, presentation, joint review and any necessary final validation remain to be completed. The instructor's project brief is not included in this repository; follow its requirements for citations and tool disclosure.
+| Output | Contents |
+| --- | --- |
+| [Current-model verification](results/submission_verification) | Saved summaries, figures, settings and audit results from the merged implementation |
+| [Earlier evaluation](results/final_evaluation) | Synthetic and solar comparisons, offline reference and solver checks from the earlier simulator |
+| [Development studies](results) | Earlier proposal runs and exploratory policy tuning under their original settings |
+
+The included current-model verification covers the short workflow and a
+two-seed, 1,000-slot normalized synthetic comparison at channel volatility
+`sigma = 0.45`. The original November 20 production output files described in
+the branch history were absent from the GitHub branches. A new full run
+produces the complete set of outputs for the current model.
+
+In the included 1,000-slot check, the policy with adaptive margins on all
+forecasts lowered mean weighted cost by 4.2% relative to nominal MPC at 0.6 J
+mean harvest. At 1.2 J, its cost was 0.5% higher. Each comparison uses two
+matched seeds, so these differences describe the included runs.
+
+A generated study directory contains `settings.json`, a run matrix,
+`per_seed.csv` or `per_window.csv`, aggregate and paired comparison tables, and
+plots. Full runs also save per-slot and per-packet records for auditing. The
+offline reference uses perfect future inputs and continuous expected goodput.
+Its cost comparison with realized online execution is descriptive.
+
+## Model and data notes
+
+- The current simulator uses correlated lognormal channel gains, uniform
+  arrivals from 0 to 10 packets, a 32-packet buffer, and up to five transmission
+  attempts per slot. The [proposal](docs/submitted_proposal.tex) records the
+  original assumptions and division of work. The supplementary studies use
+  fixed penalty weights and vary the energy penalty or forecast noise.
+- ARCO and UMass provide solar-panel current at one-minute resolution after
+  aggregation. NREL provides hourly TMY3 irradiance. Each is converted to
+  simulated harvest with an assumed scale. Channel and traffic inputs are
+  synthetic. Solar windows can share observations, and throughput comparisons
+  need to account for the different slot durations.
+- Review queue, rejection, energy and delay together when interpreting policy
+  comparisons. Packet delay statistics use completed observations and report
+  the associated cohort counts. Empirical margin coverage is scenario-specific.
+
+Further details appear in the [radio model](docs/receiver_feedback.md),
+[packet-delay definitions](docs/packet_delays.md),
+[supplementary studies](docs/supplementary_studies.md) and
+[solver regression notes](docs/solver_recovery.md).

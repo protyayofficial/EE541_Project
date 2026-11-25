@@ -1,0 +1,112 @@
+{
+  "status": "completed",
+  "started_at": "2026-11-24T23:44:50+00:00",
+  "ended_at": "2026-11-24T23:46:09+00:00",
+  "stages": [
+    {
+      "stage": "preflight",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "solar_validate",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "solver_checks",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "solver_audit",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "sweep",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "sweep_audit",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "sweep_normalized",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "normalized_audit",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "solar",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "solar_action_audit",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "solar_source_audit",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "delay_energy",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "delay_energy_analysis_plots",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "delay_energy_audit",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "forecast_sensitivity",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "forecast_analysis_plots",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "forecast_audit",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "offline_references",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "offline_audit",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "main_figures",
+      "status": "completed",
+      "exit_code": 0
+    },
+    {
+      "stage": "completion_audit",
+      "status": "completed",
+      "exit_code": 0
+    }
+  ]
+}

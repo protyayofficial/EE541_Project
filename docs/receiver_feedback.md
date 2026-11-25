@@ -1,8 +1,8 @@
 # Probe, receiver feedback and retransmission model
 
-This implementation supersedes the execution assumptions behind all saved
-experiments. No saved results were regenerated during this implementation stage.
-The submitted proposal remains a historical document.
+The simulator models channel probes, reliable acknowledgments and retry
+behavior. The [submitted proposal](submitted_proposal.tex) describes the initial
+continuous scheduling formulation.
 
 ## Arrivals and attempted actions
 
@@ -337,90 +337,3 @@ lengths to settings. Non-finite plans are rejected. Settings record initial queu
 (60/60/3600 seconds) separately from the 5-second synthetic default.
 Five-state saved settings are rejected by the new channel/radio model versions.
 Audits independently reconstruct conditional forecasts from timed reports.
-
-## Validation and pending experiments
-
-Current continuous-channel verification and benchmark results are recorded in
-[experiments_1000.md](experiments_1000.md). All saved production experiments still
-require regeneration. The implementation-stage notes below are historical; their
-five-state channel descriptions and old commands are superseded.
-
-### Historical implementation-stage notes
-
-The phase-timing implementation passed **68 tests in 23.553 seconds**, including
-10 new focused timing tests. The full command below also exercised synthetic,
-solar-fixture, proposal, offline-reference, solver, audit and figure entry points
-in temporary directories. Tests verify the default boundaries, invalid phase
-sums, event ordering, next-interval availability, A0 and starvation, constant
-one-second data energy, source-specific guard times, causal history, deadline
-flags (including forced overruns), CSV audits, all policies and both planners.
-No production experiment outputs were regenerated.
-
-Files changed for phase timing:
-
-- Shared implementation: `src/scheduling.py`, `src/radio.py`, `src/experiment.py`,
-  `src/auditing.py`.
-- Policy/experiment consumers: `proposal_study.py`, `final_evaluation.py`,
-  `final_solar_evaluation.py`, `tune_proposal.py`.
-- Audit entry-point reports: `audit_final_evaluation.py`, `audit_comparison.py`,
-  `audit_proposal.py`.
-- Focused tests: `tests/test_phase_timing.py`.
-- Documentation: `README.md`, `FINAL_HANDOFF.md`, `docs/receiver_feedback.md`.
-
-Older saved settings/logs lack phased timing and the corrected solver-runtime
-meaning. Regenerate them together with experiment tables, audits and figures
-after the remaining model decisions are settled. The timing change itself does
-not add energy costs or change stochastic traces, policies or planner dynamics.
-
-Channel/probe stage changed files:
-
-| Area | Files |
-|---|---|
-| Canonical mapping and shared implementation | `src/channel.py` (new), `src/radio.py`, `src/scheduling.py`, `src/forecasting.py`, `src/auditing.py` |
-| Simulators and settings | `src/experiment.py`, `proposal_study.py`, `final_evaluation.py`, `final_solar_evaluation.py`, `tune_proposal.py` |
-| References, reconstruction, figures | `offline_reference.py`, `audit_offline.py`, `audit_final_evaluation.py`, `audit_final_solar.py`, `plot_final_figures.py` |
-| Tests | `tests/test_channel_probe.py` (new), `tests/test_arrival_actions.py`, `tests/test_final_evaluation.py`, `tests/test_packet_execution.py`, `tests/test_proposal_study.py`, `tests/test_receiver_feedback.py` |
-| Documentation | `README.md`, `FINAL_HANDOFF.md`, `docs/receiver_feedback.md` |
-
-The previous stages passed 42 tests. This stage passed **51 tests**, adding nine
-condition/probe tests and adapting regression checks to the defaults, including every policy and both
-planning backends. Checks cover condition-only payloads, TX lookup, held radio
-state, channel/reception matching, A0 and A3 costs, probe starvation, partial
-controls, ACK retries, CSV audits, and convex planning. Test-created audit fixtures
-use temporary directories; saved project experiments are not regenerated.
-All 28 project Python files also passed syntax parsing.
-
-Run the existing environment (use a writable Matplotlib cache if needed):
-
-```bash
-MPLCONFIGDIR=/tmp/ee541-matplotlib .venv/bin/python -B -m unittest discover -s tests -v
-```
-
-During the superseded five-state stage, the continuous sweeps were disabled and
-replaced by `synthetic/`. The current implementation restores `sweep/` and
-`sweep_normalized/` with the packet/energy/timing improvements retained. Current
-commands and parameter semantics are in the experiment protocol, not these notes.
-
-After remaining model decisions are settled, regenerate the synthetic evaluation,
-solar evaluation, solver comparison, offline expected-goodput reference, and all
-associated tables, audits and figures. Earlier proposal/consistency/tuning studies
-also require regeneration if used; tuning needs a regenerated matching proposal
-reference. Historical saved CSVs, settings, logs and figures retain their old
-meaning and have been left untouched.
-
-The logical/mathematical audit subsequently passed **57 tests**, including small
-CLI workflows for synthetic, artificial solar-format fixtures, offline reference,
-solver comparison, proposal analysis and their audits/figures. Fixtures validate
-interfaces and units handling; the three real solar inputs were absent at that
-audit. They were subsequently downloaded and checksum-verified, and all 30
-1,000-sample windows were validated. Short real-input action/delay checks are
-recorded in [packet_delays.md](packet_delays.md#real-solar-input-verification-20-november-2026);
-production results remain deferred. The audit also corrected solver-to-integer
-precision loss, NaN plan verification, aggregate/seed/interval audit gaps,
-row-order-dependent terminal analysis, and fixed sample-count figure labeling.
-
-The subsequent uniform 0–10 arrival update passed **58 tests**, including integer
-RNG reproducibility, matched synthetic/solar traffic, the mean-5 prior and [0,10]
-forecast bounds, rejection of obsolete arrival settings, and overflow after
-partial ACK departures with both zero and ten new packets. Actions, channel
-mapping, packet size, probe cost and ACK-based departure rules remain unchanged.
